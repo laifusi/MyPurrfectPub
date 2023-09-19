@@ -24,10 +24,10 @@ MonoBehaviour:
   - id_option: 0
     text_option: "Opci\xF3n 1"
     selected_option: 0
-    purrstige: 0
-    michicoins: 0
+    purrstige: 10
+    michicoins: 50
   - id_option: 0
     text_option: "Opci\xF3n 2"
     selected_option: 0
-    purrstige: 0
-    michicoins: 0
+    purrstige: -50
+    michicoins: 10

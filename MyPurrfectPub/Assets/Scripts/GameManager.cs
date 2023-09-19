@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
             {
                 EventSO selectedEvent = calmNightEvent;
                 AsignarValoresEvent newEvent = Instantiate(eventPrefab);
-                newEvent.AssignEvent(selectedEvent);
+                newEvent.AssignEvent(selectedEvent, this);
             }
         }
         else
@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
                 selectedEvent = calmNightEvent;
             }
             AsignarValoresEvent newEvent = Instantiate(eventPrefab);
-            newEvent.AssignEvent(selectedEvent);
+            newEvent.AssignEvent(selectedEvent, this);
         }
 
         timesInStartNight = 0;

@@ -16,18 +16,31 @@ public class AsignarValoresEvent : MonoBehaviour
 
     [SerializeField] private Button buttonPrefab;
 
-    public void AssignEvent(EventSO newEvent)
+    private GameManager gameManager;
+
+    public void AssignEvent(EventSO newEvent, GameManager gameManager)
     {
         evento = newEvent;
+        this.gameManager = gameManager;
 
         titulo.text = evento.event_tittle;
         texto.text = evento.event_text;
 
-        foreach (EventSO.option option in evento.options)
+        for(int i = 0; i < evento.options.Length; i++)
         {
+            EventSO.option option = evento.options[i];
             Button newButton = Instantiate(buttonPrefab, panel);
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = option.text_option;
-            //newButton.onClick.AddListener()
+            newButton.onClick.AddListener(() => EndEvent(option.id_option));
         }
+    }
+
+    private void EndEvent(int optionId)
+    {
+        evento.options[optionId].selected_option = true;
+        EventSO.option option = evento.options[optionId];
+        gameManager.AddCoins(option.michicoins);
+        gameManager.AddPrestige(option.purrstige);
+        Destroy(gameObject);
     }
 }

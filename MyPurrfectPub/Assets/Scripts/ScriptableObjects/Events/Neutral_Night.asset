@@ -24,5 +24,5 @@ MonoBehaviour:
   - id_option: 0
     text_option: Continuar
     selected_option: 0
-    purrstige: 0
-    michicoins: 0
+    purrstige: 5
+    michicoins: 5
