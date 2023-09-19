@@ -13,15 +13,25 @@ public class EventSO : ScriptableObject
     [TextArea(2,2)]
     public string event_text;
 
-    public int probility;
+    //public int probility;
+    public Rarity rarity;
 
     public int min_purrstige;
 
     public int max_purrstige;
 
     public EventSO dependence;
+    public int optionDependecyId;
 
-    public List<option> options;
+    public option[] options;
+
+    public void Reset()
+    {
+        for(int i = 0; i < options.Length; i++)
+        {
+            options[i].selected_option = false;
+        }
+    }
 
     [System.Serializable]
     public struct option
@@ -33,4 +43,8 @@ public class EventSO : ScriptableObject
         public int michicoins;
     }
 
+    public enum Rarity
+    {
+        Common, Uncommon, Rare, VeryRare
+    }
 }
