@@ -15,10 +15,11 @@ MonoBehaviour:
   id: 0
   event_tittle: Evento Multiple
   event_text: "Este evento tiene m\xFAltiple opci\xF3n"
-  probility: 0
+  rarity: 0
   min_purrstige: 0
-  max_purrstige: 0
+  max_purrstige: 100
   dependence: {fileID: 0}
+  optionDependecyId: 0
   options:
   - id_option: 0
     text_option: "Opci\xF3n 1"

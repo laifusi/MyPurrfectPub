@@ -15,18 +15,14 @@ MonoBehaviour:
   id: 0
   event_tittle: Noche Tranquila
   event_text: "Ha sido una noche tranquila sin ning\xFAn problema"
-  probility: 50
+  rarity: 0
   min_purrstige: 0
-  max_purrstige: 0
+  max_purrstige: 100
   dependence: {fileID: 0}
+  optionDependecyId: 0
   options:
   - id_option: 0
-    text_option: "Opci\xF3n 1"
-    selected_option: 0
-    purrstige: 0
-    michicoins: 0
-  - id_option: 0
-    text_option: "Opci\xF3n 2"
+    text_option: Continuar
     selected_option: 0
     purrstige: 0
     michicoins: 0

@@ -16,24 +16,18 @@ public class AsignarValoresEvent : MonoBehaviour
 
     [SerializeField] private Button buttonPrefab;
 
-    // Start is called before the first frame update
-    void Start()
+    public void AssignEvent(EventSO newEvent)
     {
+        evento = newEvent;
+
         titulo.text = evento.event_tittle;
         texto.text = evento.event_text;
 
-        foreach(EventSO.option option in evento.options)
+        foreach (EventSO.option option in evento.options)
         {
             Button newButton = Instantiate(buttonPrefab, panel);
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = option.text_option;
             //newButton.onClick.AddListener()
         }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

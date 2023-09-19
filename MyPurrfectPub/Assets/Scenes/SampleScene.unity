@@ -2077,7 +2077,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 700372737}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1344643768}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: StartNight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &700372737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2976,6 +2988,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialCoins: 0
   initialPrestige: 0
+  allEvents:
+  - {fileID: 11400000, guid: 5e8cd23b5d40c1541becd74967f757ac, type: 2}
+  - {fileID: 11400000, guid: 3d33b9e42f5e35b408f38ac8a9dd765a, type: 2}
+  eventPrefab: {fileID: 6208623395915467129, guid: c55b8f2809a1dde44bf2337d7af8641e, type: 3}
+  calmNightEvent: {fileID: 11400000, guid: 3d33b9e42f5e35b408f38ac8a9dd765a, type: 2}
 --- !u!4 &1344643769
 Transform:
   m_ObjectHideFlags: 0
