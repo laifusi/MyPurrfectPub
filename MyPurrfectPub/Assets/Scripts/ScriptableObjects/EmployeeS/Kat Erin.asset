@@ -16,4 +16,6 @@ MonoBehaviour:
   prestigePerTurn: 7
   costPerTurn: 70
   rol: Camarera
-  image: {fileID: 0}
+  description: 
+  bought: 0
+  image: {fileID: -1429985499, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}

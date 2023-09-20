@@ -16,4 +16,6 @@ MonoBehaviour:
   prestigePerTurn: 5
   costPerTurn: 50
   rol: Coctelera
-  image: {fileID: 0}
+  description: 
+  bought: 0
+  image: {fileID: 1212369534, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
