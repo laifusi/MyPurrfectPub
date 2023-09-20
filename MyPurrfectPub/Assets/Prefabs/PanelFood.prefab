@@ -121,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2227648033762512757}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8481155245654354592}
+        m_TargetAssemblyTypeName: PanelFood, Assembly-CSharp
+        m_MethodName: Comprar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2227648033973399022
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +331,9 @@ MonoBehaviour:
   nombre: {fileID: 2227648034918366364}
   precio: {fileID: 2227648034745215400}
   prestigio: {fileID: 2227648035596096514}
-  detailsPrefab: {fileID: 0}
+  detalles: 
+  detailsPrefab: {fileID: 7020173661215313155, guid: 7da610388c776a34fb6f5d7e63d2589b, type: 3}
+  foodAsociada: {fileID: 0}
 --- !u!1 &2227648034077641884
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +590,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2227648034659498586}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8481155245654354592}
+        m_TargetAssemblyTypeName: PanelFood, Assembly-CSharp
+        m_MethodName: Details
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2227648034693412930
 GameObject:
   m_ObjectHideFlags: 0

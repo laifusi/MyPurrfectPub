@@ -99,9 +99,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_NormalColor: {r: 0.5768441, g: 1, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.5764706, g: 1, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 0.9532509, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -121,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2227648033762512757}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2420544812702909881}
+        m_TargetAssemblyTypeName: PanelNightShow, Assembly-CSharp
+        m_MethodName: Comprar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2227648033973399022
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +331,10 @@ MonoBehaviour:
   nombre: {fileID: 2227648034918366364}
   precio: {fileID: 2227648034745215400}
   prestigio: {fileID: 2227648035596096514}
-  detailsPrefab: {fileID: 0}
+  detalles: 
+  detailsPrefab: {fileID: 7020173661215313155, guid: 7da610388c776a34fb6f5d7e63d2589b, type: 3}
+  nshowAsociado: {fileID: 0}
+  comprar: {fileID: 2227648033762512756}
 --- !u!1 &2227648034077641884
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +591,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2227648034659498586}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2420544812702909881}
+        m_TargetAssemblyTypeName: PanelNightShow, Assembly-CSharp
+        m_MethodName: Details
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2227648034693412930
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class DrinkSO : ScriptableObject
     [SerializeField] public int cost;
     [SerializeField] Sprite image;
     [SerializeField] public int prestige;
+    [TextArea(2, 2)]
     [SerializeField] public string description;
     [SerializeField] public int durability;
 
