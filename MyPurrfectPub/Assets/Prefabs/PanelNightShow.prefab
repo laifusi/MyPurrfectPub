@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 2227648033762512758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2227648034077641885}
@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 554.5, y: 0}
-  m_SizeDelta: {x: 154.5782, y: 30}
+  m_SizeDelta: {x: 315, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2227648033762512762
 CanvasRenderer:
@@ -210,9 +210,9 @@ GameObject:
   - component: {fileID: 2227648034061503924}
   - component: {fileID: 2227648034061503927}
   - component: {fileID: 2227648034061503925}
-  - component: {fileID: 8481155245654354592}
+  - component: {fileID: 2420544812702909881}
   m_Layer: 5
-  m_Name: PanelFood
+  m_Name: PanelNightShow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &8481155245654354592
+--- !u!114 &2420544812702909881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2227648034061503921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 149cd2c866e87b345b95f049c7eb44ac, type: 3}
+  m_Script: {fileID: 11500000, guid: e53d519e6f91e3d49bff6756a33df062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nombre: {fileID: 2227648034918366364}
@@ -413,10 +413,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -483,7 +483,7 @@ RectTransform:
   m_GameObject: {fileID: 2227648034659498583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2227648035038285652}
@@ -493,7 +493,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 836.38, y: 0}
-  m_SizeDelta: {x: 74.3363, y: 30}
+  m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2227648034659498587
 CanvasRenderer:
@@ -1016,10 +1016,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 48.35
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
