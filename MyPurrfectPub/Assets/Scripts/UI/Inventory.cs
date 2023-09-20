@@ -212,7 +212,7 @@ public class Inventory : MonoBehaviour
 
     public void UpdateMoney()
     {
-        moneytext.text = moneycount + " Michimonedas";
+        moneytext.text = moneycount.ToString();
     }
 
     public void AddPurrstige(int amount)
@@ -229,7 +229,7 @@ public class Inventory : MonoBehaviour
 
     public void UpdatePurrstige()
     {
-        prestigetext.text = prestiegecount + " Purrstigio";
+        prestigetext.text = prestiegecount.ToString();
     }
 
     private void Awake()
