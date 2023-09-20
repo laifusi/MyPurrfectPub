@@ -16,4 +16,6 @@ MonoBehaviour:
   prestigePerTurn: 0
   costPerTurn: 25
   rol: Camarero
-  image: {fileID: 0}
+  description: 
+  bought: 0
+  image: {fileID: 1551501862, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}

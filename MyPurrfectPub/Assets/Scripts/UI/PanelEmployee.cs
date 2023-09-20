@@ -20,6 +20,8 @@ public class PanelEmployee : MonoBehaviour
     [SerializeField] private Button comprar;
     [SerializeField] private Button despedir;
 
+    [SerializeField] private Image image;
+
     [SerializeField] private GameObject detailsPrefab;
 
     [SerializeField] private EmployeeSO empleadoAsociado;
@@ -46,6 +48,7 @@ public class PanelEmployee : MonoBehaviour
         precio.text = empleado.costPerTurn.ToString();
         prestigio.text = empleado.prestigePerTurn.ToString();
         detalles = empleado.description;
+        image.sprite = empleado.image;
 
         empleadoAsociado = empleado;
     }

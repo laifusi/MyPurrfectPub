@@ -14,7 +14,7 @@ public class UIPrestige : MonoBehaviour
 
     private void ChangeText(int value)
     {
-        text.SetText(value.ToString() + " Purrstige");
+        text.SetText(value.ToString());
     }
 
     private void OnDestroy()
