@@ -17,6 +17,8 @@ public class PanelEmployee : MonoBehaviour
 
     [SerializeField] private Button comprar;
 
+    [SerializeField] private Image image;
+
     [SerializeField] private GameObject detailsPrefab;
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class PanelEmployee : MonoBehaviour
         rol.text = empleado.rol;
         precio.text = empleado.costPerTurn.ToString();
         prestigio.text = empleado.prestigePerTurn.ToString();
+        image.sprite = empleado.image;
 
         if(empleado.bought)
         {
