@@ -5,8 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new Employee", menuName = "ScriptableObjects/Employee")]
 public class EmployeeSO : ScriptableObject
 {
-    [SerializeField] new string name;
-    [SerializeField] int prestigePerTurn;
-    [SerializeField] int costPerTurn;
-    [SerializeField] Sprite image;
+    [SerializeField] public new string name;
+    [SerializeField] public int prestigePerTurn;
+    [SerializeField] public int costPerTurn;
+    [SerializeField] public string rol;
+    [SerializeField] public string description;
+    [SerializeField] public bool bought;
+    [SerializeField] public Sprite image;
 }

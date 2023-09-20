@@ -5,12 +5,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new Drink", menuName = "ScriptableObjects/Drink")]
 public class DrinkSO : ScriptableObject
 {
-    [SerializeField] new string name;
-    [SerializeField] int cost;
+    [SerializeField] public new string name;
+    [SerializeField] public int cost;
     [SerializeField] Sprite image;
-    [SerializeField] int prestige;
+    [SerializeField] public int prestige;
+    [SerializeField] public string description;
+    [SerializeField] public int durability;
 
-    [HideInInspector] int currentAmount;
+    [HideInInspector] public int currentAmount;
 
     public void Reset()
     {

@@ -6,11 +6,13 @@ using UnityEngine;
 public class FoodSO : ScriptableObject
 {
     [SerializeField] new string name;
-    [SerializeField] int cost;
-    [SerializeField] Sprite image;
-    [SerializeField] int prestige;
+    [SerializeField] public int cost;
+    [SerializeField] public Sprite image;
+    [SerializeField] public int prestige;
+    [SerializeField] public string description;
+    [SerializeField] public int durability;
 
-    [HideInInspector] int currentAmount;
+    [HideInInspector] public int currentAmount;
 
     public void Reset()
     {

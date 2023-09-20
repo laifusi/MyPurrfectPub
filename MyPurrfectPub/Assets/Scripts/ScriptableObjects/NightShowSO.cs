@@ -5,8 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new Night Show", menuName = "ScriptableObjects/Night Show")]
 public class NightShowSO : ScriptableObject
 {
-    [SerializeField] new string name;
-    [SerializeField] int prestigePerTurn;
-    [SerializeField] int costPerTurn;
-    [SerializeField] Sprite image;
+    [SerializeField] public new string name;
+    [SerializeField] public int prestige;
+    [SerializeField] public int cost;
+    [SerializeField] public string description;
+    [SerializeField] public Sprite image;
 }
