@@ -14,7 +14,7 @@ public class UICoins : MonoBehaviour
 
     private void ChangeText(int value)
     {
-        text.SetText(value.ToString() + " Michimonedas");
+        text.SetText(value.ToString());
     }
 
     private void OnDestroy()
