@@ -16,6 +16,6 @@ MonoBehaviour:
   cost: 8
   image: {fileID: 0}
   prestige: 5
-  description: 
+  description: prueba
   durability: 0
   currentAmount: 0
