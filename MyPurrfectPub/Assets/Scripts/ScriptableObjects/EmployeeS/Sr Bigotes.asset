@@ -18,4 +18,4 @@ MonoBehaviour:
   rol: Camarero
   description: 
   bought: 0
-  image: {fileID: 1551501862, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
+  image: {fileID: -958879238, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
