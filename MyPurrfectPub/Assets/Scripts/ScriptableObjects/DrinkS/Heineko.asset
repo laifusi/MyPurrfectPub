@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Heineko
   cost: 3
-  image: {fileID: 0}
+  image: {fileID: 944108766, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 1
   description: prueba
   durability: 0

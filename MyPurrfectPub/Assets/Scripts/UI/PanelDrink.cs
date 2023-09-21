@@ -14,6 +14,8 @@ public class PanelDrink : MonoBehaviour
 
     [SerializeField] private string detalles;
 
+    [SerializeField] private Image image;
+
     [SerializeField] private GameObject detailsPrefab;
 
     [SerializeField] private DrinkSO drinkAsociada;
@@ -31,6 +33,7 @@ public class PanelDrink : MonoBehaviour
         prestigio.text = bebida.prestige.ToString();
         detalles = bebida.description;
         drinkAsociada = bebida;
+        image.sprite = bebida.image;
     }
 
     public void Comprar()
