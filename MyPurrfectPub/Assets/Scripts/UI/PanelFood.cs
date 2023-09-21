@@ -35,10 +35,10 @@ public class PanelFood : MonoBehaviour
 
     public void Comprar()
     {
-        if(foodAsociada.cost <= Inventory.instance.moneycount)
+        if(foodAsociada.cost <= GameManager.instance.GetCoins())
         {
             Inventory.instance.AddFood(foodAsociada);
-            Inventory.instance.RemoveMichiCoins(foodAsociada.cost);
+            GameManager.instance.AddCoins(foodAsociada.cost * -1);
         }
     }
 

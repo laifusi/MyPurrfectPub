@@ -35,10 +35,10 @@ public class PanelDrink : MonoBehaviour
 
     public void Comprar()
     {
-        if(drinkAsociada.cost <= Inventory.instance.moneycount)
+        if(drinkAsociada.cost <= GameManager.instance.GetCoins())
         {
             Inventory.instance.AddDrink(drinkAsociada);
-            Inventory.instance.RemoveMichiCoins(drinkAsociada.cost);
+            GameManager.instance.AddCoins(drinkAsociada.cost * -1);
         }
     }
 

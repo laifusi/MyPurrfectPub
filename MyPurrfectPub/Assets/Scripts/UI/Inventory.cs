@@ -71,12 +71,6 @@ public class Inventory : MonoBehaviour
     }
     [SerializeField] private TextMeshProUGUI employeetext;
 
-    [SerializeField] public int moneycount;
-    [SerializeField] private TextMeshProUGUI moneytext;
-
-    [SerializeField] private int prestiegecount;
-    [SerializeField] private TextMeshProUGUI prestigetext;
-
     [SerializeField] public bool ShowActive;
 
     [SerializeField] private inventoryShowActive ShowDetails;
@@ -103,8 +97,6 @@ public class Inventory : MonoBehaviour
         UpdateFood();
         UpdateDrink();
         UpdateEmployees();
-        UpdateMoney();
-        UpdatePurrstige();
         UpdateShow();
     }
 
@@ -196,40 +188,6 @@ public class Inventory : MonoBehaviour
     public void UpdateShow()
     {
         showtext.text = ShowDetails.name_show;
-    }
-
-    public void AddMichiCoins(int amount)
-    {
-        moneycount += amount;
-        UpdateMoney();
-    }
-
-    public void RemoveMichiCoins(int amount)
-    {
-        moneycount -= amount;
-        UpdateMoney();
-    }
-
-    public void UpdateMoney()
-    {
-        moneytext.text = moneycount.ToString();
-    }
-
-    public void AddPurrstige(int amount)
-    {
-        prestiegecount += amount;
-        UpdatePurrstige();
-    }
-
-    public void RemovePurrstige(int amount)
-    {
-        prestiegecount -= amount;
-        UpdatePurrstige();
-    }
-
-    public void UpdatePurrstige()
-    {
-        prestigetext.text = prestiegecount.ToString();
     }
 
     private void Awake()
