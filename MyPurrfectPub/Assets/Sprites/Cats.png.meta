@@ -223,6 +223,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cats_5
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 878
+        width: 440
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6e220e1c3d09e4b8944a9b050de643
+      internalID: -699907576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cats_6
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 878
+        width: 441
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3396580e7a98894d9c0451282f574c5
+      internalID: 1740230092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cats_7
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 878
+        width: 440
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6905cb2429396a44c96cc90fcca0bb8b
+      internalID: 875532748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cats_8
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 878
+        width: 438
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8843128f11947046877fbaf7d354346
+      internalID: -958879238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cats_9
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 878
+        width: 441
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cee094f6d413f479cea9e63c3463cf
+      internalID: 582669625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -236,7 +341,12 @@ TextureImporter:
     nameFileIdTable:
       Cats_1: 1212369534
       Cats_2: 1551501862
+      Cats_8: -958879238
+      Cats_6: 1740230092
+      Cats_7: 875532748
       Cats_3: -1429985499
+      Cats_9: 582669625
+      Cats_5: -699907576
       Cats_4: -1825194733
       Cats_0: 2005082265
   spritePackingTag: 
