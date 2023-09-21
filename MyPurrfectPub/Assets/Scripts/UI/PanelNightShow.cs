@@ -45,10 +45,10 @@ public class PanelNightShow : MonoBehaviour
 
     public void Comprar()
     {
-        if(nshowAsociado.cost <= Inventory.instance.moneycount)
+        if(nshowAsociado.cost <= GameManager.instance.GetCoins())
         {
             Inventory.instance.AddShow(nshowAsociado);
-            Inventory.instance.RemoveMichiCoins(nshowAsociado.cost);
+            GameManager.instance.AddCoins(nshowAsociado.cost * -1);
         }
     }
 

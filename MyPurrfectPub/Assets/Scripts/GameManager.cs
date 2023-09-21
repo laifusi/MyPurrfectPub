@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance { get; private set; }
+
     [SerializeField] private int initialCoins;
     [SerializeField] private int initialPrestige;
     [SerializeField] private EventSO[] allEvents;
     [SerializeField] private AsignarValoresEvent eventPrefab;
     [SerializeField] private EventSO calmNightEvent;
+    [SerializeField] private Inventory inventory;
 
     private int coins;
     private int prestige;
@@ -37,10 +40,20 @@ public class GameManager : MonoBehaviour
         OnCoinsChange?.Invoke(coins);
     }
 
+    public int GetCoins()
+    {
+        return coins;
+    }
+
     public void AddPrestige(int value)
     {
         prestige += value;
         OnPrestigeChange?.Invoke(prestige);
+    }
+
+    public int GetPrestige()
+    {
+        return prestige;
     }
 
     public void StartNight()
@@ -120,5 +133,10 @@ public class GameManager : MonoBehaviour
         }
 
         timesInStartNight = 0;
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 }

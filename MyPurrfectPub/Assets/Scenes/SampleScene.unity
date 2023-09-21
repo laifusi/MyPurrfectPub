@@ -4644,6 +4644,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3d33b9e42f5e35b408f38ac8a9dd765a, type: 2}
   eventPrefab: {fileID: 6208623395915467129, guid: c55b8f2809a1dde44bf2337d7af8641e, type: 3}
   calmNightEvent: {fileID: 11400000, guid: 3d33b9e42f5e35b408f38ac8a9dd765a, type: 2}
+  inventory: {fileID: 1344643770}
 --- !u!4 &1344643769
 Transform:
   m_ObjectHideFlags: 0
@@ -4712,10 +4713,6 @@ MonoBehaviour:
   employeecount: 0
   employeelist: []
   employeetext: {fileID: 1943737290}
-  moneycount: 0
-  moneytext: {fileID: 1423826930}
-  prestiegecount: 0
-  prestigetext: {fileID: 572777623}
   ShowActive: 0
   ShowDetails:
     name_show: 
