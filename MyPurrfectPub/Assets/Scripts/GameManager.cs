@@ -365,8 +365,9 @@ public class GameManager : MonoBehaviour
 
         int indexDrink = -1;
         int indexFood = -1;
-
-        for(int i = 1; i <= numberClients; i++)
+        Debug.Log(actualCapacityDrink + " Capacida bebida");
+        Debug.Log(actualCapacityFood + " Capacida food");
+        for (int i = 1; i <= numberClients; i++)
         {
             switch(UnityEngine.Random.Range(0,3))
             {
@@ -428,7 +429,7 @@ public class GameManager : MonoBehaviour
                     }
                     break;
                 case 2:
-                    if((inventory.GetDrinkCount() == 0 && actualCapacityDrink == 0) || (inventory.GetFoodCount() == 0 && actualCapacityFood == 0))
+                    if((inventory.GetDrinkCount() == 0 && actualCapacityDrink == 0) || (inventory.GetFoodCount() <= 0 && actualCapacityFood <= 0))
                     {
                         Debug.Log("Cliente insatisfecho doble alimento");
                         unhappyClients++;
@@ -473,6 +474,7 @@ public class GameManager : MonoBehaviour
         if(inventory.ShowActive)
         {
             calculationsPrestige.Add(inventory.ShowDetails.purrstige);
+            costEventPrestige += inventory.ShowDetails.purrstige;
         }
     }
 
@@ -526,6 +528,8 @@ public class GameManager : MonoBehaviour
 
         AddCoins(coinsObtained);
         AddPrestige(prestigeObtained);
+
+        inventory.RemoveShow();
 
         UpdatePrestigeLevel();
 
