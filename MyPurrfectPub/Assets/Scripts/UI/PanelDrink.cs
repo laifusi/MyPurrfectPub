@@ -20,6 +20,8 @@ public class PanelDrink : MonoBehaviour
 
     [SerializeField] private DrinkSO drinkAsociada;
 
+    [SerializeField] private Image Color_rarity;
+
     // Update is called once per frame
     void Update()
     {
@@ -32,6 +34,7 @@ public class PanelDrink : MonoBehaviour
         precio.text = bebida.cost.ToString();
         prestigio.text = bebida.prestige.ToString();
         detalles = bebida.description;
+        Color_rarity.color = bebida.rarityColor;
         drinkAsociada = bebida;
         image.sprite = bebida.image;
     }

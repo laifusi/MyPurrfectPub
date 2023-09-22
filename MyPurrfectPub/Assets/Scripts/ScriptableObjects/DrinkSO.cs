@@ -14,6 +14,7 @@ public class DrinkSO : ScriptableObject
     [SerializeField] public string rarity;
     [SerializeField] public int minprobability;
     [SerializeField] public int maxprobability;
+    [SerializeField] public Color rarityColor;
 
     [HideInInspector] public int currentAmount;
 
