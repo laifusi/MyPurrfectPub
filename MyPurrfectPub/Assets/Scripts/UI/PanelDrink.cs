@@ -14,6 +14,8 @@ public class PanelDrink : MonoBehaviour
 
     [SerializeField] private string detalles;
 
+    [SerializeField] private Image image;
+
     [SerializeField] private GameObject detailsPrefab;
 
     [SerializeField] private DrinkSO drinkAsociada;
@@ -34,6 +36,7 @@ public class PanelDrink : MonoBehaviour
         detalles = bebida.description;
         Color_rarity.color = bebida.rarityColor;
         drinkAsociada = bebida;
+        image.sprite = bebida.image;
     }
 
     public void Comprar()
