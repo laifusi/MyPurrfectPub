@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     public static Inventory instance { get; private set; }
 
     [SerializeField] private int drinkcount;
-    [SerializeField] private List<inventoryDrink> drinklist;
+    [SerializeField] public List<inventoryDrink> drinklist;
 
     [System.Serializable]
     public struct inventoryDrink
@@ -18,19 +18,25 @@ public class Inventory : MonoBehaviour
         public int purrstige;
         public int michicoinscost;
         public int amount;
+        public int minprobability;
+        public int maxprobability;
+        public string rarity;
 
-        public inventoryDrink(string name, int p, int m, int a)
+        public inventoryDrink(string name, int p, int m, int a, int mpr, int mmpr, string r)
         {
             name_drink = name;
             purrstige = p;
             michicoinscost = m;
             amount = a;
+            minprobability = mpr;
+            maxprobability = mmpr;
+            rarity = r;
         }
     }
     [SerializeField] private TextMeshProUGUI drinktext;
 
     [SerializeField] private int foodcount;
-    [SerializeField] private List<inventoryFood> foodlist;
+    [SerializeField] public List<inventoryFood> foodlist;
 
     [System.Serializable]
     public struct inventoryFood
@@ -39,19 +45,25 @@ public class Inventory : MonoBehaviour
         public int purrstige;
         public int michicoinscost;
         public int amount;
+        public int minprobability;
+        public int maxprobability;
+        public string rarity;
 
-        public inventoryFood(string name, int p, int m, int a)
+        public inventoryFood(string name, int p, int m, int a, int mpr, int mmpr, string r)
         {
             name_food = name;
             purrstige = p;
             michicoinscost = m;
             amount = a;
+            minprobability = mpr;
+            maxprobability = mmpr;
+            rarity = r;
         }
     }
     [SerializeField] private TextMeshProUGUI foodtext;
 
     [SerializeField] private int employeecount;
-    [SerializeField] private List<inventoryEmployee> employeelist;
+    [SerializeField] public List<inventoryEmployee> employeelist;
 
     [System.Serializable]
     public struct inventoryEmployee
@@ -60,20 +72,22 @@ public class Inventory : MonoBehaviour
         public int purrstige;
         public int michicoinssalary;
         public string rol;
+        public int capacity;
 
-        public inventoryEmployee(string name, int p, int m, string r)
+        public inventoryEmployee(string name, int p, int m, string r, int c)
         {
             name_employee = name;
             purrstige = p;
             michicoinssalary = m;
             rol = r;
+            capacity = c;
         }
     }
     [SerializeField] private TextMeshProUGUI employeetext;
 
     [SerializeField] public bool ShowActive;
 
-    [SerializeField] private inventoryShowActive ShowDetails;
+    [SerializeField] public inventoryShowActive ShowDetails;
 
     [System.Serializable]
     public struct inventoryShowActive
@@ -106,20 +120,30 @@ public class Inventory : MonoBehaviour
         
     }
 
+    public int GetDrinkCount()
+    {
+        return drinkcount;
+    }
+
+    public int GetFoodCount()
+    {
+        return foodcount;
+    }
+
     public void AddFood(FoodSO food)
     {
         var index = foodlist.FindIndex(item => item.name_food == food.name);
         
-        foodlist[index] = new inventoryFood(food.name, food.prestige, food.cost, foodlist[index].amount + 1);
+        foodlist[index] = new inventoryFood(food.name, food.prestige, food.cost, foodlist[index].amount + 1, food.minprobability, food.maxprobability, food.rarity);
         foodcount++;
         UpdateFood();
     }
 
-    public void RemoveFood(FoodSO food)
+    public void RemoveFood(inventoryFood food)
     {
-        var index = foodlist.FindIndex(item => item.name_food == food.name);
+        var index = foodlist.FindIndex(item => item.name_food == food.name_food);
 
-        foodlist[index] = new inventoryFood(food.name, food.prestige, food.cost, foodlist[index].amount - 1);
+        foodlist[index] = new inventoryFood(food.name_food, food.purrstige, food.michicoinscost, foodlist[index].amount - 1, food.minprobability, food.maxprobability, food.rarity);
         foodcount--;
         UpdateFood();
     }
@@ -133,16 +157,16 @@ public class Inventory : MonoBehaviour
     {
         var index = drinklist.FindIndex(item => item.name_drink == drink.name);
 
-        drinklist[index] = new inventoryDrink(drink.name, drink.prestige, drink.cost, drinklist[index].amount + 1);
+        drinklist[index] = new inventoryDrink(drink.name, drink.prestige, drink.cost, drinklist[index].amount + 1, drink.minprobability, drink.maxprobability, drink.rarity);
         drinkcount++;
         UpdateDrink();
     }
 
-    public void RemoveDrink(DrinkSO drink)
+    public void RemoveDrink(inventoryDrink drink)
     {
-        var index = drinklist.FindIndex(item => item.name_drink == drink.name);
+        var index = drinklist.FindIndex(item => item.name_drink == drink.name_drink);
 
-        drinklist[index] = new inventoryDrink(drink.name, drink.prestige, drink.cost, drinklist[index].amount - 1);
+        drinklist[index] = new inventoryDrink(drink.name_drink, drink.purrstige, drink.michicoinscost, drinklist[index].amount - 1, drink.minprobability, drink.maxprobability, drink.rarity);
         drinkcount--;
         UpdateDrink();
     }
@@ -154,8 +178,12 @@ public class Inventory : MonoBehaviour
 
     public void AddEmployee(EmployeeSO employee)
     {
-        employeelist.Add(new inventoryEmployee(employee.name, employee.prestigePerTurn, employee.costPerTurn, employee.rol));
+        employeelist.Add(new inventoryEmployee(employee.name, employee.prestigePerTurn, employee.costPerTurn, employee.rol, employee.capacity));
         employeecount = employeelist.Count;
+        if(employee.rol == "Coctelero" || employee.rol == "Coctelera")
+            GameManager.instance.AddCapacityDrink(employee.capacity);
+        else
+            GameManager.instance.AddCapacityFood(employee.capacity);
         UpdateEmployees();
     }
 
@@ -163,6 +191,10 @@ public class Inventory : MonoBehaviour
     {
         employeelist.RemoveAll(a => a.name_employee == employee.name);
         employeecount = employeelist.Count;
+        if (employee.rol == "Coctelero" || employee.rol == "Coctelera")
+            GameManager.instance.AddCapacityDrink(employee.capacity * -1);
+        else
+            GameManager.instance.AddCapacityFood(employee.capacity * -1);
         UpdateEmployees();
     }
 

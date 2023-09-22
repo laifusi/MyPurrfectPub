@@ -9,6 +9,7 @@ public class EmployeeSO : ScriptableObject
     [SerializeField] public int prestigePerTurn;
     [SerializeField] public int costPerTurn;
     [SerializeField] public string rol;
+    [SerializeField] public int capacity;
     [SerializeField] public string description;
     [SerializeField] public bool bought;
     [SerializeField] public Sprite image;

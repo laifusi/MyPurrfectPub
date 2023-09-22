@@ -4642,9 +4642,75 @@ MonoBehaviour:
   allEvents:
   - {fileID: 11400000, guid: 5e8cd23b5d40c1541becd74967f757ac, type: 2}
   - {fileID: 11400000, guid: 3d33b9e42f5e35b408f38ac8a9dd765a, type: 2}
-  eventPrefab: {fileID: 6208623395915467129, guid: c55b8f2809a1dde44bf2337d7af8641e, type: 3}
+  eventPrefab: {fileID: 6208623395915467129, guid: 63b4885efa2bae44f8801d4bddcf450a, type: 3}
   calmNightEvent: {fileID: 11400000, guid: 3d33b9e42f5e35b408f38ac8a9dd765a, type: 2}
   inventory: {fileID: 1344643770}
+  adminNightPrefab: {fileID: 976565068368924123, guid: c55b8f2809a1dde44bf2337d7af8641e, type: 3}
+  actualCapacityDrink: 0
+  actualCapacityFood: 0
+  totalCapacityDrink: 0
+  totalCapacityFood: 0
+  prestigelevel: 0
+  actualRarityRate: []
+  purrstigeRanges:
+  - minPurrstige: 0
+    maxPurrstige: 10
+    minClients: 5
+    maxClients: 10
+  rarityRatesLevel1:
+  - rarity: Common
+    minrate: 1
+    maxrate: 70
+  - rarity: Uncommon
+    minrate: 71
+    maxrate: 90
+  - rarity: Rare
+    minrate: 91
+    maxrate: 97
+  - rarity: VeryRare
+    minrate: 98
+    maxrate: 100
+  rarityRatesLevel2:
+  - rarity: Common
+    minrate: 0
+    maxrate: 0
+  - rarity: Uncommon
+    minrate: 0
+    maxrate: 0
+  - rarity: Rare
+    minrate: 0
+    maxrate: 0
+  - rarity: VeryRare
+    minrate: 0
+    maxrate: 0
+  rarityRatesLevel3:
+  - rarity: Common
+    minrate: 0
+    maxrate: 0
+  - rarity: Uncommon
+    minrate: 0
+    maxrate: 0
+  - rarity: Rare
+    minrate: 0
+    maxrate: 0
+  - rarity: VeryRare
+    minrate: 0
+    maxrate: 0
+  rarityRatesLevel4:
+  - rarity: Common
+    minrate: 0
+    maxrate: 0
+  - rarity: Uncommon
+    minrate: 0
+    maxrate: 0
+  - rarity: Rare
+    minrate: 0
+    maxrate: 0
+  - rarity: VeryRare
+    minrate: 0
+    maxrate: 0
+  costEventCoins: 0
+  costEventPrestige: 0
 --- !u!4 &1344643769
 Transform:
   m_ObjectHideFlags: 0
@@ -4678,18 +4744,30 @@ MonoBehaviour:
     purrstige: 0
     michicoinscost: 2
     amount: 0
+    minprobability: 0
+    maxprobability: 0
+    rarity: Common
   - name_drink: Estrella Miau
     purrstige: 1
     michicoinscost: 3
     amount: 0
+    minprobability: 0
+    maxprobability: 0
+    rarity: Common
   - name_drink: Heineko
     purrstige: 3
     michicoinscost: 5
     amount: 0
+    minprobability: 0
+    maxprobability: 0
+    rarity: Uncommon
   - name_drink: Purrlaner
     purrstige: 5
     michicoinscost: 8
     amount: 0
+    minprobability: 0
+    maxprobability: 0
+    rarity: Uncommon
   drinktext: {fileID: 89895978}
   foodcount: 0
   foodlist:
@@ -4697,18 +4775,30 @@ MonoBehaviour:
     purrstige: 0
     michicoinscost: 5
     amount: 0
+    minprobability: 0
+    maxprobability: 0
+    rarity: Common
   - name_food: Atunes rotos
     purrstige: 8
     michicoinscost: 7
     amount: 0
+    minprobability: 0
+    maxprobability: 0
+    rarity: Common
   - name_food: Anchoa rellena
     purrstige: 0
     michicoinscost: 10
     amount: 0
+    minprobability: 0
+    maxprobability: 0
+    rarity: Uncommon
   - name_food: "Salm\xF3n King"
     purrstige: 10
     michicoinscost: 25
     amount: 0
+    minprobability: 0
+    maxprobability: 0
+    rarity: Uncommon
   foodtext: {fileID: 2001253216}
   employeecount: 0
   employeelist: []

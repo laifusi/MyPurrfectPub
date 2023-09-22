@@ -39,8 +39,13 @@ public class AsignarValoresEvent : MonoBehaviour
     {
         evento.options[optionId].selected_option = true;
         EventSO.option option = evento.options[optionId];
-        gameManager.AddCoins(option.michicoins);
-        gameManager.AddPrestige(option.purrstige);
+        GameManager.instance.costEventCoins += option.michicoins;
+        GameManager.instance.costEventPrestige += option.purrstige;
+        GameManager.instance.AddListCalculationCoins(option.michicoins);
+        GameManager.instance.AddListCalculationPrestiege(option.purrstige);
+        GameManager.instance.DoNightCalculations();
+        //gameManager.AddCoins(option.michicoins);
+        //gameManager.AddPrestige(option.purrstige);
         Destroy(gameObject);
     }
 }

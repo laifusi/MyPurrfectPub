@@ -16,4 +16,8 @@ MonoBehaviour:
   cost: 25
   image: {fileID: 0}
   prestige: 10
-  durability: 0
+  description: 
+  rarity: Uncommon
+  minprobability: 51
+  maxprobability: 100
+  currentAmount: 0
