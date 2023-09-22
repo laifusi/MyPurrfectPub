@@ -11,7 +11,9 @@ public class DrinkSO : ScriptableObject
     [SerializeField] public int prestige;
     [TextArea(2, 2)]
     [SerializeField] public string description;
-    [SerializeField] public int durability;
+    [SerializeField] public string rarity;
+    [SerializeField] public int minprobability;
+    [SerializeField] public int maxprobability;
 
     [HideInInspector] public int currentAmount;
 

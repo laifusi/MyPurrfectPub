@@ -17,5 +17,7 @@ MonoBehaviour:
   image: {fileID: 0}
   prestige: 1
   description: prueba
-  durability: 0
+  rarity: Uncommon
+  minprobability: 51
+  maxprobability: 100
   currentAmount: 0

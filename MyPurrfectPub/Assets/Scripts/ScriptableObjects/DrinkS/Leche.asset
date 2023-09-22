@@ -19,5 +19,7 @@ MonoBehaviour:
   description: "Leche\nBebida popular en la sociedad gatuna. Muy barata, pero bastante
     com\xFAn. Perfecta para conseguir un m\xEDnimo de benef\xEDcios si no tienes
     otra bebida a mano."
-  durability: 0
+  rarity: Common
+  minprobability: 31
+  maxprobability: 100
   currentAmount: 0
