@@ -17,12 +17,14 @@ public class GameManager : MonoBehaviour
 
     private int coins;
     private int prestige;
-    [SerializeField] private int actualCapacityDrink;
-    [SerializeField] private int actualCapacityFood;
+    private int actualCapacityDrink;
+    private int actualCapacityFood;
     [SerializeField] private int totalCapacityDrink;
     [SerializeField] private int totalCapacityFood;
     [SerializeField] private int prestigelevel;
     [SerializeField] private rarityRate[] actualRarityRate;
+
+    public AdministradorEvent eventAdministrator;
 
     List<EventSO> possibleCommonEvents = new List<EventSO>();
     List<EventSO> possibleUncommonEvents = new List<EventSO>();
@@ -58,6 +60,8 @@ public class GameManager : MonoBehaviour
     public int costEventCoins;
     public int costEventPrestige;
 
+    public int createdEvents;
+
 
 
     [System.Serializable]
@@ -86,6 +90,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
+        createdEvents = 0;
         ResetAdministratorNight();
         totalCapacityDrink = 0;
         totalCapacityFood = 0;
@@ -176,13 +181,216 @@ public class GameManager : MonoBehaviour
         calculationsPrestige.Add(new_calculation);
     }
 
+    public void fillShowEventList()
+    {
+        if (inventory.ShowActive)
+        {
+            foreach (EventSO e in inventory.ShowDetails.eventlist)
+            {
+                switch (e.rarity)
+                {
+                    case EventSO.Rarity.Common:
+                        eventAdministrator.showEvents.commonEventlist.Add(e);
+                        break;
+                    case EventSO.Rarity.Uncommon:
+                        eventAdministrator.showEvents.uncommonEventlist.Add(e);
+                        break;
+                    case EventSO.Rarity.Rare:
+                        eventAdministrator.showEvents.rareEventlist.Add(e);
+                        break;
+                    case EventSO.Rarity.VeryRare:
+                        eventAdministrator.showEvents.veryRareEventlist.Add(e);
+                        break;
+                }
+            }
+        }
+    }
+
+    public void fillEmployeeEventList()
+    {
+        if (inventory.employeelist.Count > 0)
+        {
+            foreach (Inventory.inventoryEmployee emp in inventory.employeelist)
+            {
+                foreach (EventSO e in emp.eventlist)
+                {
+                    switch (e.rarity)
+                    {
+                        case EventSO.Rarity.Common:
+                            eventAdministrator.employeeEvents.commonEventlist.Add(e);
+                            break;
+                        case EventSO.Rarity.Uncommon:
+                            eventAdministrator.employeeEvents.uncommonEventlist.Add(e);
+                            break;
+                        case EventSO.Rarity.Rare:
+                            eventAdministrator.employeeEvents.rareEventlist.Add(e);
+                            break;
+                        case EventSO.Rarity.VeryRare:
+                            eventAdministrator.employeeEvents.veryRareEventlist.Add(e);
+                            break;
+                    }
+                }
+            }
+        }
+    }
+
     public void StartNight()
     {
-        possibleCommonEvents.Clear();
+        /*possibleCommonEvents.Clear();
         possibleUncommonEvents.Clear();
         possibleRareEvents.Clear();
-        possibleVeryRareEvents.Clear();
+        possibleVeryRareEvents.Clear();*/
 
+        eventAdministrator.ResetshowEvents();
+        if (UnityEngine.Random.Range(1, 101) <= eventAdministrator.showEvents.posibility)
+        {
+            fillShowEventList();
+            int numEventsShow = UnityEngine.Random.Range(1, eventAdministrator.showEvents.maxEventsDuringNight + 1);
+            for (int i = 1; i <= numEventsShow; i++)
+            {
+                string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
+
+                int randomEventPosition;
+                EventSO selectedEvent = new EventSO();
+                AsignarValoresEvent newEvent;
+                switch (actualRaity)
+                {
+
+                    case "Common":
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.commonEventlist.Count);
+                        selectedEvent = eventAdministrator.showEvents.commonEventlist[randomEventPosition];
+                        break;
+                    case "Uncommon":
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.uncommonEventlist.Count);
+                        selectedEvent = eventAdministrator.showEvents.uncommonEventlist[randomEventPosition];
+                        break;
+                    case "Rare":
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.rareEventlist.Count);
+                        selectedEvent = eventAdministrator.showEvents.rareEventlist[randomEventPosition];
+                        break;
+                    case "VeryRare":
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.veryRareEventlist.Count);
+                        selectedEvent = eventAdministrator.showEvents.veryRareEventlist[randomEventPosition];
+                        break;
+                }
+
+                if (selectedEvent.dependence != null)
+                {
+                    if (selectedEvent.dependence.options[selectedEvent.optionDependecyId].selected_option)
+                    {
+                        newEvent = Instantiate(eventPrefab);
+                        newEvent.AssignEvent(selectedEvent, this);
+                        createdEvents++;
+                    }
+                }
+                else
+                {
+                    newEvent = Instantiate(eventPrefab);
+                    newEvent.AssignEvent(selectedEvent, this);
+                    createdEvents++;
+                }
+            }
+        }
+
+
+        eventAdministrator.ResetEmployeeEvents();
+        if (UnityEngine.Random.Range(1, 101) <= eventAdministrator.employeeEvents.posibility)
+        {
+            fillEmployeeEventList();
+            int numEventsEmployee = UnityEngine.Random.Range(1, eventAdministrator.employeeEvents.maxEventsDuringNight + 1);
+            for (int i = 1; i <= numEventsEmployee; i++)
+            {
+                string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
+
+                int randomEventPosition;
+                EventSO selectedEvent = new EventSO();
+                AsignarValoresEvent newEvent;
+                switch (actualRaity)
+                {
+
+                    case "Common":
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.commonEventlist.Count);
+                        selectedEvent = eventAdministrator.employeeEvents.commonEventlist[randomEventPosition];
+                        break;
+                    case "Uncommon":
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.uncommonEventlist.Count);
+                        selectedEvent = eventAdministrator.employeeEvents.uncommonEventlist[randomEventPosition];
+                        break;
+                    case "Rare":
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.rareEventlist.Count);
+                        selectedEvent = eventAdministrator.employeeEvents.rareEventlist[randomEventPosition];
+                        break;
+                    case "VeryRare":
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.veryRareEventlist.Count);
+                        selectedEvent = eventAdministrator.employeeEvents.veryRareEventlist[randomEventPosition];
+                        break;
+                }
+
+                if (selectedEvent.dependence != null)
+                {
+                    if (selectedEvent.dependence.options[selectedEvent.optionDependecyId].selected_option)
+                    {
+                        newEvent = Instantiate(eventPrefab);
+                        newEvent.AssignEvent(selectedEvent, this);
+                        createdEvents++;
+                    }
+                }
+                else
+                {
+                    newEvent = Instantiate(eventPrefab);
+                    newEvent.AssignEvent(selectedEvent, this);
+                    createdEvents++;
+                }
+            }
+        }
+
+        int numStandardEmployee = UnityEngine.Random.Range(1, eventAdministrator.standarEvents.maxEventsDuringNight + 1);
+        for (int i = 1; i <= numStandardEmployee; i++)
+        {
+            string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
+
+            int randomEventPosition;
+            EventSO selectedEvent = new EventSO();
+            AsignarValoresEvent newEvent;
+
+            switch (actualRaity)
+            {
+
+                case "Common":
+                    randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.commonEventlist.Count);
+                    selectedEvent = eventAdministrator.employeeEvents.commonEventlist[randomEventPosition];
+                    break;
+                case "Uncommon":
+                    randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.uncommonEventlist.Count);
+                    selectedEvent = eventAdministrator.employeeEvents.uncommonEventlist[randomEventPosition];
+                    break;
+                case "Rare":
+                    randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.rareEventlist.Count);
+                    selectedEvent = eventAdministrator.employeeEvents.rareEventlist[randomEventPosition];
+                    break;
+                case "VeryRare":
+                    randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.veryRareEventlist.Count);
+                    selectedEvent = eventAdministrator.employeeEvents.veryRareEventlist[randomEventPosition];
+                    break;
+            }
+
+            if (selectedEvent.dependence != null)
+            {
+                if (selectedEvent.dependence.options[selectedEvent.optionDependecyId].selected_option)
+                {
+                    newEvent = Instantiate(eventPrefab);
+                    newEvent.AssignEvent(selectedEvent, this);
+                    createdEvents++;
+                }
+            }
+            else
+            {
+                newEvent = Instantiate(eventPrefab);
+                newEvent.AssignEvent(selectedEvent, this);
+                createdEvents++;
+            }
+        }
+        /*
         foreach (EventSO eventSO in allEvents)
         {
             if (eventSO.min_purrstige <= prestige && eventSO.max_purrstige >= prestige)
@@ -252,7 +460,7 @@ public class GameManager : MonoBehaviour
             newEvent.AssignEvent(selectedEvent, this);
         }
 
-        timesInStartNight = 0;
+        timesInStartNight = 0;*/
     }
 
 
@@ -365,8 +573,9 @@ public class GameManager : MonoBehaviour
 
         int indexDrink = -1;
         int indexFood = -1;
-
-        for(int i = 1; i <= numberClients; i++)
+        Debug.Log(actualCapacityDrink + " Capacida bebida");
+        Debug.Log(actualCapacityFood + " Capacida food");
+        for (int i = 1; i <= numberClients; i++)
         {
             switch(UnityEngine.Random.Range(0,3))
             {
@@ -428,7 +637,7 @@ public class GameManager : MonoBehaviour
                     }
                     break;
                 case 2:
-                    if((inventory.GetDrinkCount() == 0 && actualCapacityDrink == 0) || (inventory.GetFoodCount() == 0 && actualCapacityFood == 0))
+                    if((inventory.GetDrinkCount() == 0 && actualCapacityDrink == 0) || (inventory.GetFoodCount() <= 0 && actualCapacityFood <= 0))
                     {
                         Debug.Log("Cliente insatisfecho doble alimento");
                         unhappyClients++;
@@ -473,6 +682,7 @@ public class GameManager : MonoBehaviour
         if(inventory.ShowActive)
         {
             calculationsPrestige.Add(inventory.ShowDetails.purrstige);
+            costEventPrestige += inventory.ShowDetails.purrstige;
         }
     }
 
@@ -493,42 +703,49 @@ public class GameManager : MonoBehaviour
 
     public void DoNightCalculations()
     {
-        actualCapacityFood = totalCapacityFood;
-        actualCapacityDrink = totalCapacityDrink;
-
-        ConsumtionGestor();
-        ShowGestor();
-        EmployeeCost();
-
-        AdministrarNoche panelAdmin = Instantiate(adminNightPrefab);
-        panelAdmin.GetClientesTotales(totalClients);
-        panelAdmin.GetClientesAtendidos(happyClients);
-        panelAdmin.GetClientesDesatendidos(unhappyClients, unhappyClients * -2);
-        panelAdmin.GetBebidasConsumidas(consumedDrinks, consumedDrinksCoins, consumedDrinksPrestige);
-        panelAdmin.GetAlimentosConsumidos(consumedFood, consumedFoodCoins, consumedFoodPrestige);
-        panelAdmin.GetCosteEmpleados(costEmployeeCoins, costEmployeePrestige);
-        panelAdmin.GetGananciasEvento(costEventCoins,costEventPrestige);
-
-        int coinsObtained = 0;
-        int prestigeObtained = 0;
-
-        foreach(int amount in calculationsCoins)
+        createdEvents--;
+        if (createdEvents <= 0)
         {
-            coinsObtained += amount;
+            createdEvents = 0;
+
+            actualCapacityFood = totalCapacityFood;
+            actualCapacityDrink = totalCapacityDrink;
+
+            ConsumtionGestor();
+            ShowGestor();
+            EmployeeCost();
+
+            AdministrarNoche panelAdmin = Instantiate(adminNightPrefab);
+            panelAdmin.GetClientesTotales(totalClients);
+            panelAdmin.GetClientesAtendidos(happyClients);
+            panelAdmin.GetClientesDesatendidos(unhappyClients, unhappyClients * -2);
+            panelAdmin.GetBebidasConsumidas(consumedDrinks, consumedDrinksCoins, consumedDrinksPrestige);
+            panelAdmin.GetAlimentosConsumidos(consumedFood, consumedFoodCoins, consumedFoodPrestige);
+            panelAdmin.GetCosteEmpleados(costEmployeeCoins, costEmployeePrestige);
+            panelAdmin.GetGananciasEvento(costEventCoins, costEventPrestige);
+
+            int coinsObtained = 0;
+            int prestigeObtained = 0;
+
+            foreach (int amount in calculationsCoins)
+            {
+                coinsObtained += amount;
+            }
+
+            foreach (int amount in calculationsPrestige)
+            {
+                prestigeObtained += amount;
+            }
+
+            panelAdmin.GetGananciasTotales(coinsObtained, prestigeObtained);
+
+            AddCoins(coinsObtained);
+            AddPrestige(prestigeObtained);
+
+            inventory.RemoveShow();
+
+            UpdatePrestigeLevel();
         }
-
-        foreach (int amount in calculationsPrestige)
-        {
-            prestigeObtained += amount;
-        }
-
-        panelAdmin.GetGananciasTotales(coinsObtained, prestigeObtained);
-
-        AddCoins(coinsObtained);
-        AddPrestige(prestigeObtained);
-
-        UpdatePrestigeLevel();
-
     }
 
     public void ResetAdministratorNight()

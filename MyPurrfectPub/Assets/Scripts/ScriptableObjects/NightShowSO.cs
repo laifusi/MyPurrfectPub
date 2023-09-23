@@ -10,4 +10,5 @@ public class NightShowSO : ScriptableObject
     [SerializeField] public int cost;
     [SerializeField] public string description;
     [SerializeField] public Sprite image;
+    [SerializeField] public List<EventSO> eventlist;
 }

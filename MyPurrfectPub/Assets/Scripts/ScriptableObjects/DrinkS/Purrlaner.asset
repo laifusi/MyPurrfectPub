@@ -20,4 +20,5 @@ MonoBehaviour:
   rarity: Uncommon
   minprobability: 1
   maxprobability: 50
+  rarityColor: {r: 0, g: 0.6745098, b: 1, a: 1}
   currentAmount: 0

@@ -18,5 +18,5 @@ MonoBehaviour:
   rol: Camarero
   capacity: 10
   description: 
-  bought: 0
+  bought: 1
   image: {fileID: -958879238, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
