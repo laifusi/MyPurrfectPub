@@ -16,10 +16,10 @@ public class FoodSO : ScriptableObject
     [SerializeField] public int maxprobability;
     [SerializeField] public Color rarityColor;
 
-    [HideInInspector] public int currentAmount;
+    /*[HideInInspector] public int currentAmount;
 
     public void Reset()
     {
         currentAmount = 0;
-    }
+    }*/
 }
