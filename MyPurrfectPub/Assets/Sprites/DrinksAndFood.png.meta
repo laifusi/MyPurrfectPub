@@ -123,11 +123,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 1912
+        y: 1917
         width: 77
-        height: 228
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,11 +144,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 194
-        y: 1912
+        y: 1917
         width: 79
-        height: 228
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,11 +165,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 329
-        y: 1912
+        y: 1917
         width: 96
-        height: 228
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,12 +185,12 @@ TextureImporter:
       name: DrinksAndFood_3
       rect:
         serializedVersion: 2
-        x: 457
+        x: 460
         y: 1912
         width: 86
         height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,6 +198,90 @@ TextureImporter:
       bones: []
       spriteID: 2caae954d3d0f9442856bd09cf800bfc
       internalID: 1824566809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrinksAndFood_4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1737
+        width: 182
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d372a77bcfdf5a4e94ef8cb0efb35e4
+      internalID: 24786586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrinksAndFood_5
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1743
+        width: 173
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3a5f380b8a3e14a999bdf67270d491
+      internalID: -108851696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrinksAndFood_6
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1750
+        width: 204
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155da51cc4a99a741936a45ac342bb5d
+      internalID: 2074635296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrinksAndFood_7
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1730
+        width: 279
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7992495056add8943aafb905c150c890
+      internalID: 106909645
       vertices: []
       indices: 
       edges: []
@@ -215,9 +299,12 @@ TextureImporter:
     nameFileIdTable:
       DrinksAndFood_1: 944108766
       DrinksAndFood_2: -191422379
+      DrinksAndFood_6: 2074635296
       DrinksAndFood_3: 1824566809
       DrinksAndFood_0: -1536250138
       DrinksAndFood_4: 24786586
+      DrinksAndFood_7: 106909645
+      DrinksAndFood_5: -108851696
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

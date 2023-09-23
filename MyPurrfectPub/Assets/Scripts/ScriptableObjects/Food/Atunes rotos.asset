@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Atunes rotos
   cost: 7
-  image: {fileID: 0}
+  image: {fileID: 24786586, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 8
   description: 
   rarity: Common
   minprobability: 71
   maxprobability: 100
   rarityColor: {r: 1, g: 1, b: 1, a: 1}
-  currentAmount: 0
