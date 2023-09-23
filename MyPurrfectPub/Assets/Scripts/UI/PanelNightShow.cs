@@ -25,7 +25,7 @@ public class PanelNightShow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Inventory.instance.ShowActive)
+        if(Inventory.instance.ShowDetails.name_show == nshowAsociado.name)
         {
             comprar.SetActive(false);
             remove.SetActive(true);

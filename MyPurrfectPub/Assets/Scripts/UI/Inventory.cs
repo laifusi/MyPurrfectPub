@@ -209,6 +209,9 @@ public class Inventory : MonoBehaviour
 
     public void AddShow(NightShowSO nshow)
     {
+        if (nshow.name != ShowDetails.name_show)
+            GameManager.instance.AddCoins(ShowDetails.cost);
+
         ShowDetails = new inventoryShowActive(nshow.name, nshow.prestige, nshow.cost, nshow.eventlist);
         ShowActive = true;
         UpdateShow();
