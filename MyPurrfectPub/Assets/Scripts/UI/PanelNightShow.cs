@@ -18,19 +18,23 @@ public class PanelNightShow : MonoBehaviour
 
     [SerializeField] private NightShowSO nshowAsociado;
 
-    [SerializeField] private Button comprar;
+    [SerializeField] private GameObject comprar;
+
+    [SerializeField] private GameObject remove;
 
     // Update is called once per frame
     void Update()
     {
         if(Inventory.instance.ShowActive)
         {
-            comprar.enabled = false;
+            comprar.SetActive(false);
+            remove.SetActive(true);
         }
 
         else
         {
-            comprar.enabled = true;
+            comprar.SetActive(true);
+            remove.SetActive(false);
         }
     }
 
@@ -50,6 +54,12 @@ public class PanelNightShow : MonoBehaviour
             Inventory.instance.AddShow(nshowAsociado);
             GameManager.instance.AddCoins(nshowAsociado.cost * -1);
         }
+    }
+
+    public void CancelarShow()
+    {
+        Inventory.instance.RemoveShow();
+        GameManager.instance.AddCoins(nshowAsociado.cost);
     }
 
     public void Details()
