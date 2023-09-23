@@ -73,14 +73,16 @@ public class Inventory : MonoBehaviour
         public int michicoinssalary;
         public string rol;
         public int capacity;
+        public List<EventSO> eventlist;
 
-        public inventoryEmployee(string name, int p, int m, string r, int c)
+        public inventoryEmployee(string name, int p, int m, string r, int c, List<EventSO> l)
         {
             name_employee = name;
             purrstige = p;
             michicoinssalary = m;
             rol = r;
             capacity = c;
+            eventlist = l;
         }
     }
     [SerializeField] private TextMeshProUGUI employeetext;
@@ -95,12 +97,14 @@ public class Inventory : MonoBehaviour
         public string name_show;
         public int purrstige;
         public int cost;
+        public List<EventSO> eventlist;
 
-        public inventoryShowActive(string name, int p, int m)
+        public inventoryShowActive(string name, int p, int m, List<EventSO> l)
         {
             name_show = name;
             purrstige = p;
             cost = m;
+            eventlist = l;
         }
     }
     [SerializeField] private TextMeshProUGUI showtext;
@@ -178,7 +182,7 @@ public class Inventory : MonoBehaviour
 
     public void AddEmployee(EmployeeSO employee)
     {
-        employeelist.Add(new inventoryEmployee(employee.name, employee.prestigePerTurn, employee.costPerTurn, employee.rol, employee.capacity));
+        employeelist.Add(new inventoryEmployee(employee.name, employee.prestigePerTurn, employee.costPerTurn, employee.rol, employee.capacity, employee.eventlist));
         employeecount = employeelist.Count;
         if(employee.rol == "Coctelero" || employee.rol == "Coctelera")
             GameManager.instance.AddCapacityDrink(employee.capacity);
@@ -205,14 +209,14 @@ public class Inventory : MonoBehaviour
 
     public void AddShow(NightShowSO nshow)
     {
-        ShowDetails = new inventoryShowActive(nshow.name, nshow.prestige, nshow.cost);
+        ShowDetails = new inventoryShowActive(nshow.name, nshow.prestige, nshow.cost, nshow.eventlist);
         ShowActive = true;
         UpdateShow();
     }
 
     public void RemoveShow()
     {
-        ShowDetails = new inventoryShowActive("", 0, 0);
+        ShowDetails = new inventoryShowActive("", 0, 0, new List<EventSO>());
         ShowActive = false;
         UpdateShow();
     }

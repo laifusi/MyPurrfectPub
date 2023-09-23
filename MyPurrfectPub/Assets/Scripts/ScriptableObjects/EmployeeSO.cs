@@ -13,4 +13,5 @@ public class EmployeeSO : ScriptableObject
     [SerializeField] public string description;
     [SerializeField] public bool bought;
     [SerializeField] public Sprite image;
+    [SerializeField] public List<EventSO> eventlist;
 }

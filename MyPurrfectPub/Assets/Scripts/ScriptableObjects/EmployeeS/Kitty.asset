@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Kitty
   prestigePerTurn: 5
-  costPerTurn: 50
+  costPerTurn: 15
   rol: Coctelera
   capacity: 15
   description: 
