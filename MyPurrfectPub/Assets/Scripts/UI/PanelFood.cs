@@ -12,6 +12,8 @@ public class PanelFood : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI prestigio;
 
+    [SerializeField] private Image image;
+
     [SerializeField] private string detalles;
 
     [SerializeField] private GameObject detailsPrefab;
@@ -31,6 +33,7 @@ public class PanelFood : MonoBehaviour
         nombre.text = comida.name;
         precio.text = comida.cost.ToString();
         prestigio.text = comida.prestige.ToString();
+        image.sprite = comida.image;
         detalles = comida.description;
         Color_rarity.color = comida.rarityColor;
         foodAsociada = comida;
