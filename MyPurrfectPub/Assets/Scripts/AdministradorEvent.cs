@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AdministradorEvent : MonoBehaviour
 {
+    [SerializeField] private EventSO[] allEvents;
+
     [SerializeField] public structEvents standarEvents;
 
     [SerializeField] public structEvents employeeEvents;
@@ -19,6 +21,14 @@ public class AdministradorEvent : MonoBehaviour
         public List<EventSO> veryRareEventlist;
         public int maxEventsDuringNight;
         public int posibility;
+    }
+
+    private void Start()
+    {
+        foreach(EventSO nightEvent in allEvents)
+        {
+            nightEvent.Reset();
+        }
     }
 
     public void AddEmployeeEvent(EventSO employeeEvent)
