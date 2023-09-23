@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Simba
   prestigePerTurn: 0
-  costPerTurn: 15
+  costPerTurn: 10
   rol: Coctelero
   capacity: 10
   description: 
-  bought: 0
+  bought: 1
   image: {fileID: 2005082265, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}

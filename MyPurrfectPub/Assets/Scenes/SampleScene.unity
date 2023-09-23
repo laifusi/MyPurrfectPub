@@ -4617,6 +4617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1344643769}
   - component: {fileID: 1344643768}
+  - component: {fileID: 1344643771}
   - component: {fileID: 1344643770}
   m_Layer: 0
   m_Name: GameManager
@@ -4646,17 +4647,24 @@ MonoBehaviour:
   calmNightEvent: {fileID: 11400000, guid: 3d33b9e42f5e35b408f38ac8a9dd765a, type: 2}
   inventory: {fileID: 1344643770}
   adminNightPrefab: {fileID: 976565068368924123, guid: c55b8f2809a1dde44bf2337d7af8641e, type: 3}
-  actualCapacityDrink: 0
-  actualCapacityFood: 0
   totalCapacityDrink: 0
   totalCapacityFood: 0
   prestigelevel: 0
   actualRarityRate: []
+  eventAdministrator: {fileID: 1344643771}
   purrstigeRanges:
   - minPurrstige: 0
-    maxPurrstige: 10
+    maxPurrstige: 25
     minClients: 5
     maxClients: 10
+  - minPurrstige: 26
+    maxPurrstige: 50
+    minClients: 7
+    maxClients: 20
+  - minPurrstige: 51
+    maxPurrstige: 75
+    minClients: 12
+    maxClients: 30
   rarityRatesLevel1:
   - rarity: Common
     minrate: 1
@@ -4711,6 +4719,7 @@ MonoBehaviour:
     maxrate: 0
   costEventCoins: 0
   costEventPrestige: 0
+  createdEvents: 0
 --- !u!4 &1344643769
 Transform:
   m_ObjectHideFlags: 0
@@ -4808,7 +4817,41 @@ MonoBehaviour:
     name_show: 
     purrstige: 0
     cost: 0
+    eventlist: []
   showtext: {fileID: 893229899}
+--- !u!114 &1344643771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344643767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75680daa93f5336448d975eaecf9e49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standarEvents:
+    commonEventlist: []
+    uncommonEventlist: []
+    rareEventlist: []
+    veryRareEventlist: []
+    maxEventsDuringNight: 0
+    posibility: 0
+  employeeEvents:
+    commonEventlist: []
+    uncommonEventlist: []
+    rareEventlist: []
+    veryRareEventlist: []
+    maxEventsDuringNight: 0
+    posibility: 0
+  showEvents:
+    commonEventlist: []
+    uncommonEventlist: []
+    rareEventlist: []
+    veryRareEventlist: []
+    maxEventsDuringNight: 0
+    posibility: 0
 --- !u!1 &1415617061
 GameObject:
   m_ObjectHideFlags: 0

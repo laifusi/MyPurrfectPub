@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Kat Erin
   m_EditorClassIdentifier: 
   name: Kat Erin
-  prestigePerTurn: 7
-  costPerTurn: 70
+  prestigePerTurn: 5
+  costPerTurn: 20
   rol: Camarera
-  capacity: 15
+  capacity: 20
   description: 
   bought: 0
   image: {fileID: -1429985499, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
