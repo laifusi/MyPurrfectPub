@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Un cliente, debido a su estado de embriaguez, se le cae el micr\xF3fono
+  event_text: "A un cliente, debido a su estado de embriaguez, se le cae el micr\xF3fono
     al suelo.\n\nEsto provoca que el Miauraoke quede inutilizado para toda la noche.\n\nHabr\xE1
     que reparar el micr\xF3fono para que funcione la pr\xF3xima vez.\n\n(Pierdes
     15 MICHIMONEDAS) "

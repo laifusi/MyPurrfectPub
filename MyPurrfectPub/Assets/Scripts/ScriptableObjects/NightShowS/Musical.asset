@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d041e10933090439f6fd4b21154188, type: 3}
   m_Name: Musical
   m_EditorClassIdentifier: 
-  name: Humans el musical
+  name: 'Humans: el musical'
   prestige: 20
   cost: 50
   description: 
-  image: {fileID: 0}
+  image: {fileID: -2100401110, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   eventlist: []

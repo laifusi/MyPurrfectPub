@@ -15,9 +15,9 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Las gatitos se ven muy satisfechos. La noche ha ido muy bien gracias
-    al Miauraoke.\n\nTodos salen cantando y mauyando. Para cuando te das cuentas,
-    el bote de propinas est\xE1 m\xE1s lleno que de costumbre. Lo suficiente como
-    para compensar los gastos del Miauraoke.\n\n(Ganas 15 MICHIMONEDAS)"
+    al Miauraoke.\n\nTodos salen cantando y maullando. Cuando te das cuentas, el
+    bote de propinas est\xE1 m\xE1s lleno que de costumbre. Lo suficiente como para
+    compensar los gastos del Miauraoke.\n\n(Ganas 15 MICHIMONEDAS)"
   rarity: 1
   min_purrstige: 0
   max_purrstige: 0
