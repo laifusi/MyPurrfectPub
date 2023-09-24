@@ -4904,10 +4904,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allEvents: []
   standarEvents:
-    commonEventlist: []
-    uncommonEventlist: []
-    rareEventlist: []
-    veryRareEventlist: []
+    commonEventlist:
+    - {fileID: 11400000, guid: 69efe8c20cf117e458562a59f426aee2, type: 2}
+    - {fileID: 11400000, guid: f468123572614054fad97da179bbeca0, type: 2}
+    - {fileID: 11400000, guid: 9a7287b05b182e345b18a3183d1e0c02, type: 2}
+    - {fileID: 11400000, guid: 9aa5db31f711e634cb8e8c7236c87744, type: 2}
+    uncommonEventlist:
+    - {fileID: 11400000, guid: 84b3ebbb634f7d44cb095b94395fd1bd, type: 2}
+    - {fileID: 11400000, guid: 0289805361325be4b975f9b710e02b18, type: 2}
+    - {fileID: 11400000, guid: b4622964dda11a84d9420516b8bcc802, type: 2}
+    - {fileID: 11400000, guid: e2f82c8f00d1be247b2e59df978ef9b2, type: 2}
+    - {fileID: 11400000, guid: f0d49eb05d5399248a4c6740590176b0, type: 2}
+    - {fileID: 11400000, guid: a91cb13b93846da4da2ae24eac4e2ddc, type: 2}
+    rareEventlist:
+    - {fileID: 11400000, guid: ec9beb4a26ba5164c86d0b9700db2f12, type: 2}
+    - {fileID: 11400000, guid: 4b6970190627ba84ca4732139d9e97f9, type: 2}
+    veryRareEventlist:
+    - {fileID: 11400000, guid: 1863737e030911341b939647c7e61f7c, type: 2}
+    - {fileID: 11400000, guid: f8b86492dfe5e13468479cd379458cbe, type: 2}
     maxEventsDuringNight: 0
     posibility: 0
   employeeEvents:
@@ -6633,7 +6647,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lstNightShow:
   - {fileID: 11400000, guid: b041491e43659ec48843d28fe06d55a5, type: 2}
+  - {fileID: 11400000, guid: 0a425cbecc3a6a247b0762f500142e93, type: 2}
   - {fileID: 11400000, guid: 505e8d2be7cffd043a88ef3b0559d55b, type: 2}
+  - {fileID: 11400000, guid: 3ecaf673f36b740478a218f3d27b3086, type: 2}
   panel: {fileID: 200190008}
   PanelPrefab: {fileID: 2227648034061503921, guid: 7668dc12daf004940af23460ec7e232c, type: 3}
 --- !u!114 &1916769288
