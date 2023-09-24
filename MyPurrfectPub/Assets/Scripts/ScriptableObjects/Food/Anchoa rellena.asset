@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Anchoa rellena
   cost: 10
-  image: {fileID: 0}
+  image: {fileID: -108851696, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 0
   description: 
   rarity: Uncommon
   minprobability: 0
   maxprobability: 50
   rarityColor: {r: 0.8662356, g: 0, b: 0.8773585, a: 1}
-  currentAmount: 0

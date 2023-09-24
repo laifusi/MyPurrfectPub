@@ -209,6 +209,9 @@ public class Inventory : MonoBehaviour
 
     public void AddShow(NightShowSO nshow)
     {
+        if (nshow.name != ShowDetails.name_show)
+            GameManager.instance.AddCoins(ShowDetails.cost);
+
         ShowDetails = new inventoryShowActive(nshow.name, nshow.prestige, nshow.cost, nshow.eventlist);
         ShowActive = true;
         UpdateShow();
@@ -216,14 +219,17 @@ public class Inventory : MonoBehaviour
 
     public void RemoveShow()
     {
-        ShowDetails = new inventoryShowActive("", 0, 0, new List<EventSO>());
+        ShowDetails = new inventoryShowActive("Sin espectáculo", 0, 0, new List<EventSO>());
         ShowActive = false;
         UpdateShow();
     }
 
     public void UpdateShow()
     {
-        showtext.text = ShowDetails.name_show;
+        if(!ShowActive)
+            showtext.text = "Sin espectáculo";
+        else
+            showtext.text = ShowDetails.name_show;
     }
 
     private void Awake()

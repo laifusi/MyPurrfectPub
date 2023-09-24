@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AdministradorEvent : MonoBehaviour
 {
+    [SerializeField] private EventSO[] allEvents;
+
     [SerializeField] public structEvents standarEvents;
 
     [SerializeField] public structEvents employeeEvents;
@@ -21,18 +23,12 @@ public class AdministradorEvent : MonoBehaviour
         public int posibility;
     }
 
-    
-
-        // Start is called before the first frame update
-        void Start()
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        foreach(EventSO nightEvent in allEvents)
+        {
+            nightEvent.Reset();
+        }
     }
 
     public void AddEmployeeEvent(EventSO employeeEvent)

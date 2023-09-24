@@ -12,25 +12,31 @@ public class PanelNightShow : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI prestigio;
 
+    [SerializeField] private Image image;
+
     [SerializeField] private string detalles;
 
     [SerializeField] private GameObject detailsPrefab;
 
     [SerializeField] private NightShowSO nshowAsociado;
 
-    [SerializeField] private Button comprar;
+    [SerializeField] private GameObject comprar;
+
+    [SerializeField] private GameObject remove;
 
     // Update is called once per frame
     void Update()
     {
-        if(Inventory.instance.ShowActive)
+        if(Inventory.instance.ShowDetails.name_show == nshowAsociado.name)
         {
-            comprar.enabled = false;
+            comprar.SetActive(false);
+            remove.SetActive(true);
         }
 
         else
         {
-            comprar.enabled = true;
+            comprar.SetActive(true);
+            remove.SetActive(false);
         }
     }
 
@@ -39,6 +45,7 @@ public class PanelNightShow : MonoBehaviour
         nombre.text = nshow.name;
         precio.text = nshow.cost.ToString();
         prestigio.text = nshow.prestige.ToString();
+        image.sprite = nshow.image;
         detalles = nshow.description;
         nshowAsociado = nshow;
     }
@@ -50,6 +57,12 @@ public class PanelNightShow : MonoBehaviour
             Inventory.instance.AddShow(nshowAsociado);
             GameManager.instance.AddCoins(nshowAsociado.cost * -1);
         }
+    }
+
+    public void CancelarShow()
+    {
+        Inventory.instance.RemoveShow();
+        GameManager.instance.AddCoins(nshowAsociado.cost);
     }
 
     public void Details()

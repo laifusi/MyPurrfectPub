@@ -14,4 +14,9 @@ public class EmployeeSO : ScriptableObject
     [SerializeField] public bool bought;
     [SerializeField] public Sprite image;
     [SerializeField] public List<EventSO> eventlist;
+
+    public void Reset()
+    {
+        bought = false;
+    }
 }

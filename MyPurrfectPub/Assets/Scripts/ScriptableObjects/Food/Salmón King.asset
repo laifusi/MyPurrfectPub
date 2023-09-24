@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b36c3cb039e32c489c34233ba478f8d, type: 3}
   m_Name: "Salm\xF3n King"
   m_EditorClassIdentifier: 
-  name: "Salm\xF3n King"
+  name: Salmon King
   cost: 25
-  image: {fileID: 0}
+  image: {fileID: 106909645, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 10
   description: 
   rarity: Uncommon
   minprobability: 51
   maxprobability: 100
   rarityColor: {r: 1, g: 0.71440893, b: 0, a: 1}
-  currentAmount: 0
