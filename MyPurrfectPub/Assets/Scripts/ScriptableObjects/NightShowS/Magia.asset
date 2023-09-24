@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Magia
   m_EditorClassIdentifier: 
   name: El Miauravilloso Nekodini
-  prestige: 10
-  cost: 25
   description: 
   image: {fileID: 360808819, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
+  cost: 37
+  prestige: 15
   eventlist: []

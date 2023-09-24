@@ -41,6 +41,9 @@ public class EventSO : ScriptableObject
         public bool selected_option;
         public int purrstige;
         public int michicoins;
+        public int capacity_drink;
+        public int capacity_food;
+        public int new_clients;
     }
 
     public enum Rarity

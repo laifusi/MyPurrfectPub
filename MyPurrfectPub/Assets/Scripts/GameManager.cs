@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     private int prestige;
     private int actualCapacityDrink;
     private int actualCapacityFood;
+    private int clientsNumber;
     [SerializeField] private int totalCapacityDrink;
     [SerializeField] private int totalCapacityFood;
     [SerializeField] private int prestigelevel;
@@ -90,6 +91,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
+        clientsNumber = 0;
         createdEvents = 0;
         ResetAdministratorNight();
         totalCapacityDrink = 0;
@@ -140,11 +142,27 @@ public class GameManager : MonoBehaviour
     public void AddCapacityDrink(int cap)
     {
         totalCapacityDrink += cap;
+        if(totalCapacityDrink < 0)
+        {
+            totalCapacityDrink = 0;
+        }
     }
 
     public void AddCapacityFood(int cap)
     {
         totalCapacityFood += cap;
+        if (totalCapacityFood < 0)
+        {
+            totalCapacityFood = 0;
+        }
+    }
+
+    public void AddClients(int clients)
+    {
+        clientsNumber += clients;
+
+        if (clientsNumber < 0)
+            clientsNumber = 0;
     }
 
     public void UpdatePrestigeLevel()
@@ -241,59 +259,81 @@ public class GameManager : MonoBehaviour
         possibleRareEvents.Clear();
         possibleVeryRareEvents.Clear();*/
 
+        clientsNumber = GetNumberClients();
+
         eventAdministrator.ResetshowEvents();
-        if (UnityEngine.Random.Range(1, 101) <= eventAdministrator.showEvents.posibility)
+        eventAdministrator.ChangepossibleEventShow(prestigelevel);
+        if (inventory.ShowActive)
         {
-            fillShowEventList();
-            int numEventsShow = UnityEngine.Random.Range(1, eventAdministrator.showEvents.maxEventsDuringNight + 1);
-            for (int i = 1; i <= numEventsShow; i++)
+            if (UnityEngine.Random.Range(1, 101) <= eventAdministrator.showEvents.posibility)
             {
-                string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
-
-                int randomEventPosition;
-                EventSO selectedEvent = new EventSO();
-                AsignarValoresEvent newEvent;
-                switch (actualRaity)
+                Debug.Log("Hay evento de Show");
+                fillShowEventList();
+                int numEventsShow = UnityEngine.Random.Range(1, eventAdministrator.showEvents.maxEventsDuringNight + 1);
+                for (int i = 1; i <= numEventsShow; i++)
                 {
+                    string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
 
-                    case "Common":
-                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.commonEventlist.Count);
-                        selectedEvent = eventAdministrator.showEvents.commonEventlist[randomEventPosition];
-                        break;
-                    case "Uncommon":
-                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.uncommonEventlist.Count);
-                        selectedEvent = eventAdministrator.showEvents.uncommonEventlist[randomEventPosition];
-                        break;
-                    case "Rare":
-                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.rareEventlist.Count);
-                        selectedEvent = eventAdministrator.showEvents.rareEventlist[randomEventPosition];
-                        break;
-                    case "VeryRare":
-                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.veryRareEventlist.Count);
-                        selectedEvent = eventAdministrator.showEvents.veryRareEventlist[randomEventPosition];
-                        break;
-                }
-
-                if (selectedEvent.dependence != null)
-                {
-                    if (selectedEvent.dependence.options[selectedEvent.optionDependecyId].selected_option)
+                    int randomEventPosition;
+                    EventSO selectedEvent = new EventSO();
+                    AsignarValoresEvent newEvent;
+                    switch (actualRaity)
                     {
-                        newEvent = Instantiate(eventPrefab);
-                        newEvent.AssignEvent(selectedEvent, this);
-                        createdEvents++;
+
+                        case "Common":
+                            if (eventAdministrator.showEvents.commonEventlist.Count > 0)
+                            {
+                                randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.commonEventlist.Count - 1);
+                                selectedEvent = eventAdministrator.showEvents.commonEventlist[randomEventPosition];
+                            }
+                            break;
+                        case "Uncommon":
+                            if (eventAdministrator.showEvents.uncommonEventlist.Count > 0)
+                            {
+                                randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.uncommonEventlist.Count - 1);
+                                selectedEvent = eventAdministrator.showEvents.uncommonEventlist[randomEventPosition];
+                            }
+                            break;
+                        case "Rare":
+                            if (eventAdministrator.showEvents.rareEventlist.Count > 0)
+                            {
+                                randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.rareEventlist.Count - 1);
+                                selectedEvent = eventAdministrator.showEvents.rareEventlist[randomEventPosition];
+                            }
+                            break;
+                        case "VeryRare":
+                            if (eventAdministrator.showEvents.veryRareEventlist.Count > 0)
+                            {
+                                randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.showEvents.veryRareEventlist.Count - 1);
+                                selectedEvent = eventAdministrator.showEvents.veryRareEventlist[randomEventPosition];
+                            }
+                            break;
+                    }
+
+                    if (selectedEvent != null)
+                    {
+                        if (selectedEvent.dependence != null)
+                        {
+                            if (selectedEvent.dependence.options[selectedEvent.optionDependecyId].selected_option)
+                            {
+                                newEvent = Instantiate(eventPrefab);
+                                newEvent.AssignEvent(selectedEvent, this);
+                                createdEvents++;
+                            }
+                        }
+                        else
+                        {
+                            newEvent = Instantiate(eventPrefab);
+                            newEvent.AssignEvent(selectedEvent, this);
+                            createdEvents++;
+                        }
                     }
                 }
-                else
-                {
-                    newEvent = Instantiate(eventPrefab);
-                    newEvent.AssignEvent(selectedEvent, this);
-                    createdEvents++;
-                }
             }
-        }
-
-
+        } 
+        
         eventAdministrator.ResetEmployeeEvents();
+        eventAdministrator.ChangepossibleEventEmployee(prestigelevel);
         if (UnityEngine.Random.Range(1, 101) <= eventAdministrator.employeeEvents.posibility)
         {
             fillEmployeeEventList();
@@ -309,22 +349,101 @@ public class GameManager : MonoBehaviour
                 {
 
                     case "Common":
-                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.commonEventlist.Count);
-                        selectedEvent = eventAdministrator.employeeEvents.commonEventlist[randomEventPosition];
+                        if (eventAdministrator.employeeEvents.commonEventlist.Count > 0)
+                        {
+                            randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.commonEventlist.Count - 1);
+                            selectedEvent = eventAdministrator.employeeEvents.commonEventlist[randomEventPosition];
+                        }
                         break;
                     case "Uncommon":
-                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.uncommonEventlist.Count);
-                        selectedEvent = eventAdministrator.employeeEvents.uncommonEventlist[randomEventPosition];
+                        if (eventAdministrator.employeeEvents.uncommonEventlist.Count > 0)
+                        {
+                            randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.uncommonEventlist.Count - 1);
+                            selectedEvent = eventAdministrator.employeeEvents.uncommonEventlist[randomEventPosition];
+                        }
                         break;
                     case "Rare":
-                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.rareEventlist.Count);
-                        selectedEvent = eventAdministrator.employeeEvents.rareEventlist[randomEventPosition];
+                        if (eventAdministrator.employeeEvents.rareEventlist.Count > 0)
+                        {
+                            randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.rareEventlist.Count - 1);
+                            selectedEvent = eventAdministrator.employeeEvents.rareEventlist[randomEventPosition];
+                        }
                         break;
                     case "VeryRare":
-                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.veryRareEventlist.Count);
-                        selectedEvent = eventAdministrator.employeeEvents.veryRareEventlist[randomEventPosition];
+                        if (eventAdministrator.employeeEvents.veryRareEventlist.Count > 0)
+                        {
+                            randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.veryRareEventlist.Count - 1);
+                            selectedEvent = eventAdministrator.employeeEvents.veryRareEventlist[randomEventPosition];
+                        }
                         break;
                 }
+
+
+                if (selectedEvent != null)
+                {
+                    if (selectedEvent.dependence != null)
+                    {
+                        if (selectedEvent.dependence.options[selectedEvent.optionDependecyId].selected_option)
+                        {
+                            newEvent = Instantiate(eventPrefab);
+                            newEvent.AssignEvent(selectedEvent, this);
+                            createdEvents++;
+                        }
+                    }
+                    else
+                    {
+                        newEvent = Instantiate(eventPrefab);
+                        newEvent.AssignEvent(selectedEvent, this);
+                        createdEvents++;
+                    }
+                }
+            }
+        }
+
+        int numStandardEvent = UnityEngine.Random.Range(1, eventAdministrator.standarEvents.maxEventsDuringNight + 1);
+        eventAdministrator.ChangepossibleEventStandar(prestigelevel);
+        for (int i = 1; i <= numStandardEvent; i++)
+        {
+            string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
+
+            int randomEventPosition;
+            EventSO selectedEvent = new EventSO();
+            AsignarValoresEvent newEvent;
+            switch (actualRaity)
+            {
+
+                case "Common":
+                    if (eventAdministrator.standarEvents.commonEventlist.Count > 0)
+                    {
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.standarEvents.commonEventlist.Count - 1);
+                        selectedEvent = eventAdministrator.standarEvents.commonEventlist[randomEventPosition];
+                    }
+                    break;
+                case "Uncommon":
+                    if (eventAdministrator.standarEvents.uncommonEventlist.Count > 0)
+                    {
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.standarEvents.uncommonEventlist.Count - 1);
+                        selectedEvent = eventAdministrator.standarEvents.uncommonEventlist[randomEventPosition];
+                    }
+                    break;
+                case "Rare":
+                    if (eventAdministrator.standarEvents.rareEventlist.Count > 0)
+                    {
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.standarEvents.rareEventlist.Count - 1);
+                        selectedEvent = eventAdministrator.standarEvents.rareEventlist[randomEventPosition];
+                    }
+                    break;
+                case "VeryRare":
+                    if (eventAdministrator.standarEvents.veryRareEventlist.Count > 0)
+                    {
+                        randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.standarEvents.veryRareEventlist.Count - 1);
+                        selectedEvent = eventAdministrator.standarEvents.veryRareEventlist[randomEventPosition];
+                    }
+                    break;
+            }
+
+            if(selectedEvent.event_text != "")
+            {
 
                 if (selectedEvent.dependence != null)
                 {
@@ -341,53 +460,6 @@ public class GameManager : MonoBehaviour
                     newEvent.AssignEvent(selectedEvent, this);
                     createdEvents++;
                 }
-            }
-        }
-
-        int numStandardEmployee = UnityEngine.Random.Range(1, eventAdministrator.standarEvents.maxEventsDuringNight + 1);
-        for (int i = 1; i <= numStandardEmployee; i++)
-        {
-            string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
-
-            int randomEventPosition;
-            EventSO selectedEvent = new EventSO();
-            AsignarValoresEvent newEvent;
-
-            switch (actualRaity)
-            {
-
-                case "Common":
-                    randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.commonEventlist.Count);
-                    selectedEvent = eventAdministrator.employeeEvents.commonEventlist[randomEventPosition];
-                    break;
-                case "Uncommon":
-                    randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.uncommonEventlist.Count);
-                    selectedEvent = eventAdministrator.employeeEvents.uncommonEventlist[randomEventPosition];
-                    break;
-                case "Rare":
-                    randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.rareEventlist.Count);
-                    selectedEvent = eventAdministrator.employeeEvents.rareEventlist[randomEventPosition];
-                    break;
-                case "VeryRare":
-                    randomEventPosition = UnityEngine.Random.Range(0, eventAdministrator.employeeEvents.veryRareEventlist.Count);
-                    selectedEvent = eventAdministrator.employeeEvents.veryRareEventlist[randomEventPosition];
-                    break;
-            }
-
-            if (selectedEvent.dependence != null)
-            {
-                if (selectedEvent.dependence.options[selectedEvent.optionDependecyId].selected_option)
-                {
-                    newEvent = Instantiate(eventPrefab);
-                    newEvent.AssignEvent(selectedEvent, this);
-                    createdEvents++;
-                }
-            }
-            else
-            {
-                newEvent = Instantiate(eventPrefab);
-                newEvent.AssignEvent(selectedEvent, this);
-                createdEvents++;
             }
         }
         /*
@@ -569,13 +641,12 @@ public class GameManager : MonoBehaviour
 
     private void ConsumtionGestor()
     {
-        int numberClients = GetNumberClients();
 
         int indexDrink = -1;
         int indexFood = -1;
         Debug.Log(actualCapacityDrink + " Capacida bebida");
         Debug.Log(actualCapacityFood + " Capacida food");
-        for (int i = 1; i <= numberClients; i++)
+        for (int i = 1; i <= clientsNumber; i++)
         {
             switch(UnityEngine.Random.Range(0,3))
             {
@@ -595,7 +666,6 @@ public class GameManager : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("Cliente insatisfecho bebida");
                             unhappyClients++;
                             calculationsPrestige.Add(-2);
                         }
@@ -603,7 +673,6 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("Cliente insatisfecho bebida");
                         unhappyClients++;
                         calculationsPrestige.Add(-2);
                     }
@@ -624,14 +693,12 @@ public class GameManager : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("Cliente insatisfecho comida");
                             unhappyClients++;
                             calculationsPrestige.Add(-2);
                         }
                     }
                     else
                     {
-                        Debug.Log("Cliente insatisfecho comida");
                         unhappyClients++;
                         calculationsPrestige.Add(-2);
                     }
@@ -639,7 +706,6 @@ public class GameManager : MonoBehaviour
                 case 2:
                     if((inventory.GetDrinkCount() == 0 && actualCapacityDrink == 0) || (inventory.GetFoodCount() <= 0 && actualCapacityFood <= 0))
                     {
-                        Debug.Log("Cliente insatisfecho doble alimento");
                         unhappyClients++;
                         calculationsPrestige.Add(-2);
                     }
@@ -667,7 +733,6 @@ public class GameManager : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("Cliente insatisfecho doble alimento");
                             unhappyClients++;
                             calculationsPrestige.Add(-2);
                         }
