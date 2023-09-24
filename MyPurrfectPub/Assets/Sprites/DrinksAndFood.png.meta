@@ -328,6 +328,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: DrinksAndFood_14
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1372
+        width: 461
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a90e209be849c498a3a59625a06e8d
+      internalID: -2100401110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrinksAndFood_17
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1369
+        width: 445
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5a9dd72e44fe047b99c3b2fde41c57
+      internalID: 1394762516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -339,16 +381,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      DrinksAndFood_17: 1394762516
       DrinksAndFood_13: 1588993436
       DrinksAndFood_1: 944108766
       DrinksAndFood_2: -191422379
+      DrinksAndFood_15: -815193754
+      DrinksAndFood_14: -2100401110
       DrinksAndFood_6: 2074635296
       DrinksAndFood_3: 1824566809
+      DrinksAndFood_16: 372693815
       DrinksAndFood_12: 1361165633
       DrinksAndFood_9: 987186313
       DrinksAndFood_0: -1536250138
       DrinksAndFood_4: 24786586
+      DrinksAndFood_18: 110869160
       DrinksAndFood_7: 106909645
+      DrinksAndFood_19: -1790052155
       DrinksAndFood_8: 360808819
       DrinksAndFood_11: 1604158148
       DrinksAndFood_5: -108851696
