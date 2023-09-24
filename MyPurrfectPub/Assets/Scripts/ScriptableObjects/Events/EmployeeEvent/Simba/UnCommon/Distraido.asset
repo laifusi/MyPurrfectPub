@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Hoy Simba parece algo distraido, y esto lo notan los clientes, quienes
-    se quejan de que su pedido tarde en llegar m\xE1s de lo habitual.\n\nEsto puede
-    darnos mala prensa."
+  event_text: "Hoy Simba parece algo distra\xEDdo, y esto lo notan los clientes,
+    quienes se quejan de que sus pedidos tarden en llegar m\xE1s de lo habitual.\n\nEsto
+    puede darnos mala prensa.\n\n(Pierdes 5 puntos de PURRSTIGIO)"
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100

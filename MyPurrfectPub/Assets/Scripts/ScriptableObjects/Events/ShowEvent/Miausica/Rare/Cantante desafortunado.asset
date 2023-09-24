@@ -16,7 +16,7 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Un cliente, embriagado por la bebida decide subir al escenario y cantar
     una canci\xF3n.\n\nSu voz resulta ser extremadamente irritante, haciendo que
-    todos los clientes buffen de rabia para que se calle. Sinembargo, el cantante
+    todos los clientes bufen de rabia para que se calle. Sin embargo, el cantante
     se niega a dejar el micr\xF3fono.\n\nPara cuando termina, varios clientes han
     abandonado el local airados.\n\n(Pierdes 3 clientes\n Pierdes 15 puntos de PURRSTIGIO)"
   rarity: 2
