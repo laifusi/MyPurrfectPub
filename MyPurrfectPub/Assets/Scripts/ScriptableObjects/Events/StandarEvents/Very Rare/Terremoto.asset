@@ -32,3 +32,4 @@ MonoBehaviour:
     michicoins: -50
     capacity_drink: 0
     capacity_food: 0
+    new_clients: 0

@@ -14,9 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Simba parece haber embelesado a un grupo de gatitas, quienes parecen
-    encantadas con el coctelero.\n\nCuando el grupito se marcha, han dejado tras
-    de s\xED una buena cantidad de propina.\n\n(Ganas 15 MICHIMONEDAS)"
+  event_text: 'Simba parece haber embelesado a un grupo de gatitas, quienes parecen
+    encantadas con el coctelero.
+
+
+    Cuando el grupito se ha marchado, han dejado
+    una buena propina.
+
+
+    (Ganas 15 MICHIMONEDAS)'
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100

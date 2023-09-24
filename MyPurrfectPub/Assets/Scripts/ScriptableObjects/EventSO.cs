@@ -10,7 +10,7 @@ public class EventSO : ScriptableObject
 
     [TextArea(2, 2)]
     public string event_tittle;
-    [TextArea(2,2)]
+    [TextArea(2,20)]
     public string event_text;
 
     //public int probility;

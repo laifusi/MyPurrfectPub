@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Una fuerte lluvia arrecia afuera del pub. De repente, la puerta suena
+  event_text: "Una fuerte lluvia arrecia fuera del pub. De repente, la puerta suena
     y un vendedor ambulante del extranjero te pide refugio para \xE9l y para su elefante.\n\nEl
     gran tama\xF1o del animal podr\xEDa causar serios desperfectos en el local. Sin
     embargo, un elefante llama bastante la atenci\xF3n. Y llamar la atenci\xF3n,
@@ -33,6 +33,7 @@ MonoBehaviour:
     michicoins: -30
     capacity_drink: 0
     capacity_food: 0
+    new_clients: 0
   - id_option: 1
     text_option: Rechazar
     selected_option: 0
@@ -40,3 +41,4 @@ MonoBehaviour:
     michicoins: 0
     capacity_drink: 0
     capacity_food: 0
+    new_clients: 0

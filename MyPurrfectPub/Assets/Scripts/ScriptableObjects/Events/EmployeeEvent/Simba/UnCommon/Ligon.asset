@@ -22,13 +22,14 @@ MonoBehaviour:
     de mala manera abandonando el bar.
 
 
-    Por motivos como este uno entiende que
-    se castren a los gatos.
+    Por motivos como este, uno entiende
+    que se castre a los gatos.
 
 
     (Pierdes 1 cliente
 
-    Pierdes 5 puntos de PURRSTIGIO)'
+    Pierdes 5 puntos de
+    PURRSTIGIO)'
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100
