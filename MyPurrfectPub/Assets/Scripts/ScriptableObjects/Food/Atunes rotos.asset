@@ -20,4 +20,4 @@ MonoBehaviour:
   rarity: Common
   minprobability: 71
   maxprobability: 100
-  rarityColor: {r: 0.72156864, g: 0.7176471, b: 0.72156864, a: 1}
+  rarityColor: {r: 0.25882354, g: 0.6666667, b: 0.28627452, a: 1}
