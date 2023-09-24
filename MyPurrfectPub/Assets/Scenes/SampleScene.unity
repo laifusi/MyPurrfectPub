@@ -4902,6 +4902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75680daa93f5336448d975eaecf9e49f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allEvents: []
   standarEvents:
     commonEventlist: []
     uncommonEventlist: []

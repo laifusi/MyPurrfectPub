@@ -12,6 +12,8 @@ public class PanelNightShow : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI prestigio;
 
+    [SerializeField] private Image image;
+
     [SerializeField] private string detalles;
 
     [SerializeField] private GameObject detailsPrefab;
@@ -43,6 +45,7 @@ public class PanelNightShow : MonoBehaviour
         nombre.text = nshow.name;
         precio.text = nshow.cost.ToString();
         prestigio.text = nshow.prestige.ToString();
+        image.sprite = nshow.image;
         detalles = nshow.description;
         nshowAsociado = nshow;
     }
