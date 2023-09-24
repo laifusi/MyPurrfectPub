@@ -45,8 +45,8 @@ public class PanelEmployee : MonoBehaviour
     {
         nombre.text = empleado.name;
         rol.text = empleado.rol;
-        precio.text = empleado.costPerTurn.ToString();
-        prestigio.text = empleado.prestigePerTurn.ToString();
+        precio.text = empleado.costPerTurn.ToString() + "/turno";
+        prestigio.text = empleado.prestigePerTurn.ToString() + "/turno";
         detalles = empleado.description;
         image.sprite = empleado.image;
 
