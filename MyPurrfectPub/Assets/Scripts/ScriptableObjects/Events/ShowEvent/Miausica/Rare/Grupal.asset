@@ -22,6 +22,7 @@ MonoBehaviour:
     compensaci\xF3n, te ofrecen un peque\xF1o donativo para el negocio. En un principio
     te niegas, pero son muy insistentes.\n\n(Ganas 8 puntos de PURRSTIGIO\nGanas
     18 MICHIMONEDAS)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100

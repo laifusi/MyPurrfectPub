@@ -12,6 +12,8 @@ public class AsignarValoresEvent : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI texto;
 
+    [SerializeField] private Image[] images;
+
     [SerializeField] private Transform panel;
 
     [SerializeField] private Button buttonPrefab;
@@ -25,6 +27,11 @@ public class AsignarValoresEvent : MonoBehaviour
 
         titulo.text = evento.event_tittle;
         texto.text = evento.event_text;
+        
+        foreach(Image im in images)
+        {
+            im.sprite = evento.image;
+        }
 
         for(int i = 0; i < evento.options.Length; i++)
         {

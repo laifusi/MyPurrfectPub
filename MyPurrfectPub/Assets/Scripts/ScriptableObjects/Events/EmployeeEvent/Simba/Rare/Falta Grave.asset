@@ -16,6 +16,7 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Simba no ha venido a trabajar hoy.\n\nCuando aparezca, habr\xEDa que
     tener una charla con ese caradura.\n\n(Pierdes 10 puntos de capacidad de bebidas)"
+  image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100

@@ -19,6 +19,7 @@ MonoBehaviour:
 
 
     (Ganas 5 MICHIMONEDAS)'
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0
   max_purrstige: 0
@@ -27,8 +28,9 @@ MonoBehaviour:
   options:
   - id_option: 0
     text_option: Siguiente
-    selected_option: 0
+    selected_option: 1
     purrstige: 0
     michicoins: 10
     capacity_drink: 0
     capacity_food: 0
+    new_clients: 0

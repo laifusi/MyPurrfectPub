@@ -18,6 +18,7 @@ MonoBehaviour:
     Michilix27.\n\nParece que le ha gustado tu local y ha compartido su ubicaci\xF3n
     en las redes, a\xF1adiendo de paso una valoraci\xF3n positiva hacia tu negocio.\n\nEsto
     podr\xEDa ayudar a atraer nuevos clientes.\n\n(Ganas 15 de PURRSTIGIO)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100
@@ -31,3 +32,4 @@ MonoBehaviour:
     michicoins: 0
     capacity_drink: 0
     capacity_food: 0
+    new_clients: 0
