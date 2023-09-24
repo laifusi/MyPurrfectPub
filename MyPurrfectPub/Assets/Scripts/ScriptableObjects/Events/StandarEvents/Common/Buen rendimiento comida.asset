@@ -17,6 +17,7 @@ MonoBehaviour:
   event_text: "Esta noche, has decidido unirte al equipo de cocineros, pudiendo as\xED
     atender a un mayor n\xFAmero de pedidos de comida.\n\n(Ganas 3 puntos de Capacidad
     de comida)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0
   max_purrstige: 20
@@ -30,3 +31,4 @@ MonoBehaviour:
     michicoins: 0
     capacity_drink: 0
     capacity_food: 3
+    new_clients: 0

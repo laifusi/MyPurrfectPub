@@ -19,6 +19,7 @@ MonoBehaviour:
     buena. El grupo se lo pasa bien, r\xEDe, disfruta y lo m\xE1s importante, paga
     la cuenta.\n\nEsto puede ayudar a que el bar gane algo de fama gracias al boca
     a boca.\n\n(Ganas 15 puntos de PURRSTIGIO)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100

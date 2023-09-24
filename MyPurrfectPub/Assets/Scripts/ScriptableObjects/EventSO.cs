@@ -13,6 +13,8 @@ public class EventSO : ScriptableObject
     [TextArea(2,20)]
     public string event_text;
 
+    public Sprite image;
+
     //public int probility;
     public Rarity rarity;
 

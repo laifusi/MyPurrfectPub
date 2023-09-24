@@ -17,6 +17,7 @@ MonoBehaviour:
   event_text: "El micr\xF3fono est\xE1 dando problemas, haciendo que la voz de los
     michis suene mal y desagradable.\n\nLos gatos bufan frustrados por no poder disfrutar
     de las canciones que tanto les gustan.\n\n(Pierdes 7 puntos de PURRSTIGIO)"
+  image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 0

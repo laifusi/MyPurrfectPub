@@ -20,6 +20,7 @@ MonoBehaviour:
     embargo, un elefante llama bastante la atenci\xF3n. Y llamar la atenci\xF3n,
     atrae a nuevos clientes.\n\nAceptar:\nPierdes 30 MICHIMONEDAS\nGanas 30 de PURRSTIGIO\n\nRechazar:\nEl
     vendedor se va sin causar problemas"
+  image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100

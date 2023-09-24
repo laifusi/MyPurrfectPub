@@ -19,6 +19,7 @@ MonoBehaviour:
     desgracia no lo ten\xEDas asegurado. Las p\xE9rdidas econ\xF3micas son enormes,
     pero el seguro ha reducido cuantiosamente los gastos de reconstrucci\xF3n.\n\n(Pierdes
     50 MICHIMONEDAS)"
+  image: {fileID: -1212568836, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100
