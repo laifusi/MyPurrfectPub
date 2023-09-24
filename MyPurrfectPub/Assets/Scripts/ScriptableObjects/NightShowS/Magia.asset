@@ -15,4 +15,6 @@ MonoBehaviour:
   name: El Miauravilloso Nekodini
   prestige: 10
   cost: 25
-  image: {fileID: 0}
+  description: 
+  image: {fileID: 360808819, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
+  eventlist: []
