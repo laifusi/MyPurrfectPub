@@ -20,3 +20,10 @@ MonoBehaviour:
   description: 
   bought: 1
   image: {fileID: 2005082265, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
+  eventlist:
+  - {fileID: 11400000, guid: 51a568c3f79393c4792dcd949fc8a79d, type: 2}
+  - {fileID: 11400000, guid: 5e7028778071ca8439d5610d85cc92a4, type: 2}
+  - {fileID: 11400000, guid: 1f844b4d6e6d385429a47a00c9ba3b5c, type: 2}
+  - {fileID: 11400000, guid: 57141f18293260f44bb852537b197d47, type: 2}
+  - {fileID: 11400000, guid: aa4c9e86a2032da408b76f43fc81ecce, type: 2}
+  - {fileID: 11400000, guid: b51b6ccc1a047574dbc898e04f1a3abc, type: 2}

@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sr. Bigotes
   prestigePerTurn: 0
-  costPerTurn: 25
+  costPerTurn: 10
   rol: Camarero
   capacity: 10
   description: 
-  bought: 1
-  image: {fileID: -958879238, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
+  bought: 0
+  image: {fileID: 875532748, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
+  eventlist: []

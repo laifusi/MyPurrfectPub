@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sardinitas Bravas
   cost: 5
-  image: {fileID: 0}
+  image: {fileID: 2074635296, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 0
   description: 
   rarity: Common
   minprobability: 0
   maxprobability: 70
   rarityColor: {r: 1, g: 1, b: 1, a: 1}
-  currentAmount: 0
