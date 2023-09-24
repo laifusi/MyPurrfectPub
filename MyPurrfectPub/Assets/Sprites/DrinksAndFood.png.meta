@@ -337,7 +337,7 @@ TextureImporter:
         width: 461
         height: 392
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,7 +358,7 @@ TextureImporter:
         width: 445
         height: 335
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,6 +366,48 @@ TextureImporter:
       bones: []
       spriteID: ae5a9dd72e44fe047b99c3b2fde41c57
       internalID: 1394762516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrinksAndFood_9
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1660
+        width: 531
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d0358e5f7e1be47ba57725ac52798f
+      internalID: 987186313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrinksAndFood_10
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 1223
+        width: 681
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7e400d37d57f3459042e26527ea07e
+      internalID: -1160082213
       vertices: []
       indices: 
       edges: []
