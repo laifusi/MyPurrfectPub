@@ -325,7 +325,7 @@ public class GameManager : MonoBehaviour
                     string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
 
                     int randomEventPosition;
-                    EventSO selectedEvent = new EventSO();
+                    EventSO selectedEvent = ScriptableObject.CreateInstance<EventSO>();
                     AsignarValoresEvent newEvent;
                     switch (actualRaity)
                     {
@@ -360,7 +360,7 @@ public class GameManager : MonoBehaviour
                             break;
                     }
 
-                    if (selectedEvent != null)
+                    if (selectedEvent.event_text != "")
                     {
                         if (selectedEvent.dependence != null)
                         {
@@ -393,7 +393,7 @@ public class GameManager : MonoBehaviour
                 string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
 
                 int randomEventPosition;
-                EventSO selectedEvent = new EventSO();
+                EventSO selectedEvent = ScriptableObject.CreateInstance<EventSO>();
                 AsignarValoresEvent newEvent;
                 switch (actualRaity)
                 {
@@ -429,7 +429,7 @@ public class GameManager : MonoBehaviour
                 }
 
 
-                if (selectedEvent != null)
+                if (selectedEvent != null && selectedEvent.event_text != null && selectedEvent.event_text != "")
                 {
                     if (selectedEvent.dependence != null)
                     {
@@ -442,6 +442,7 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
+                        Debug.Log(selectedEvent.event_text);
                         newEvent = Instantiate(eventPrefab);
                         newEvent.AssignEvent(selectedEvent, this);
                         createdEvents++;
@@ -457,7 +458,7 @@ public class GameManager : MonoBehaviour
             string actualRaity = GetRarity(UnityEngine.Random.Range(1, 101));
 
             int randomEventPosition;
-            EventSO selectedEvent = new EventSO();
+            EventSO selectedEvent = ScriptableObject.CreateInstance<EventSO>();
             AsignarValoresEvent newEvent;
             switch (actualRaity)
             {
