@@ -26,6 +26,16 @@ public class PanelEmployee : MonoBehaviour
 
     [SerializeField] private EmployeeSO empleadoAsociado;
 
+    [SerializeField] private AudioClip buyClip;
+    [SerializeField] private AudioClip removeClip;
+
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -57,12 +67,14 @@ public class PanelEmployee : MonoBehaviour
     {
         empleadoAsociado.bought = true;
         Inventory.instance.AddEmployee(empleadoAsociado);
+        audioSource.PlayOneShot(buyClip);
     }
 
     public void Despedir()
     {
         empleadoAsociado.bought = false;
         Inventory.instance.RemoveEmployee(empleadoAsociado);
+        audioSource.PlayOneShot(removeClip);
     }
 
     public void Details()
