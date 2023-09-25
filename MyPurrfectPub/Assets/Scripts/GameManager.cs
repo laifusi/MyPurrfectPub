@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
 
     public static Action<int> OnCoinsChange;
     public static Action<int> OnPrestigeChange;
+    public static Action<int> OnFoodCapacityChange;
+    public static Action<int> OnDrinkCapacityChange;
 
     [SerializeField] private rangePurrstige[] purrstigeRanges;
 
@@ -161,6 +163,8 @@ public class GameManager : MonoBehaviour
         {
             totalCapacityDrink = 0;
         }
+
+        OnDrinkCapacityChange?.Invoke(totalCapacityDrink);
     }
 
     public void AddCapacityFood(int cap)
@@ -170,6 +174,8 @@ public class GameManager : MonoBehaviour
         {
             totalCapacityFood = 0;
         }
+
+        OnFoodCapacityChange?.Invoke(totalCapacityFood);
     }
 
     public void AddActualCapacityDrink(int cap)
@@ -179,6 +185,8 @@ public class GameManager : MonoBehaviour
         {
             actualCapacityDrink = 0;
         }
+
+        OnFoodCapacityChange?.Invoke(totalCapacityFood);
     }
 
     public void AddActualCapacityFood(int cap)
