@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private EventSO calmNightEvent;
     [SerializeField] private Inventory inventory;
     [SerializeField] private AdministrarNoche adminNightPrefab;
+    [SerializeField] private GameObject[] managementPanels;
 
     private int coins;
     private int prestige;
@@ -91,6 +92,12 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
+        foreach(GameObject panel in managementPanels)
+        {
+            panel.SetActive(true);
+            panel.SetActive(false);
+        }
+
         clientsNumber = 0;
         createdEvents = 0;
         ResetAdministratorNight();
@@ -98,7 +105,9 @@ public class GameManager : MonoBehaviour
         totalCapacityFood = 0;
         prestigelevel = 1;
         actualRarityRate = (rarityRate[])rarityRatesLevel1.Clone();
+
         yield return null;
+
         AddCoins(initialCoins);
         AddPrestige(initialPrestige);
     }
