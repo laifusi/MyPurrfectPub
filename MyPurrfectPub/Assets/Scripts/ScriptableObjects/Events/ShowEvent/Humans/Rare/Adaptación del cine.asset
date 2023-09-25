@@ -21,7 +21,7 @@ MonoBehaviour:
     horribles pesadillas al p\xFAblico.\n\nMaldita sea esta coincidencia. Es posible
     que esto repercuta negativamente al local.\n\n(Pierdes 35 puntos de PURRSTIGIO\n10
     clientes no acuden esa noche al bar) "
-  image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
+  image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100

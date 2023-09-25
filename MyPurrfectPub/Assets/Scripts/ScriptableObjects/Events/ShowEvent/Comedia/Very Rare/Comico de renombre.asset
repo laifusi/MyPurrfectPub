@@ -21,6 +21,7 @@ MonoBehaviour:
     se hace una foto contigo para que la cuelgues en la pared.\n\nMientras la cuelgas,
     puedes ver como el bote de donativos esta a rebosar.\n\n(Ganas 25 puntos de PURRSTIGIO\nGanas
     50 MICHIMONEDAS)"
+  image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100

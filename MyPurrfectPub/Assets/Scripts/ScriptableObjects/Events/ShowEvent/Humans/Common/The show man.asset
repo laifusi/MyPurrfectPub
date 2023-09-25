@@ -19,7 +19,7 @@ MonoBehaviour:
     te enternece es la cantidad de donatibos recibidos y la esperanza de que los
     asistentes vuelvan a visitar el local.\n\n(Ganas 5 puntos de PURRSTIGIO\nGanas
     25 MICHIMONEDAS)"
-  image: {fileID: 0}
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0
   max_purrstige: 100

@@ -20,6 +20,8 @@ public class AsignarValoresEvent : MonoBehaviour
 
     [SerializeField] private AudioClip buttonClip;
 
+    [SerializeField] private Color commonColor, uncommonColor, rareColor, veryRareColor;
+
     private GameManager gameManager;
 
     public void AssignEvent(EventSO newEvent, GameManager gameManager)
@@ -30,19 +32,19 @@ public class AsignarValoresEvent : MonoBehaviour
         switch(evento.rarity)
         {
             case EventSO.Rarity.Common:
-                titulo.color = new Color32(70, 166, 75, 255);
+                titulo.color = commonColor;
                 titulo.text = "Evento Común";
                 break;
             case EventSO.Rarity.Uncommon:
-                titulo.color = new Color32(118, 202, 187, 255);
+                titulo.color = uncommonColor;
                 titulo.text = "Evento Poco Común";
                 break;
             case EventSO.Rarity.Rare:
-                titulo.color = new Color32(255, 0, 255, 255);
+                titulo.color = rareColor;
                 titulo.text = "Evento Raro";
                 break;
             case EventSO.Rarity.VeryRare:
-                titulo.color = new Color32(255, 158, 0, 255);
+                titulo.color = veryRareColor;
                 titulo.text = "Evento Muy Raro";
                 break;
         }

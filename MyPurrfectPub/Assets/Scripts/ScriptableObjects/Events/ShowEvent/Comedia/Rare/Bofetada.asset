@@ -21,6 +21,7 @@ MonoBehaviour:
     tan vulgar.\n\nEl cliente es guiado hacia la salida y el espect\xE1culo es retomado,
     pero esto puede desprestigiar el buen nombre de tu local.\n\n(Pierdes 20 puntos
     de PURRSTIGIO) "
+  image: {fileID: -1212568836, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100

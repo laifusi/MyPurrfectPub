@@ -19,7 +19,7 @@ MonoBehaviour:
     m\xE1gico que deja embelesados a todo el mundo.\n\nCosas como esta y las increibles
     ganancias que te ha aportado el show, hacen que creas en la magia.\n\n(Ganas
     30 puntos de PURRSTIGIO\nGanas 55 MICHIMONEDAS)"
-  image: {fileID: 0}
+  image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100

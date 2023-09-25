@@ -22,7 +22,7 @@ MonoBehaviour:
     que parec\xEDa una noche de pocas ganancias se ha convertido en un evento muy
     lucrativo gracias al ingenio de tu empleada.\n\n(Ganas 60 MICHIMONEDAS\nGanas
     10 puntos de PURRSTIGIO) "
-  image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100
