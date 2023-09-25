@@ -15,9 +15,10 @@ MonoBehaviour:
   name: Atunes rotos
   cost: 7
   image: {fileID: 24786586, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
-  prestige: 8
-  description: 
-  rarity: Common
-  minprobability: 71
+  prestige: 5
+  description: "ATUNES ROTOS\n\nSin duda un plato que gusta a la mayor\xEDa. Buena
+    cantidad, buen sabor. \xBFQu\xE9 m\xE1s se le puede pedir?"
+  rarity: Uncommon
+  minprobability: 1
   maxprobability: 100
-  rarityColor: {r: 0.25882354, g: 0.6666667, b: 0.28627452, a: 1}
+  rarityColor: {r: 0.4627451, g: 0.7921569, b: 0.73333335, a: 1}

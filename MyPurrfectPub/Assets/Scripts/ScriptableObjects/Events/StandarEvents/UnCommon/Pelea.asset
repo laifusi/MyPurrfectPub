@@ -18,6 +18,7 @@ MonoBehaviour:
     han acabado en bufidos y finalmentos han llegado a los zarpazos.\n\nLa pelea
     no ha causado da\xF1os graves, pero la gente hablar\xE1 de esto, y no muy bien.\n\n(Pierdes
     5 de PURRSTIGIO)"
+  image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100
@@ -31,3 +32,4 @@ MonoBehaviour:
     michicoins: 0
     capacity_drink: 0
     capacity_food: 0
+    new_clients: 0

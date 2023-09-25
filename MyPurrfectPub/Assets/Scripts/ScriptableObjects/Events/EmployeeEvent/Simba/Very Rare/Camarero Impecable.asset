@@ -19,6 +19,7 @@ MonoBehaviour:
     clientes.\n\nSus movimientos con las bebidas son grandiosos y todo el mundo queda
     embelesado con \xE9l.\n\nCuando le pone ganas, Simba puede demostrar ser un importante
     activo.\n\n(Ganas 25 puntos de PURRSTIGIO\nGanas 30 MICHIMONEDAS)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100
@@ -28,8 +29,8 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: 25
-    michicoins: 30
+    purrstige: 15
+    michicoins: 35
     capacity_drink: 0
     capacity_food: 0
     new_clients: 0

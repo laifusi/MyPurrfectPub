@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private EventSO calmNightEvent;
     [SerializeField] private Inventory inventory;
     [SerializeField] private AdministrarNoche adminNightPrefab;
+    [SerializeField] private GameObject[] managementPanels;
+    [SerializeField] private PanelFinal PanelFinal;
+
+    private AudioSource audioSource;
 
     private int coins;
     private int prestige;
@@ -58,6 +62,7 @@ public class GameManager : MonoBehaviour
     private int consumedFoodPrestige;
     private int costEmployeeCoins;
     private int costEmployeePrestige;
+
     public int costEventCoins;
     public int costEventPrestige;
 
@@ -91,6 +96,14 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
+        foreach(GameObject panel in managementPanels)
+        {
+            panel.SetActive(true);
+            panel.SetActive(false);
+        }
+
         clientsNumber = 0;
         createdEvents = 0;
         ResetAdministratorNight();
@@ -98,7 +111,9 @@ public class GameManager : MonoBehaviour
         totalCapacityFood = 0;
         prestigelevel = 1;
         actualRarityRate = (rarityRate[])rarityRatesLevel1.Clone();
+
         yield return null;
+
         AddCoins(initialCoins);
         AddPrestige(initialPrestige);
     }
@@ -142,7 +157,7 @@ public class GameManager : MonoBehaviour
     public void AddCapacityDrink(int cap)
     {
         totalCapacityDrink += cap;
-        if(totalCapacityDrink < 0)
+        if (totalCapacityDrink < 0)
         {
             totalCapacityDrink = 0;
         }
@@ -154,6 +169,24 @@ public class GameManager : MonoBehaviour
         if (totalCapacityFood < 0)
         {
             totalCapacityFood = 0;
+        }
+    }
+
+    public void AddActualCapacityDrink(int cap)
+    {
+        actualCapacityDrink += cap;
+        if(actualCapacityDrink < 0)
+        {
+            actualCapacityDrink = 0;
+        }
+    }
+
+    public void AddActualCapacityFood(int cap)
+    {
+        actualCapacityFood += cap;
+        if (actualCapacityFood < 0)
+        {
+            actualCapacityFood = 0;
         }
     }
 
@@ -644,8 +677,6 @@ public class GameManager : MonoBehaviour
 
         int indexDrink = -1;
         int indexFood = -1;
-        Debug.Log(actualCapacityDrink + " Capacida bebida");
-        Debug.Log(actualCapacityFood + " Capacida food");
         for (int i = 1; i <= clientsNumber; i++)
         {
             switch(UnityEngine.Random.Range(0,3))
@@ -807,6 +838,8 @@ public class GameManager : MonoBehaviour
             AddCoins(coinsObtained);
             AddPrestige(prestigeObtained);
 
+            panelAdmin.GetRecursosTotales(coins, prestige);
+
             inventory.RemoveShow();
 
             UpdatePrestigeLevel();
@@ -830,5 +863,22 @@ public class GameManager : MonoBehaviour
         costEventPrestige = 0;
         calculationsPrestige.Clear();
         calculationsCoins.Clear();
+    }
+
+    public void Ganar()
+    {
+        PanelFinal panelFinal = Instantiate(PanelFinal);
+        panelFinal.Ganar();
+    }
+
+    public void Perder()
+    {
+        PanelFinal panelFinal = Instantiate(PanelFinal);
+        panelFinal.Perder();
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }

@@ -30,17 +30,13 @@ public class AdministrarNoche : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI ganancias_totales_coins;
     [SerializeField] private TextMeshProUGUI ganancias_totales_prestige;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private TextMeshProUGUI recursos_totales_prestige;
+    [SerializeField] private TextMeshProUGUI recursos_totales_coins;
+    [SerializeField] private int i_recursos_totales_coins;
+    [SerializeField] private int i_recursos_totales_prestige;
+
+    [SerializeField] private AudioClip buttonClip;
 
     public void GetClientesTotales(int ct)
     {
@@ -91,9 +87,29 @@ public class AdministrarNoche : MonoBehaviour
         ganancias_totales_prestige.text = prestige.ToString();
     }
 
+    public void GetRecursosTotales(int coins, int prestige)
+    {
+        recursos_totales_coins.text = coins.ToString();
+        i_recursos_totales_coins = coins;
+        recursos_totales_prestige.text = prestige.ToString();
+        i_recursos_totales_prestige = prestige;
+    }
+
     public void ReturnBar()
     {
+        if (i_recursos_totales_prestige >= 100)
+        {
+            GameManager.instance.Perder();
+        }
+        else if (i_recursos_totales_coins < 0)
+        {
+            GameManager.instance.Perder();
+        }
+        else
+        {
+        GameManager.instance.PlaySound(buttonClip);
         GameManager.instance.ResetAdministratorNight();
         Destroy(gameObject);
+        }
     }
 }

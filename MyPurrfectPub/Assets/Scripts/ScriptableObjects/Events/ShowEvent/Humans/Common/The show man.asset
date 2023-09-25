@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
+  m_Name: The show man
+  m_EditorClassIdentifier: 
+  id: 0
+  event_tittle: 
+  event_text: "Parece que el m\xFAsical ha tenido bastante \xE9xito entre los asistentes
+    de la noche. \n\nVes sus ojos llenos de vida y fascinaci\xF3n. Pero lo que realmente
+    te enternece es la cantidad de donatibos recibidos y la esperanza de que los
+    asistentes vuelvan a visitar el local.\n\n(Ganas 5 puntos de PURRSTIGIO\nGanas
+    25 MICHIMONEDAS)"
+  image: {fileID: 0}
+  rarity: 0
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 1
+    purrstige: 5
+    michicoins: 25
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 0

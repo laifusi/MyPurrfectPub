@@ -12,9 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d041e10933090439f6fd4b21154188, type: 3}
   m_Name: Musical
   m_EditorClassIdentifier: 
-  name: 'Humans: el musical'
+  name: 'Humans: el miausical'
   prestige: 20
-  cost: 50
-  description: 
+  cost: 35
+  description: "HUMANS: EL MIAUSICAL\n\nPese a la dudosa adaptaci\xF3n cinematogr\xE1fica
+    que tiene. Es un miausical recordado con cari\xF1o. Hay un peque\xF1o grupo actoral
+    que se dedica a interpretarlo con menos recursos.\n\nPuede ser una buena oportunidad
+    para ofrecer algo memorable a los clientes."
   image: {fileID: -2100401110, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
-  eventlist: []
+  eventlist:
+  - {fileID: 11400000, guid: 4ebe77e0baeb3954989c9700b0513cd3, type: 2}
+  - {fileID: 11400000, guid: c48b2212391a3ea438a907f7964084b9, type: 2}
+  - {fileID: 11400000, guid: 856502077225c4c4b87300ed83ce3c5e, type: 2}
+  - {fileID: 11400000, guid: f205645aade62fd4bb4a1f6efe8deb1a, type: 2}
+  - {fileID: 11400000, guid: b0111f11bf6e9d74ca766d61ff8b2186, type: 2}
+  - {fileID: 11400000, guid: 12d10689b05a65747af34724a97b07de, type: 2}
+  - {fileID: 11400000, guid: 10a7d4639e2e8134f9b336564613f855, type: 2}

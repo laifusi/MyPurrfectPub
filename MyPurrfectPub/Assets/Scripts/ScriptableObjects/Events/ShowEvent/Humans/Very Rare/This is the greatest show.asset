@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
+  m_Name: This is the greatest show
+  m_EditorClassIdentifier: 
+  id: 0
+  event_tittle: 
+  event_text: "Lo de esta noche ha sido sobervio. \n\nNunca hab\xEDas presenciado
+    un espect\xE1culo como este. Los mininos est\xE1n fascinados y t\xFA no puedes
+    dejar de aplaudir.\n\nSin duda ha sido el espect\xE1culo definitivo. Los cr\xEDticos
+    hablaran de ello y tu local no quedar\xE1 desapercibido.\n\n(Ganas 35 puntos
+    de PURRSTIGIO\nGanas 100 MICHIMONEDAS)"
+  image: {fileID: 0}
+  rarity: 3
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 0
+    purrstige: 35
+    michicoins: 100
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 0

@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: "Salm\xF3n King"
   m_EditorClassIdentifier: 
   name: Salmon King
-  cost: 25
+  cost: 12
   image: {fileID: 106909645, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 10
-  description: 
-  rarity: Uncommon
-  minprobability: 51
+  description: "SALMON KING\n\nSi de entre los peces hay un rey, ese es sin duda
+    el salm\xF3n. El pez m\xE1s noble de todos. Y por extensi\xF3n el mejor ingrediente
+    que un paladar felino puede degustar."
+  rarity: VeryRare
+  minprobability: 1
   maxprobability: 100
-  rarityColor: {r: 0.47058827, g: 0.8313726, b: 0.78823537, a: 1}
+  rarityColor: {r: 1, g: 0.61737466, b: 0, a: 1}

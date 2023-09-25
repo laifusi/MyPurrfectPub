@@ -18,6 +18,7 @@ MonoBehaviour:
     que trabajan.\n\nEsto les ha permitido poder cumplir con m\xE1s pedidos de los
     que suelen cumplir.\n\n(Ganas 3 puntos de Capacidad en bebidas y de Capacidad
     en comidas)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100

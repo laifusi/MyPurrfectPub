@@ -26,6 +26,16 @@ public class PanelEmployee : MonoBehaviour
 
     [SerializeField] private EmployeeSO empleadoAsociado;
 
+    [SerializeField] private AudioClip buyClip;
+    [SerializeField] private AudioClip removeClip;
+
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -45,8 +55,8 @@ public class PanelEmployee : MonoBehaviour
     {
         nombre.text = empleado.name;
         rol.text = empleado.rol;
-        precio.text = empleado.costPerTurn.ToString();
-        prestigio.text = empleado.prestigePerTurn.ToString();
+        precio.text = empleado.costPerTurn.ToString() + "/turno";
+        prestigio.text = empleado.prestigePerTurn.ToString() + "/turno";
         detalles = empleado.description;
         image.sprite = empleado.image;
 
@@ -57,12 +67,14 @@ public class PanelEmployee : MonoBehaviour
     {
         empleadoAsociado.bought = true;
         Inventory.instance.AddEmployee(empleadoAsociado);
+        audioSource.PlayOneShot(buyClip);
     }
 
     public void Despedir()
     {
         empleadoAsociado.bought = false;
         Inventory.instance.RemoveEmployee(empleadoAsociado);
+        audioSource.PlayOneShot(removeClip);
     }
 
     public void Details()

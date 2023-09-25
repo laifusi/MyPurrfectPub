@@ -12,9 +12,13 @@ public class AsignarValoresEvent : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI texto;
 
+    [SerializeField] private Image[] images;
+
     [SerializeField] private Transform panel;
 
     [SerializeField] private Button buttonPrefab;
+
+    [SerializeField] private AudioClip buttonClip;
 
     private GameManager gameManager;
 
@@ -23,8 +27,31 @@ public class AsignarValoresEvent : MonoBehaviour
         evento = newEvent;
         this.gameManager = gameManager;
 
-        titulo.text = evento.event_tittle;
+        switch(evento.rarity)
+        {
+            case EventSO.Rarity.Common:
+                titulo.color = new Color32(70, 166, 75, 255);
+                titulo.text = "Evento Común";
+                break;
+            case EventSO.Rarity.Uncommon:
+                titulo.color = new Color32(118, 202, 187, 255);
+                titulo.text = "Evento Poco Común";
+                break;
+            case EventSO.Rarity.Rare:
+                titulo.color = new Color32(255, 0, 255, 255);
+                titulo.text = "Evento Raro";
+                break;
+            case EventSO.Rarity.VeryRare:
+                titulo.color = new Color32(255, 158, 0, 255);
+                titulo.text = "Evento Muy Raro";
+                break;
+        }
         texto.text = evento.event_text;
+        
+        foreach(Image im in images)
+        {
+            im.sprite = evento.image;
+        }
 
         for(int i = 0; i < evento.options.Length; i++)
         {
@@ -41,12 +68,13 @@ public class AsignarValoresEvent : MonoBehaviour
         EventSO.option option = evento.options[optionId];
         GameManager.instance.costEventCoins += option.michicoins;
         GameManager.instance.costEventPrestige += option.purrstige;
-        GameManager.instance.AddCapacityDrink(option.capacity_drink);
-        GameManager.instance.AddCapacityDrink(option.capacity_food);
+        GameManager.instance.AddActualCapacityDrink(option.capacity_drink);
+        GameManager.instance.AddActualCapacityDrink(option.capacity_food);
         GameManager.instance.AddClients(option.new_clients);
         GameManager.instance.AddListCalculationCoins(option.michicoins);
         GameManager.instance.AddListCalculationPrestiege(option.purrstige);
         GameManager.instance.DoNightCalculations();
+        GameManager.instance.PlaySound(buttonClip);
         //gameManager.AddCoins(option.michicoins);
         //gameManager.AddPrestige(option.purrstige);
         Destroy(gameObject);

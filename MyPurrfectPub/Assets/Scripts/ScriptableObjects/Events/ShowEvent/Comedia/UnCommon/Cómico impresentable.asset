@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
+  m_Name: "C\xF3mico impresentable"
+  m_EditorClassIdentifier: 
+  id: 0
+  event_tittle: 
+  event_text: "Esta noche no ha habido suerte con el c\xF3mico.\n\nSus bromas no
+    son muy buenas y el p\xFAblic lo abuchea. El espect\xE1culo termina, pero la
+    impresi\xF3n que se han llevado los clientes no es muy buena.\n\n(Pierdes 15
+    puntos de PURRSTIGIO)"
+  rarity: 1
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 0
+    purrstige: -15
+    michicoins: 0
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 0

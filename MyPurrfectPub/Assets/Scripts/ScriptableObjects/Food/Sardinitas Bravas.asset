@@ -16,8 +16,10 @@ MonoBehaviour:
   cost: 5
   image: {fileID: 2074635296, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 0
-  description: 
+  description: "SARDINITAS BRAVAS\n\nLa tapa por excelencia de la sociedad gatuna.
+    Perfecta tanto para compartir como para comer en solitario. Ning\xFAn local que
+    se precie deber\xEDa negarse a servir este plato."
   rarity: Common
-  minprobability: 0
-  maxprobability: 70
+  minprobability: 1
+  maxprobability: 100
   rarityColor: {r: 0.25882354, g: 0.6666667, b: 0.28627452, a: 1}

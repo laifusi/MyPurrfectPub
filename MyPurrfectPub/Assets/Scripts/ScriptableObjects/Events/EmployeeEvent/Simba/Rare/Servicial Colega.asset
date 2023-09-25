@@ -18,7 +18,8 @@ MonoBehaviour:
     bar.\n\nPara sorpresa de todos, su actitud como coctelero frente a ellos es muy
     buena. El grupo se lo pasa bien, r\xEDe, disfruta y lo m\xE1s importante, paga
     la cuenta.\n\nEsto puede ayudar a que el bar gane algo de fama gracias al boca
-    a boca.\n\n(Ganas 15 puntos de PURRSTIGIO)"
+    a boca.\n\n(Ganas 10 puntos de PURRSTIGIO)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100
@@ -28,7 +29,7 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: 15
+    purrstige: 10
     michicoins: 0
     capacity_drink: 0
     capacity_food: 0

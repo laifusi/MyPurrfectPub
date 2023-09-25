@@ -18,6 +18,7 @@ MonoBehaviour:
     que sea, la lluvia puede hacer que el gatito m\xE1s activo quiera no salir de
     su caja.\n\nEsto puede influir en la cantidad de clientes que vengan a tu local.\n\n(2
     gatitos han decidido no venir a tu local)"
+  image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0
   max_purrstige: 0

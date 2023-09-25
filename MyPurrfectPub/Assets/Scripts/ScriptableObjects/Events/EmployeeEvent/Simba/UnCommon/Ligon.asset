@@ -30,7 +30,8 @@ MonoBehaviour:
 
     Pierdes 5 puntos de
     PURRSTIGIO)'
-  rarity: 2
+  image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
+  rarity: 1
   min_purrstige: 0
   max_purrstige: 100
   dependence: {fileID: 0}

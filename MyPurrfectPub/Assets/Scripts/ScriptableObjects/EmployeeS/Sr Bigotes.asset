@@ -16,8 +16,20 @@ MonoBehaviour:
   prestigePerTurn: 0
   costPerTurn: 10
   rol: Camarero
-  capacity: 10
-  description: 
-  bought: 0
+  capacity: 15
+  description: "SE\xD1OR BIGOTES\n\nCallado y con una mirada que hiela la sangre.\n\nYa
+    carga con mucha experiencia, pero parece que es un trabajador ejemplar que no
+    causa muchos problemas.\n\nHe oido que el Se\xF1or Bigotes tiene algunas compa\xF1\xEDas
+    raras, pero mientras haga su trabajo, todo ir\xE1 bien.\n\nEl Se\xF1or Bigotes
+    solo podr\xE1 atender a 10 clientes por noche, pero solo preparando comida."
+  bought: 1
   image: {fileID: 875532748, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
-  eventlist: []
+  eventlist:
+  - {fileID: 11400000, guid: 6ca79008eb088144f9ff3a238f9df09c, type: 2}
+  - {fileID: 11400000, guid: f8749fe2a95ed4d43a7c88390877fba1, type: 2}
+  - {fileID: 11400000, guid: 4712b0cfd926126408e73d99a05b8271, type: 2}
+  - {fileID: 11400000, guid: debfe03a4c2edb84c9b772a50d813dce, type: 2}
+  - {fileID: 11400000, guid: 27079f2d131697844be24909511d8b7e, type: 2}
+  - {fileID: 11400000, guid: ac86e852195f0d54fbeebfda16eb0a74, type: 2}
+  - {fileID: 11400000, guid: 7438035103d52fb4db3f709b1c74bcfe, type: 2}
+  - {fileID: 11400000, guid: 8379fd8694bf5e34d9bf8e50fa791d7c, type: 2}

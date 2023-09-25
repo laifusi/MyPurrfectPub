@@ -16,10 +16,10 @@ MonoBehaviour:
   cost: 2
   image: {fileID: 1824566809, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 0
-  description: "Leche\nBebida popular en la sociedad gatuna. Muy barata, pero bastante
+  description: "LECHE\n\nBebida popular en la sociedad gatuna. Muy barata, pero bastante
     com\xFAn. Perfecta para conseguir un m\xEDnimo de benef\xEDcios si no tienes
     otra bebida a mano."
   rarity: Common
-  minprobability: 31
+  minprobability: 1
   maxprobability: 100
   rarityColor: {r: 0.27450982, g: 0.6509804, b: 0.29411766, a: 1}

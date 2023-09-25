@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
+  m_Name: Esgrimista
+  m_EditorClassIdentifier: 
+  id: 0
+  event_tittle: 
+  event_text: "Una pandilla de perros con muy malas pulgas decide entrar en el local
+    de muy malas maneras.\n\nLos gatos est\xE1n aterrados y parece que los maleantes
+    buscan montar gresca con todos los clientes.\n\nSin embargo, desde la cocina
+    aparece el Se\xF1or Bigotes, quien sin inmutarse saca las garras y se lanza contra
+    la jauria.\n\nTras un brusco intercambio de golpes, los perros huyen despaboridos,
+    dejando a un herido pero aun firme Se\xF1or Bigotes en medio del local.\n\nLos
+    clientes comienzan a vitorearlo. La fama de nuestro heroe puede venirle muy bien
+    al local. Y tambi\xE9n las generosas propinas que est\xE1n dejando hoy los clientes.\n\n(Ganas
+    20 puntos de PURRSTIGIO\nGanas 25 MICHIMONEDAS)"
+  rarity: 3
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 0
+    purrstige: 20
+    michicoins: 25
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 0

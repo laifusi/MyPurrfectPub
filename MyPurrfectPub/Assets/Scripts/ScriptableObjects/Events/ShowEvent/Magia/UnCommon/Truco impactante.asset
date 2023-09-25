@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
+  m_Name: Truco impactante
+  m_EditorClassIdentifier: 
+  id: 0
+  event_tittle: 
+  event_text: "Hay algo que gusta a todo el mundo. Los trucos de cartas y los punteros
+    laseres en las paredes.\n\nAsi que imagina como tuvo que sentirse el p\xFAblico
+    cuando el miauravilloso Nekodini consigui\xF3 adivinar la carta de su voluntario
+    y mostrar su valor mediante punteros l\xE1seres en la pared.\n\nLa gente est\xE1
+    encantada con el mago y no puede esperar a ver la pr\xF3xima actuaci\xF3n.\n\n(Ganas
+    5 puntos de PURRSTIGIO)"
+  image: {fileID: 0}
+  rarity: 1
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 0
+    purrstige: 5
+    michicoins: 0
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 0

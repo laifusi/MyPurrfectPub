@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
+  m_Name: Conejos
+  m_EditorClassIdentifier: 
+  id: 0
+  event_tittle: 
+  event_text: "La noche esta yendo bien. La gente est\xE1 espectante por el pr\xF3ximo
+    truco.\n\nNekodini saca un conejo de la chistera y todo el mundo comienza a aplaudir.\n\nPara
+    sorpresa de todos, saca otro, y otro, y otro, y otro... Incluso Nekodini parece
+    tan sorprendido como el p\xFAblico por esto.\n\nAl cabo de unos instantes, el
+    local est\xE1 repleto de conejos que saltan entre el p\xFAblico. Los clientes
+    aplauden ante tal extraordinario n\xFAmero.\n\nSin embargo, el problema viene
+    cuando toca limpiar. Debido a la cantidad de conejos que hab\xEDa, la suciedad
+    es inmensa. Habr\xE1 que contratar a un equipo de limpieza para que se ocupe
+    este problema.\n\n(Pierdes 20 MICHIMONEDAS) "
+  image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
+  rarity: 2
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 0
+    purrstige: 0
+    michicoins: -20
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 0
