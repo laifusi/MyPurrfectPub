@@ -3602,6 +3602,7 @@ MonoBehaviour:
   ganancias_eventos_prestige: {fileID: 1547827987881732801}
   ganancias_totales_coins: {fileID: 1374556969900639587}
   ganancias_totales_prestige: {fileID: 264883834571093538}
+  buttonClip: {fileID: 8300000, guid: 6bbed5c7739554a4d8fc268973c41762, type: 3}
 --- !u!1 &6741672909894716721
 GameObject:
   m_ObjectHideFlags: 0

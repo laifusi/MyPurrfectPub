@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detailsText: {fileID: 7020173662509354276}
+  buttonClip: {fileID: 8300000, guid: 6bbed5c7739554a4d8fc268973c41762, type: 3}
 --- !u!1 &7020173661491754176
 GameObject:
   m_ObjectHideFlags: 0
