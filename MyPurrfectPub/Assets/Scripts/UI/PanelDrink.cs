@@ -22,10 +22,18 @@ public class PanelDrink : MonoBehaviour
 
     [SerializeField] private Image Color_rarity;
 
-    // Update is called once per frame
-    void Update()
-    {
+    [SerializeField] private UIQuantity quantityElement;
 
+    public System.Action OnDrinkBought;
+
+    private void Start()
+    {
+        quantityElement.AssignElement();
+    }
+
+    public DrinkSO GetDrink()
+    {
+        return drinkAsociada;
     }
 
     public void AsignarValoresDrink(DrinkSO bebida)
@@ -45,6 +53,7 @@ public class PanelDrink : MonoBehaviour
         {
             Inventory.instance.AddDrink(drinkAsociada);
             GameManager.instance.AddCoins(drinkAsociada.cost * -1);
+            OnDrinkBought?.Invoke();
         }
     }
 

@@ -33,6 +33,7 @@ public class Inventory : MonoBehaviour
             rarity = r;
         }
     }
+
     [SerializeField] private TextMeshProUGUI drinktext;
 
     [SerializeField] private int foodcount;
@@ -235,5 +236,28 @@ public class Inventory : MonoBehaviour
     private void Awake()
     {
         instance = this;
+    }
+
+    public string GetQuantity(string elementName, bool isFood, bool isDrink)
+    {
+        if(isDrink)
+        {
+            foreach (inventoryDrink drink in drinklist)
+            {
+                if (drink.name_drink == elementName)
+                    return drink.amount.ToString();
+            }
+        }
+
+        if (isFood)
+        {
+            foreach (inventoryFood food in foodlist)
+            {
+                if (food.name_food == elementName)
+                    return food.amount.ToString();
+            }
+        }
+
+        return "0";
     }
 }
