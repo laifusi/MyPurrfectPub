@@ -3851,7 +3851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43137258, g: 0.10980393, b: 0.10588236, a: 1}
+  m_Color: {r: 0.78823537, g: 0.78823537, b: 0.78823537, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5459,7 +5459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12941177, g: 0.1254902, b: 0.12941177, a: 1}
+  m_Color: {r: 0.78823537, g: 0.78823537, b: 0.78823537, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5972,6 +5972,7 @@ MonoBehaviour:
   - {fileID: 855014096}
   - {fileID: 1737351943}
   - {fileID: 1419302256}
+  PanelFinal: {fileID: 5884237835401309443, guid: 67cfea0a72419024ea2f43e288f18191, type: 3}
   totalCapacityDrink: 0
   totalCapacityFood: 0
   prestigelevel: 0
@@ -8381,8 +8382,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291414473
-  m_fontColor: {r: 0.78823537, g: 0.78823537, b: 0.78823537, a: 1}
+    rgba: 4280360993
+  m_fontColor: {r: 0.12941177, g: 0.1254902, b: 0.12941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8592,8 +8593,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289375658
-  m_fontColor: {r: 0.6666667, g: 0.6784314, b: 0.6666667, a: 1}
+    rgba: 4280360993
+  m_fontColor: {r: 0.12941177, g: 0.1254902, b: 0.12941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

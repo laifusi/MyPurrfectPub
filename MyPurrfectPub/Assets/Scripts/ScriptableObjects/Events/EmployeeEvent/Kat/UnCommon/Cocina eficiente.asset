@@ -18,7 +18,7 @@ MonoBehaviour:
     comida es digno de un restaurante prestigioso.\n\nEsta noche ha conseguido aumentar
     considerablemente su capacidad de cocina, pudiendo atender muchos m\xE1s pedidos
     que de costumbre.\n\n(Ganas 10 puntos de capacidad de comida)"
-  image: {fileID: 0}
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100

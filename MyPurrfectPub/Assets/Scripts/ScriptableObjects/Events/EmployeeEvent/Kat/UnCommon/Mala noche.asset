@@ -18,7 +18,7 @@ MonoBehaviour:
     los platos r\xE1pidamente, unos cuantos han acabados rotos en el suelo. \n\nNo
     han causado ning\xFAn da\xF1o, pero tendr\xE1n que ser remplazados.\n\n(Pierdes
     10 MICHIMONEDAS)"
-  image: {fileID: 0}
+  image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100

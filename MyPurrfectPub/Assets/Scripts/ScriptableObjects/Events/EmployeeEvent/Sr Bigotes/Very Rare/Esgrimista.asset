@@ -23,6 +23,7 @@ MonoBehaviour:
     clientes comienzan a vitorearlo. La fama de nuestro heroe puede venirle muy bien
     al local. Y tambi\xE9n las generosas propinas que est\xE1n dejando hoy los clientes.\n\n(Ganas
     20 puntos de PURRSTIGIO\nGanas 25 MICHIMONEDAS)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100

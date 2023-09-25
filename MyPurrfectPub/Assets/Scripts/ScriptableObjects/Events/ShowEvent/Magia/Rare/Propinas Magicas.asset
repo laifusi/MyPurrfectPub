@@ -19,7 +19,7 @@ MonoBehaviour:
     del mago. Por lo que sus donativos hacia el local aumentan con el objetivo de
     que lo vuelvas a traer.\n\n(Ganas 5 clientes\nGanas 15 MICHIMONEDAS\n Ganas 10
     puntos de PURRSTIGIO)"
-  image: {fileID: 0}
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100

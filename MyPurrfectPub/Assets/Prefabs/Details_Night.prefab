@@ -2272,7 +2272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43137258, g: 0.10980393, b: 0.10980393, a: 1}
+  m_Color: {r: 0.78823537, g: 0.79215693, b: 0.78823537, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4088,8 +4088,10 @@ MonoBehaviour:
   ganancias_eventos_prestige: {fileID: 1547827987881732801}
   ganancias_totales_coins: {fileID: 1374556969900639587}
   ganancias_totales_prestige: {fileID: 264883834571093538}
-  recursos_totales_coins: {fileID: 5878081641450928914}
   recursos_totales_prestige: {fileID: 8169806321190872400}
+  recursos_totales_coins: {fileID: 5878081641450928914}
+  i_recursos_totales_coins: 0
+  i_recursos_totales_prestige: 0
   buttonClip: {fileID: 8300000, guid: 6bbed5c7739554a4d8fc268973c41762, type: 3}
 --- !u!1 &6741672909894716721
 GameObject:
@@ -4166,8 +4168,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289375658
-  m_fontColor: {r: 0.6666667, g: 0.6784314, b: 0.6666667, a: 1}
+    rgba: 4280427042
+  m_fontColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

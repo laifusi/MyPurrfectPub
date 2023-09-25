@@ -21,7 +21,7 @@ MonoBehaviour:
     del hijo.\n\nEl local queda en silencio mientras escuchan la acalorada discusi\xF3n.
     Puedes ver los rostros de extra\xF1eza y decepci\xF3n en los clientes. Esto pdr\xEDa
     pasar factura.\n\n(Pierdes 30 puntos de PURRSTIGIO)"
-  image: {fileID: 0}
+  image: {fileID: -1212568836, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100
