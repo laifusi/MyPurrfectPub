@@ -24,6 +24,17 @@ public class PanelNightShow : MonoBehaviour
 
     [SerializeField] private GameObject remove;
 
+    [SerializeField] private AudioClip buyClip;
+    [SerializeField] private AudioClip cantBuyClip;
+    [SerializeField] private AudioClip removeClip;
+
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -56,6 +67,11 @@ public class PanelNightShow : MonoBehaviour
         {
             Inventory.instance.AddShow(nshowAsociado);
             GameManager.instance.AddCoins(nshowAsociado.cost * -1);
+            audioSource.PlayOneShot(buyClip);
+        }
+        else
+        {
+            audioSource.PlayOneShot(cantBuyClip);
         }
     }
 
@@ -63,6 +79,7 @@ public class PanelNightShow : MonoBehaviour
     {
         Inventory.instance.RemoveShow();
         GameManager.instance.AddCoins(nshowAsociado.cost);
+        audioSource.PlayOneShot(removeClip);
     }
 
     public void Details()

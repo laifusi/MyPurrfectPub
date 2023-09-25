@@ -18,6 +18,8 @@ public class AsignarValoresEvent : MonoBehaviour
 
     [SerializeField] private Button buttonPrefab;
 
+    [SerializeField] private AudioClip buttonClip;
+
     private GameManager gameManager;
 
     public void AssignEvent(EventSO newEvent, GameManager gameManager)
@@ -72,6 +74,7 @@ public class AsignarValoresEvent : MonoBehaviour
         GameManager.instance.AddListCalculationCoins(option.michicoins);
         GameManager.instance.AddListCalculationPrestiege(option.purrstige);
         GameManager.instance.DoNightCalculations();
+        GameManager.instance.PlaySound(buttonClip);
         //gameManager.AddCoins(option.michicoins);
         //gameManager.AddPrestige(option.purrstige);
         Destroy(gameObject);

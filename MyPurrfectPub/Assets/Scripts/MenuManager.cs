@@ -5,14 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] private AudioClip buttonClip;
+    [SerializeField] private Animator sceneFadeOutAnimator;
+
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        StartCoroutine(LoadScene(1, buttonClip));
+    }
+
+    private IEnumerator LoadScene(int sceneId, AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+        if(sceneFadeOutAnimator != null)
+            sceneFadeOutAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(0.25f);
+        SceneManager.LoadScene(sceneId);
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);
+        StartCoroutine(LoadScene(0, buttonClip));
     }
 
     public void ExitGame()
