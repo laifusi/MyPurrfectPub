@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Dos clientes van a comienzan una pelea en el bar. La cosa llega a
-    las manos, pero antes de que nadie se haga da\xF1o, aparece Brutus.\n\nSu presencia
+  event_text: "Dos clientes van a comenzar una pelea en el bar. La cosa llega a las
+    manos, pero antes de que nadie se haga da\xF1o, aparece Brutus.\n\nSu presencia
     resulta intimidante para todos los felinos, en especial a los dos causantes del
     problema.\n\nSin decir nada, Brutus se\xF1ala la puerta haciendo que los dos
     clientes abandonen el local.\n\n(Ganas 5 puntos de PURRSTIGIO)"
-  image: {fileID: 0}
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0
   max_purrstige: 100

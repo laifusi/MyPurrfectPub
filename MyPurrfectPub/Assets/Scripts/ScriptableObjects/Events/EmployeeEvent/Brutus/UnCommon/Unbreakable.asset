@@ -23,7 +23,7 @@ MonoBehaviour:
     el cliente deja m\xE1s dinero de lo que deber\xEDa en el mostrador, pero no te
     da tiempo a decirle nada, pues ha salido corriendo hacia la salida.\n\nInterpr\xE9talo
     como una propina extra por las molestias.\n\n(Ganas 50 MICHIMONEDAS)"
-  image: {fileID: 0}
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100

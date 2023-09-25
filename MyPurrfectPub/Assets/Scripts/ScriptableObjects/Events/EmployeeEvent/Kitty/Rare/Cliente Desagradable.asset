@@ -20,7 +20,7 @@ MonoBehaviour:
     del cliente, quien abandona el local indignado.\n\nPuede que se lo mereciese,
     pero este comportamiento no deja en buen lugar al local.\n\n(Pierdes 10 puntos
     de PURRSTIGIO)"
-  image: {fileID: 0}
+  image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100

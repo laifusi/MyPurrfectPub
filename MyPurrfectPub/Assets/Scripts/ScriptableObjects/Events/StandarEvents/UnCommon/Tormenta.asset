@@ -18,7 +18,7 @@ MonoBehaviour:
     quedarse en casa esta noche.\n\nEsto afectar\xE1 a la cantidad de clientes que
     tendr\xE1s esta noche.\n\n(6 gatos han decidido no acudir a tu local esta noche)"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
-  rarity: 0
+  rarity: 1
   min_purrstige: 0
   max_purrstige: 100
   dependence: {fileID: 0}
