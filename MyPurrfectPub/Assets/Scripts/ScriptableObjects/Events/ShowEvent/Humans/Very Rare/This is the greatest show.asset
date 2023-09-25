@@ -19,7 +19,7 @@ MonoBehaviour:
     dejar de aplaudir.\n\nSin duda ha sido el espect\xE1culo definitivo. Los cr\xEDticos
     hablaran de ello y tu local no quedar\xE1 desapercibido.\n\n(Ganas 35 puntos
     de PURRSTIGIO\nGanas 100 MICHIMONEDAS)"
-  image: {fileID: 0}
+  image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100

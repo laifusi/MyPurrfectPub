@@ -19,6 +19,7 @@ MonoBehaviour:
     comience responsabilizarse, por lo que te pide aceptarlo como ayudante de cocina
     por esta noche.\n\nEl joven felino resulta ser alguien bastante capaz, facilitando
     el trabajo en la cocina.\n\n(Ganas 15 puntos en capacidad de cocina)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100

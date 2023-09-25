@@ -19,6 +19,7 @@ MonoBehaviour:
     palabras.\n\nEsta clase de comentarios son los que el p\xFAblico recuerda para
     bien. Y tambi\xE9n son un buen aliciente para regresar a local como el tuyo.\n\n(Ganas
     15 puntos de PURRSTIGIO)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100

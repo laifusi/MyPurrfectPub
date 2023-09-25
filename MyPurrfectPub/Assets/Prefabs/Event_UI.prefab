@@ -686,6 +686,10 @@ MonoBehaviour:
   panel: {fileID: 6208623395753161444}
   buttonPrefab: {fileID: 946044285702499270, guid: 444ef2d19f9201b448c31bcf0c9449d2, type: 3}
   buttonClip: {fileID: 8300000, guid: 6bbed5c7739554a4d8fc268973c41762, type: 3}
+  commonColor: {r: 0.27450982, g: 0.6509804, b: 0.29411766, a: 1}
+  uncommonColor: {r: 0.46274513, g: 0.79215693, b: 0.73333335, a: 1}
+  rareColor: {r: 0.7019608, g: 0.4666667, b: 0.93725497, a: 1}
+  veryRareColor: {r: 0.9686275, g: 0.47058827, b: 0.12941177, a: 1}
 --- !u!1 &6664653349242695690
 GameObject:
   m_ObjectHideFlags: 0

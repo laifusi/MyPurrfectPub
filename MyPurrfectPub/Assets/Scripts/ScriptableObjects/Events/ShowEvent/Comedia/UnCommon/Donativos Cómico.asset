@@ -19,6 +19,7 @@ MonoBehaviour:
     te das cuentas, el bote de propinas est\xE1 m\xE1s lleno que de costumbre. Lo
     suficiente como para compensar los gastos de la contrataci\xF3n del neko-c\xF3mico.\n\n(Ganas
     35 MICHIMONEDAS)"
+  image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100

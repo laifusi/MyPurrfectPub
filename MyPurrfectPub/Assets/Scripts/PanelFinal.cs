@@ -17,22 +17,14 @@ public class PanelFinal : MonoBehaviour
     [SerializeField] private Sprite imagen_victoria;
 
     [SerializeField] private Sprite imagen_derrota;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private Color victoryColor;
+    [SerializeField] private Color failureColor;
 
     public void Ganar()
     {
         titulo.text = "FELICIDADES POR TU VICTORIA";
-        titulo.color = Color.cyan;
+        titulo.color = victoryColor;
         foreach (Image im in images)
         {
             im.sprite = imagen_victoria;
@@ -43,7 +35,7 @@ public class PanelFinal : MonoBehaviour
     public void Perder()
     {
         titulo.text = "DERROTA";
-        titulo.color = Color.red;
+        titulo.color = failureColor;
         foreach (Image im in images)
         {
             im.sprite = imagen_derrota;

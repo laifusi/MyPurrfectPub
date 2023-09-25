@@ -22,6 +22,7 @@ MonoBehaviour:
     del local. \n\nTodos los clientes se quedan en silencio y algunos han huido durante
     el combate. Actos como estos podr\xEDan traer mala fama al lugar.\n\n(Pierdes
     15 puntos de PURRSTIGIO)"
+  image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100
