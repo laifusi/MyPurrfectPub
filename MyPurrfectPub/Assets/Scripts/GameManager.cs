@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AdministrarNoche adminNightPrefab;
     [SerializeField] private GameObject[] managementPanels;
     [SerializeField] private PanelFinal PanelFinal;
+    [SerializeField] private PanelProbabilidades pptext;
 
     private AudioSource audioSource;
 
@@ -167,6 +168,11 @@ public class GameManager : MonoBehaviour
         OnDrinkCapacityChange?.Invoke(totalCapacityDrink);
     }
 
+    public void UpdateProbabilidadesText()
+    {
+        pptext.UpdateText(prestigelevel);
+    }
+
     public void AddCapacityFood(int cap)
     {
         totalCapacityFood += cap;
@@ -228,6 +234,8 @@ public class GameManager : MonoBehaviour
             prestigelevel = 4;
             actualRarityRate = (rarityRate[])rarityRatesLevel4.Clone();
         }
+
+        UpdateProbabilidadesText();
     }
 
     public void AddListCalculationCoins(int new_calculation)
