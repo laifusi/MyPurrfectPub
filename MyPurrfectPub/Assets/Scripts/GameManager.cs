@@ -441,7 +441,6 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log(selectedEvent.event_text);
                         newEvent = Instantiate(eventPrefab);
                         newEvent.AssignEvent(selectedEvent, this);
                         createdEvents++;
