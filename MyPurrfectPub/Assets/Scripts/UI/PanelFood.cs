@@ -22,10 +22,18 @@ public class PanelFood : MonoBehaviour
 
     [SerializeField] private Image Color_rarity;
 
-    // Update is called once per frame
-    void Update()
-    {
+    [SerializeField] private UIQuantity quantityElement;
 
+    public System.Action OnFoodBought;
+
+    private void Start()
+    {
+        quantityElement.AssignElement();
+    }
+
+    public FoodSO GetFood()
+    {
+        return foodAsociada;
     }
 
     public void AsignarValoresFood(FoodSO comida)
@@ -45,6 +53,7 @@ public class PanelFood : MonoBehaviour
         {
             Inventory.instance.AddFood(foodAsociada);
             GameManager.instance.AddCoins(foodAsociada.cost * -1);
+            OnFoodBought?.Invoke();
         }
     }
 
