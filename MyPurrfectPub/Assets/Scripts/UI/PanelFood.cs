@@ -24,10 +24,16 @@ public class PanelFood : MonoBehaviour
 
     [SerializeField] private UIQuantity quantityElement;
 
+    [SerializeField] private AudioClip buyClip;
+    [SerializeField] private AudioClip cantBuyClip;
+
     public System.Action OnFoodBought;
+
+    private AudioSource audioSource;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         quantityElement.AssignElement();
     }
 
@@ -54,6 +60,11 @@ public class PanelFood : MonoBehaviour
             Inventory.instance.AddFood(foodAsociada);
             GameManager.instance.AddCoins(foodAsociada.cost * -1);
             OnFoodBought?.Invoke();
+            audioSource.PlayOneShot(buyClip);
+        }
+        else
+        {
+            audioSource.PlayOneShot(cantBuyClip);
         }
     }
 

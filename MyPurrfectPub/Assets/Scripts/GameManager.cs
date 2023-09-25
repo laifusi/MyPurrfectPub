@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AdministrarNoche adminNightPrefab;
     [SerializeField] private GameObject[] managementPanels;
 
+    private AudioSource audioSource;
+
     private int coins;
     private int prestige;
     private int actualCapacityDrink;
@@ -59,6 +61,7 @@ public class GameManager : MonoBehaviour
     private int consumedFoodPrestige;
     private int costEmployeeCoins;
     private int costEmployeePrestige;
+
     public int costEventCoins;
     public int costEventPrestige;
 
@@ -92,6 +95,8 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         foreach(GameObject panel in managementPanels)
         {
             panel.SetActive(true);
@@ -839,5 +844,10 @@ public class GameManager : MonoBehaviour
         costEventPrestige = 0;
         calculationsPrestige.Clear();
         calculationsCoins.Clear();
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }

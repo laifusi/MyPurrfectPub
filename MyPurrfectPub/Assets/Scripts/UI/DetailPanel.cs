@@ -7,18 +7,7 @@ using UnityEngine.UI;
 public class DetailPanel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI detailsText;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private AudioClip buttonClip;
 
     public void OpenDetails(string details)
     {
@@ -27,6 +16,7 @@ public class DetailPanel : MonoBehaviour
 
     public void CloseDetails()
     {
+        GameManager.instance.PlaySound(buttonClip);
         Destroy(this.gameObject);
     }
 
