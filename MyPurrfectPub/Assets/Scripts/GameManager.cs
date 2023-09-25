@@ -113,6 +113,7 @@ public class GameManager : MonoBehaviour
         totalCapacityDrink = 0;
         totalCapacityFood = 0;
         prestigelevel = 1;
+        UpdateProbabilidadesText();
         actualRarityRate = (rarityRate[])rarityRatesLevel1.Clone();
 
         yield return null;
