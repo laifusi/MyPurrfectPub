@@ -9,7 +9,7 @@ public class FoodSO : ScriptableObject
     [SerializeField] public int cost;
     [SerializeField] public Sprite image;
     [SerializeField] public int prestige;
-    [TextArea(2, 2)]
+    [TextArea(2, 20)]
     [SerializeField] public string description;
     [SerializeField] public string rarity;
     [SerializeField] public int minprobability;

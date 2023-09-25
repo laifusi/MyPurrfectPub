@@ -19,7 +19,8 @@ MonoBehaviour:
     cuando el miauravilloso Nekodini consigui\xF3 adivinar la carta de su voluntario
     y mostrar su valor mediante punteros l\xE1seres en la pared.\n\nLa gente est\xE1
     encantada con el mago y no puede esperar a ver la pr\xF3xima actuaci\xF3n.\n\n(Ganas
-    10 puntos de PURRSTIGIO)"
+    5 puntos de PURRSTIGIO)"
+  image: {fileID: 0}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100
@@ -29,7 +30,7 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: 10
+    purrstige: 5
     michicoins: 0
     capacity_drink: 0
     capacity_food: 0

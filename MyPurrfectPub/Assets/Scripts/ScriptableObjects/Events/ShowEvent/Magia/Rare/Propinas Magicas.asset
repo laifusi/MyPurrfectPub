@@ -14,13 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Parece que el neko-c\xF3mico contratado ha decidido traerse a un grupo
-    de amigos, a los cuales incluye con elocuencia en sus bromas y chascarrillos.\n\nEsto
-    hace que la actuaci\xF3n se sienta m\xE1s cencana e interactiva con el p\xFAblico,
-    quien disfruta de sobremanera con las interacciones del neko-c\xF3mico y sus
-    compa\xF1eros.\n\nEl grupo de amigos expresa su gratitud hacia ti por dejar actuar
-    a su amigo ofreci\xE9ndote un generoso donativo.\n\n(Ganas 5 clientes\nGanas
-    15 MICHIMONEDAS\n Ganas 10 puntos de PURRSTIGIO)"
+  event_text: "La gente aplaude ante el final del truco, en el cual Nekodini ha realizado
+    un n\xFAmero de escapismo.\n\nLa gente impactada, ansia claman por m\xE1s n\xFAmeros
+    del mago. Por lo que sus donativos hacia el local aumentan con el objetivo de
+    que lo vuelvas a traer.\n\n(Ganas 5 clientes\nGanas 15 MICHIMONEDAS\n Ganas 10
+    puntos de PURRSTIGIO)"
+  image: {fileID: 0}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100
@@ -30,8 +29,8 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: 10
-    michicoins: 10
+    purrstige: 0
+    michicoins: 45
     capacity_drink: 0
     capacity_food: 0
     new_clients: 5

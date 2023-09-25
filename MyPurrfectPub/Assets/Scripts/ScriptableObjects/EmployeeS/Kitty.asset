@@ -14,9 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Kitty
   prestigePerTurn: 5
-  costPerTurn: 15
+  costPerTurn: 20
   rol: Coctelera
-  capacity: 15
-  description: 
+  capacity: 20
+  description: "KITTY\n\nUna joven gatita risue\xF1a que parece disfrutar con su
+    trabajo.\n\nParece tener un don natural para tratar con la gente y tiene algo
+    de experiencia previa en un bar cercano.\n\nSu carisma natural la han hecho ser
+    algo conocida en la zona.\n\nKitty solo podr\xE1 atender a 20 clientes por noche,
+    pero solo podr\xE1 servir bebidas."
   bought: 0
   image: {fileID: 1212369534, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
+  eventlist:
+  - {fileID: 11400000, guid: b1c0f1f356ba6384c96be3c88ad1fe2f, type: 2}
+  - {fileID: 11400000, guid: 615cc7c9226dcdc47a11a99d69484cba, type: 2}
+  - {fileID: 11400000, guid: c63d67d6cf8ab7c4881244d1c859b93e, type: 2}
+  - {fileID: 11400000, guid: fb8ca18350679a541809b6ab24368fd0, type: 2}
+  - {fileID: 11400000, guid: 7c9c9aea433dc664990995b37e7eca22, type: 2}
+  - {fileID: 11400000, guid: 6b7b3631832c91a47835b394372df96c, type: 2}
+  - {fileID: 11400000, guid: 117e32f4f853cce46bb62f6df31415eb, type: 2}

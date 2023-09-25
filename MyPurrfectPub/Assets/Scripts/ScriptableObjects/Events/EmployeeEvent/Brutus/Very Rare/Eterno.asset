@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
+  m_Name: Eterno
+  m_EditorClassIdentifier: 
+  id: 0
+  event_tittle: 
+  event_text: "Parece que unos Meowligans han entrado en el local a ver el partido,
+    molestando a todos los presentes.\n\nPoco a poco, el alcohol les va subiendo
+    y finalmente acaban montandose su propia fiesta y causando desperfectos.\n\nPero
+    cuando todo parec\xEDa perdido, un enorme ladrido silencia la estancia.\n\nBrutus
+    aparece en la habitaci\xF3n, en una pose extra\xF1a pero que de alguna forma
+    consigue ser baronil, acentuando y definiendo sus cuerpo musculoso.\n\nLos Meowligans
+    parecen desconcertados, pero deciden atacarle. Pero Brutus los derrota a los
+    Meowligans sin mucho esfuerzo y ganandose el respeto de los clientes. La denuncia
+    que haces a esos cretinos te servir\xE1 para pagar los desperfectos y para ganar
+    un poco m\xE1s de beneficios.\n\n(Ganas 10 puntos de PURRSTIGIO\nGanas 100 MICHIMONEDAS)"
+  image: {fileID: 0}
+  rarity: 3
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 0
+    purrstige: 10
+    michicoins: 100
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 0

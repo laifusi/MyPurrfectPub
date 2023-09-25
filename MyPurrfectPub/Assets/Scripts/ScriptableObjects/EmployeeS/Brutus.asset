@@ -13,9 +13,19 @@ MonoBehaviour:
   m_Name: Brutus
   m_EditorClassIdentifier: 
   name: Brutus
-  prestigePerTurn: 5
-  costPerTurn: 50
+  prestigePerTurn: 10
+  costPerTurn: 20
   rol: Guardia
-  description: 
+  capacity: 0
+  description: "BRUTUS\n\nPuede que los gatos y los perros no se lleven. Pero hay
+    gatos que no soportan a otros gatos.\n\nEs por eso que tener a un pedazo de perro
+    guardian como Brutus, leal e implacable, puede ser de utilidad pese a lo que
+    cobra.\n\nBrutus no puede servir bebidas ni comidas. Pero podr\xE1 parar algunas
+    peleas o inconvenientes que surjan."
   bought: 0
   image: {fileID: -699907576, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
+  eventlist:
+  - {fileID: 11400000, guid: 13df79c5b743d694bbe9e0bb429a8e68, type: 2}
+  - {fileID: 11400000, guid: 9133ff8ed303372489400de43b20ef34, type: 2}
+  - {fileID: 11400000, guid: b8f0b973730f5b144a90a928a321eff5, type: 2}
+  - {fileID: 11400000, guid: 5ae9b3244be7d4b4c86162e4f77fae72, type: 2}

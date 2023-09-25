@@ -15,8 +15,10 @@ MonoBehaviour:
   name: Anchoa rellena
   cost: 10
   image: {fileID: -108851696, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
-  prestige: 0
-  description: 
+  prestige: 8
+  description: "ANCHOA RELLENA\n\nUn alimento que muchos querr\xEDan probar, pero
+    pocos se atreven. Es posible que el precio sea uno de los motivos. Pero sin duda
+    un plato que gustar\xE1 a los que buscan algo poco com\xFAn."
   rarity: Rare
   minprobability: 1
   maxprobability: 100

@@ -16,9 +16,13 @@ MonoBehaviour:
   prestigePerTurn: 0
   costPerTurn: 10
   rol: Coctelero
-  capacity: 10
-  description: 
-  bought: 0
+  capacity: 15
+  description: "SIMBA\n\nUn joven gatito que est\xE1 dando sus primeros pasos en
+    el mundo laboral.\n\nPuede que su inexperiencia cause algunos problemas, pero
+    su impetu y juventud puede hacer que conecte mejor con los clientes. Y eso siempre
+    puede traer beneficios.\n\nSimba solo podr\xE1 atender a 15 clientes por noche,
+    pero solo podr\xE1 servir bebidas."
+  bought: 1
   image: {fileID: 2005082265, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
   eventlist:
   - {fileID: 11400000, guid: 51a568c3f79393c4792dcd949fc8a79d, type: 2}

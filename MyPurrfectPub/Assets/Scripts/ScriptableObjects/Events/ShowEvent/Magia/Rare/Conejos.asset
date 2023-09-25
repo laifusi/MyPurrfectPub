@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "La noche esta yendo bien. La gente se r\xEDe, el alcohol fluye...\n\nSin
-    embargo, las risas cesan cuando uno de los clientes se levanta y abofetea al
-    neko-c\xF3mico delante de todos.\n\nParece que el neko-c\xF3mico ha dicho un
-    comentario desafortunado. Pero eso no es motivo para tener un comportamiento
-    tan vulgar.\n\nEl cliente es guiado hacia la salida y el espect\xE1culo es retomado,
-    pero esto puede desprestigiar el buen nombre de tu local.\n\n(Pierdes 20 puntos
-    de PURRSTIGIO) "
+  event_text: "La noche esta yendo bien. La gente est\xE1 espectante por el pr\xF3ximo
+    truco.\n\nNekodini saca un conejo de la chistera y todo el mundo comienza a aplaudir.\n\nPara
+    sorpresa de todos, saca otro, y otro, y otro, y otro... Incluso Nekodini parece
+    tan sorprendido como el p\xFAblico por esto.\n\nAl cabo de unos instantes, el
+    local est\xE1 repleto de conejos que saltan entre el p\xFAblico. Los clientes
+    aplauden ante tal extraordinario n\xFAmero.\n\nSin embargo, el problema viene
+    cuando toca limpiar. Debido a la cantidad de conejos que hab\xEDa, la suciedad
+    es inmensa. Habr\xE1 que contratar a un equipo de limpieza para que se ocupe
+    este problema.\n\n(Pierdes 20 MICHIMONEDAS) "
+  image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
   max_purrstige: 100
@@ -30,8 +33,8 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: -15
-    michicoins: 0
+    purrstige: 0
+    michicoins: -20
     capacity_drink: 0
     capacity_food: 0
     new_clients: 0

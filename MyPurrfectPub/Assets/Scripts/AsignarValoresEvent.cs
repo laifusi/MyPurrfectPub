@@ -25,7 +25,25 @@ public class AsignarValoresEvent : MonoBehaviour
         evento = newEvent;
         this.gameManager = gameManager;
 
-        titulo.text = evento.event_tittle;
+        switch(evento.rarity)
+        {
+            case EventSO.Rarity.Common:
+                titulo.color = new Color32(70, 166, 75, 255);
+                titulo.text = "Evento Común";
+                break;
+            case EventSO.Rarity.Uncommon:
+                titulo.color = new Color32(118, 202, 187, 255);
+                titulo.text = "Evento Poco Común";
+                break;
+            case EventSO.Rarity.Rare:
+                titulo.color = new Color32(255, 0, 255, 255);
+                titulo.text = "Evento Raro";
+                break;
+            case EventSO.Rarity.VeryRare:
+                titulo.color = new Color32(255, 158, 0, 255);
+                titulo.text = "Evento Muy Raro";
+                break;
+        }
         texto.text = evento.event_text;
         
         foreach(Image im in images)

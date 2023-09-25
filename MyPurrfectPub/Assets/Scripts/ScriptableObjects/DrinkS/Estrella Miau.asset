@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Estrella Miau
   m_EditorClassIdentifier: 
   name: Estrella Miau
-  cost: 5
+  cost: 3
   image: {fileID: -1536250138, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
-  prestige: 3
-  description: prueba
+  prestige: 1
+  description: 'ESTRELLA MIAU
+
+
+    El alcohol por excelencia de los gatos. En los
+    locales medios es bastante popular.'
   rarity: Uncommon
   minprobability: 1
   maxprobability: 100

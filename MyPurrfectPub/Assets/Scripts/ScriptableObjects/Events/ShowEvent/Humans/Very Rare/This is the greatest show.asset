@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
-  m_Name: Comico de renombre
+  m_Name: This is the greatest show
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Para sorpresa de todos, el c\xF3mico invitado resulta ser el famoso
-    Michi Miaurez. Su espect\xE1culo comienza lleno de ocurrencias y chascarrillos
-    cargados de humor.\n\nLas risas y vitoreos no cesan durante toda la noche, haciendo
-    de este un espect\xE1culo inolvidable.\n\nAl finalizar la actuaci\xF3n, Michi
-    se hace una foto contigo para que la cuelgues en la pared.\n\nMientras la cuelgas,
-    puedes ver como el bote de donativos esta a rebosar.\n\n(Ganas 25 puntos de PURRSTIGIO\nGanas
-    50 MICHIMONEDAS)"
+  event_text: "Lo de esta noche ha sido sobervio. \n\nNunca hab\xEDas presenciado
+    un espect\xE1culo como este. Los mininos est\xE1n fascinados y t\xFA no puedes
+    dejar de aplaudir.\n\nSin duda ha sido el espect\xE1culo definitivo. Los cr\xEDticos
+    hablaran de ello y tu local no quedar\xE1 desapercibido.\n\n(Ganas 35 puntos
+    de PURRSTIGIO\nGanas 100 MICHIMONEDAS)"
+  image: {fileID: 0}
   rarity: 3
   min_purrstige: 0
   max_purrstige: 100
@@ -30,8 +29,8 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: 25
-    michicoins: 50
+    purrstige: 35
+    michicoins: 100
     capacity_drink: 0
     capacity_food: 0
     new_clients: 0

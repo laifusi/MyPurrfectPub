@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Noche de Nyaraoke
   prestige: 5
-  cost: 12
+  cost: 7
+  description: "NOCHE DE NYARAOKE\n\nUna noche de m\xFAsica es perfecta para que
+    los clientes se desmelenen un poco y el ambiente se anime."
   image: {fileID: 1604158148, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   eventlist:
   - {fileID: 11400000, guid: 4fb523faec852b14097e99afc82e8d9d, type: 2}
@@ -25,5 +27,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0b38c4ab57aacaa469e8d769adfe16fd, type: 2}
   - {fileID: 11400000, guid: d9c12fed896759e47a77feb6060ab435, type: 2}
   - {fileID: 11400000, guid: 6715b40194a01b346a964de93c29e8a6, type: 2}
-  description: "Una noche de m\xFAsica es perfecta para que los clientes se desmelenen
-    un poco y el ambiente se anime."

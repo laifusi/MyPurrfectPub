@@ -19,6 +19,7 @@ MonoBehaviour:
     truco ha quedado expuesto y la gente ha estallado en carcajadas.\n\nEl espect\xE1culo
     ha continuado sin ning\xFAn percance, pero esto puede afectar a la reputaci\xF3n
     de nuestra calidad.\n\n(Pierdes 30 puntos de PURRSTIGIO)"
+  image: {fileID: 0}
   rarity: 1
   min_purrstige: 0
   max_purrstige: 100
@@ -28,7 +29,7 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: -30
+    purrstige: -20
     michicoins: 0
     capacity_drink: 0
     capacity_food: 0

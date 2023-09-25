@@ -10,6 +10,7 @@ public class EmployeeSO : ScriptableObject
     [SerializeField] public int costPerTurn;
     [SerializeField] public string rol;
     [SerializeField] public int capacity;
+    [TextArea(2, 20)]
     [SerializeField] public string description;
     [SerializeField] public bool bought;
     [SerializeField] public Sprite image;

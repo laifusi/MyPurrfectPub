@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Inventory inventory;
     [SerializeField] private AdministrarNoche adminNightPrefab;
     [SerializeField] private GameObject[] managementPanels;
+    [SerializeField] private PanelFinal PanelFinal;
 
     private int coins;
     private int prestige;
@@ -832,6 +833,8 @@ public class GameManager : MonoBehaviour
             AddCoins(coinsObtained);
             AddPrestige(prestigeObtained);
 
+            panelAdmin.GetRecursosTotales(coins, prestige);
+
             inventory.RemoveShow();
 
             UpdatePrestigeLevel();
@@ -855,5 +858,17 @@ public class GameManager : MonoBehaviour
         costEventPrestige = 0;
         calculationsPrestige.Clear();
         calculationsCoins.Clear();
+    }
+
+    public void Ganar()
+    {
+        PanelFinal panelFinal = Instantiate(PanelFinal);
+        panelFinal.Ganar();
+    }
+
+    public void Perder()
+    {
+        PanelFinal panelFinal = Instantiate(PanelFinal);
+        panelFinal.Perder();
     }
 }

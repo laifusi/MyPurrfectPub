@@ -9,15 +9,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1185348a24b03b04da903b6d05f524f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
   m_Name: "Actuaci\xF3n Impoluta"
   m_EditorClassIdentifier: 
-  name: 
-  prestigePerTurn: 0
-  costPerTurn: 0
-  rol: 
-  capacity: 0
-  description: 
-  bought: 0
-  image: {fileID: 0}
-  eventlist: []
+  id: 0
+  event_tittle: 
+  event_text: "Dificilmente has presenciado alguna vez un n\xFAmero como el que has
+    visto hoy.\n\nLa gente clama por m\xE1s, pero el show ha terminado.\n\nDejarles
+    con ganas de m\xE1s es un perfecto aliciente para que vuelvan.\n\n(Ganas 10 puntos
+    de PURRSTIGIO)"
+  image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
+  rarity: 2
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 0
+    purrstige: 10
+    michicoins: 0
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 0

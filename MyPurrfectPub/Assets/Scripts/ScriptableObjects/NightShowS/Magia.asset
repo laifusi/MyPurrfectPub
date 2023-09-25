@@ -13,8 +13,19 @@ MonoBehaviour:
   m_Name: Magia
   m_EditorClassIdentifier: 
   name: El Miauravilloso Nekodini
-  description: 
-  image: {fileID: 360808819, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
-  cost: 37
   prestige: 15
-  eventlist: []
+  cost: 20
+  description: "EL MIAURAVILLOSO NEKODINI\n\nEl gran Nekodini es conocido por sus
+    trucos de prestidigitaci\xF3n, los cuales maravillan a todo el mundo.\n\nUna
+    noche m\xE1gica para los clientes puede ir acompa\xF1ada de grandes beneficios."
+  image: {fileID: 360808819, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
+  eventlist:
+  - {fileID: 11400000, guid: 0edb70a666edc2c4fa866390882e84a8, type: 2}
+  - {fileID: 11400000, guid: 981cd31d562196944a77ac320c39d847, type: 2}
+  - {fileID: 11400000, guid: 4fbbac215aed03542b5a9afb736235fa, type: 2}
+  - {fileID: 11400000, guid: d8cd56063b3f5dd4c8abb5d9cfa9dbfc, type: 2}
+  - {fileID: 11400000, guid: d8156234c46b1e14dbd9f32961b434f5, type: 2}
+  - {fileID: 11400000, guid: fed5885cd84e03249b065272160f5723, type: 2}
+  - {fileID: 11400000, guid: 9827ea8e862d106408c2d013e6d328d2, type: 2}
+  - {fileID: 11400000, guid: 51334f91790e88b4c858e904375ee243, type: 2}
+  - {fileID: 11400000, guid: 1158ec42aa8167b49975c6dd3857832e, type: 2}

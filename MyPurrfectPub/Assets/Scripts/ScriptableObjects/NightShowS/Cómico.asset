@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Neko-c\xF3mico invitado"
   prestige: 10
-  cost: 25
-  description: 
+  cost: 12
+  description: "NEKO-C\xD3MICO INVITADO\n\nLas risas siempre son bienvenidas. Ayudan
+    a que los gatos se olviden de sus preocupaciones.\n\nAsi que, \xBFPor qu\xE9
+    no traerles un espectaculo de comedia? Hay muchos neko-c\xF3micos que estar\xEDan
+    dispuestos a actuar en tu local por un m\xF3dico precio.\n\nAhora bien, el humor
+    depende de cada gato. Y no todos los chistes son recibidos del mismo modo."
   image: {fileID: 1394762516, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   eventlist:
   - {fileID: 11400000, guid: cee641271f7790849b07688ff82feb80, type: 2}
