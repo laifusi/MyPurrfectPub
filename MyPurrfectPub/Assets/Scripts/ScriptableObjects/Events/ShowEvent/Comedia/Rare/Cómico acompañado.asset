@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc91336c8bd824f82ed37e5e767e76, type: 3}
+  m_Name: "C\xF3mico acompa\xF1ado"
+  m_EditorClassIdentifier: 
+  id: 0
+  event_tittle: 
+  event_text: "Parece que el neko-c\xF3mico contratado ha decidido traerse a un grupo
+    de amigos, a los cuales incluye con elocuencia en sus bromas y chascarrillos.\n\nEsto
+    hace que la actuaci\xF3n se sienta m\xE1s cencana e interactiva con el p\xFAblico,
+    quien disfruta de sobremanera con las interacciones del neko-c\xF3mico y sus
+    compa\xF1eros.\n\nEl grupo de amigos expresa su gratitud hacia ti por dejar actuar
+    a su amigo ofreci\xE9ndote un generoso donativo.\n\n(Ganas 5 clientes\nGanas
+    15 MICHIMONEDAS\n Ganas 10 puntos de PURRSTIGIO)"
+  rarity: 2
+  min_purrstige: 0
+  max_purrstige: 100
+  dependence: {fileID: 0}
+  optionDependecyId: 0
+  options:
+  - id_option: 0
+    text_option: Siguiente
+    selected_option: 0
+    purrstige: 10
+    michicoins: 10
+    capacity_drink: 0
+    capacity_food: 0
+    new_clients: 5

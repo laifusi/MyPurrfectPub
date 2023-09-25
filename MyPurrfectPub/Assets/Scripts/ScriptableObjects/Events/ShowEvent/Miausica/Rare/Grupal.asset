@@ -32,7 +32,7 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: 15
+    purrstige: 8
     michicoins: 18
     capacity_drink: 0
     capacity_food: 0

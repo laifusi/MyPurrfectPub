@@ -17,7 +17,7 @@ MonoBehaviour:
   image: {fileID: 944108766, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 1
   description: prueba
-  rarity: Uncommon
-  minprobability: 51
+  rarity: Rare
+  minprobability: 1
   maxprobability: 100
-  rarityColor: {r: 0.4627451, g: 0.7921569, b: 0.73333335, a: 1}
+  rarityColor: {r: 0.8808007, g: 0, b: 1, a: 1}

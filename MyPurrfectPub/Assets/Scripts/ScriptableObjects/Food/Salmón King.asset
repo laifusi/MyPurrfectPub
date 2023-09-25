@@ -17,7 +17,7 @@ MonoBehaviour:
   image: {fileID: 106909645, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 10
   description: 
-  rarity: Uncommon
-  minprobability: 51
+  rarity: VeryRare
+  minprobability: 1
   maxprobability: 100
-  rarityColor: {r: 0.47058827, g: 0.8313726, b: 0.78823537, a: 1}
+  rarityColor: {r: 1, g: 0.61737466, b: 0, a: 1}

@@ -18,7 +18,7 @@ MonoBehaviour:
   rol: Coctelero
   capacity: 10
   description: 
-  bought: 1
+  bought: 0
   image: {fileID: 2005082265, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
   eventlist:
   - {fileID: 11400000, guid: 51a568c3f79393c4792dcd949fc8a79d, type: 2}

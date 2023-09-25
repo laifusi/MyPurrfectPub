@@ -18,6 +18,6 @@ MonoBehaviour:
   prestige: 0
   description: 
   rarity: Common
-  minprobability: 0
-  maxprobability: 70
+  minprobability: 1
+  maxprobability: 100
   rarityColor: {r: 0.25882354, g: 0.6666667, b: 0.28627452, a: 1}

@@ -29,8 +29,8 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: 25
-    michicoins: 30
+    purrstige: 15
+    michicoins: 35
     capacity_drink: 0
     capacity_food: 0
     new_clients: 0

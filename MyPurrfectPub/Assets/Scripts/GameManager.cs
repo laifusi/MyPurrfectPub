@@ -151,7 +151,7 @@ public class GameManager : MonoBehaviour
     public void AddCapacityDrink(int cap)
     {
         totalCapacityDrink += cap;
-        if(totalCapacityDrink < 0)
+        if (totalCapacityDrink < 0)
         {
             totalCapacityDrink = 0;
         }
@@ -163,6 +163,24 @@ public class GameManager : MonoBehaviour
         if (totalCapacityFood < 0)
         {
             totalCapacityFood = 0;
+        }
+    }
+
+    public void AddActualCapacityDrink(int cap)
+    {
+        actualCapacityDrink += cap;
+        if(actualCapacityDrink < 0)
+        {
+            actualCapacityDrink = 0;
+        }
+    }
+
+    public void AddActualCapacityFood(int cap)
+    {
+        actualCapacityFood += cap;
+        if (actualCapacityFood < 0)
+        {
+            actualCapacityFood = 0;
         }
     }
 
@@ -653,8 +671,6 @@ public class GameManager : MonoBehaviour
 
         int indexDrink = -1;
         int indexFood = -1;
-        Debug.Log(actualCapacityDrink + " Capacida bebida");
-        Debug.Log(actualCapacityFood + " Capacida food");
         for (int i = 1; i <= clientsNumber; i++)
         {
             switch(UnityEngine.Random.Range(0,3))

@@ -48,8 +48,8 @@ public class AsignarValoresEvent : MonoBehaviour
         EventSO.option option = evento.options[optionId];
         GameManager.instance.costEventCoins += option.michicoins;
         GameManager.instance.costEventPrestige += option.purrstige;
-        GameManager.instance.AddCapacityDrink(option.capacity_drink);
-        GameManager.instance.AddCapacityDrink(option.capacity_food);
+        GameManager.instance.AddActualCapacityDrink(option.capacity_drink);
+        GameManager.instance.AddActualCapacityDrink(option.capacity_food);
         GameManager.instance.AddClients(option.new_clients);
         GameManager.instance.AddListCalculationCoins(option.michicoins);
         GameManager.instance.AddListCalculationPrestiege(option.purrstige);

@@ -17,4 +17,11 @@ MonoBehaviour:
   cost: 25
   description: 
   image: {fileID: 1394762516, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
-  eventlist: []
+  eventlist:
+  - {fileID: 11400000, guid: cee641271f7790849b07688ff82feb80, type: 2}
+  - {fileID: 11400000, guid: d249cd96bba05a34d828953411951edf, type: 2}
+  - {fileID: 11400000, guid: 6931cd81afe7af143a72fb156d8ae9ab, type: 2}
+  - {fileID: 11400000, guid: 411331ac4ce1ac949b1453a588dd52b6, type: 2}
+  - {fileID: 11400000, guid: 5fc1e09d7a79c82498d496182b3c6d37, type: 2}
+  - {fileID: 11400000, guid: 0bc423535d6456042b6ed2c58d3f3274, type: 2}
+  - {fileID: 11400000, guid: f85e2f34e329c73449a3ab3d5af9d656, type: 2}
