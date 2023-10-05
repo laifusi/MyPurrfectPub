@@ -24,6 +24,9 @@ public class PanelPedido : MonoBehaviour
 
     [SerializeField] private GameObject imagenes, texto;
 
+    [SerializeField] private Color colorPedidoRealizado;
+    [SerializeField] private Color colorPedidoRechazado;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -80,12 +83,12 @@ public class PanelPedido : MonoBehaviour
         if(c.estado)
         {
             estado.text = "Realizado";
-            estado.color = new Color32(0, 168, 0, 255);
+            estado.color = colorPedidoRealizado;
         }
         else
         {
             estado.text = "Rechazado";
-            estado.color = Color.red;
+            estado.color = colorPedidoRechazado;
         }
     }
 }
