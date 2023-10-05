@@ -69,6 +69,11 @@ public class PanelPedido : MonoBehaviour
                 else
                     imagenRespuesta2.sprite = incorrect;
             }
+            else
+            {
+                imagenComida2.color = new Color(imagenComida2.color.r, imagenComida2.color.g, imagenComida2.color.b, 0);
+                imagenRespuesta2.color = new Color(imagenRespuesta2.color.r, imagenRespuesta2.color.g, imagenRespuesta2.color.b, 0); ;
+            }
         }
 
 
