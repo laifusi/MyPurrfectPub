@@ -261,7 +261,7 @@ MonoBehaviour:
   m_text: Rechazado
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 711a93641db46704685a0f18d3ae25b9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -545,12 +545,12 @@ MonoBehaviour:
   imagenRespuesta1: {fileID: 478841737034310355}
   imagenComida2: {fileID: 3468778973236149652}
   imagenRespuesta2: {fileID: 435718527612390071}
-  correct: {fileID: 21300000, guid: 8b18eea8951cf484a9df2b8f326ae10a, type: 3}
-  incorrect: {fileID: 21300000, guid: 385d098b1f53113458a6efd73be1cd01, type: 3}
+  correct: {fileID: -438183168, guid: 6da29c54d5a8a46469b20fc904310baa, type: 3}
+  incorrect: {fileID: 36512995, guid: 6da29c54d5a8a46469b20fc904310baa, type: 3}
   imagenes: {fileID: 2829035927640017805}
   texto: {fileID: 8617411099487199020}
-  colorPedidoRealizado: {r: 0, g: 0.5254902, b: 0.07450981, a: 1}
-  colorPedidoRechazado: {r: 0.93725497, g: 0.23137257, b: 0.10588236, a: 1}
+  colorPedidoRealizado: {r: 0.25882354, g: 0.6666667, b: 0.28627452, a: 1}
+  colorPedidoRechazado: {r: 0.8156863, g: 0.20784314, b: 0.2, a: 1}
 --- !u!1 &5146175221489602894
 GameObject:
   m_ObjectHideFlags: 0
