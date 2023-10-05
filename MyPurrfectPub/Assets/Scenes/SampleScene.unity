@@ -2023,7 +2023,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1862452572}
   m_HandleRect: {fileID: 1862452571}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4127,7 +4127,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 787160225}
   m_HandleRect: {fileID: 787160224}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6478,6 +6478,7 @@ MonoBehaviour:
   - {fileID: 1419302256}
   PanelFinal: {fileID: 5884237835401309443, guid: 67cfea0a72419024ea2f43e288f18191, type: 3}
   pptext: {fileID: 2474700623955026829, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+  clientePrefab: {fileID: 2590001644623579228, guid: 79132b410c5dbe240b5e9236d58e5e15, type: 3}
   totalCapacityDrink: 0
   totalCapacityFood: 0
   prestigelevel: 0
@@ -6555,6 +6556,7 @@ MonoBehaviour:
   costEventCoins: 0
   costEventPrestige: 0
   createdEvents: 0
+  listado_clientes: []
 --- !u!4 &1344643769
 Transform:
   m_ObjectHideFlags: 0
@@ -6588,30 +6590,34 @@ MonoBehaviour:
     purrstige: 0
     michicoinscost: 2
     amount: 0
-    minprobability: 0
-    maxprobability: 0
+    minprobability: 1
+    maxprobability: 100
     rarity: Common
+    imagen: {fileID: 1824566809, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_drink: Estrella Miau
     purrstige: 1
     michicoinscost: 3
     amount: 0
-    minprobability: 0
-    maxprobability: 0
-    rarity: Common
+    minprobability: 1
+    maxprobability: 100
+    rarity: Uncommon
+    imagen: {fileID: -1536250138, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_drink: Heineko
     purrstige: 3
     michicoinscost: 5
     amount: 0
-    minprobability: 0
-    maxprobability: 0
-    rarity: Uncommon
+    minprobability: 1
+    maxprobability: 100
+    rarity: Rare
+    imagen: {fileID: 944108766, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_drink: Purrlaner
     purrstige: 5
     michicoinscost: 8
     amount: 0
-    minprobability: 0
-    maxprobability: 0
-    rarity: Uncommon
+    minprobability: 1
+    maxprobability: 100
+    rarity: Very Rare
+    imagen: {fileID: -191422379, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   drinktext: {fileID: 89895978}
   foodcount: 0
   foodlist:
@@ -6619,30 +6625,34 @@ MonoBehaviour:
     purrstige: 0
     michicoinscost: 5
     amount: 0
-    minprobability: 0
-    maxprobability: 0
+    minprobability: 1
+    maxprobability: 100
     rarity: Common
+    imagen: {fileID: 24786586, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_food: Atunes rotos
     purrstige: 8
     michicoinscost: 7
     amount: 0
-    minprobability: 0
-    maxprobability: 0
-    rarity: Common
+    minprobability: 1
+    maxprobability: 100
+    rarity: Uncommon
+    imagen: {fileID: -108851696, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_food: Anchoa rellena
     purrstige: 0
     michicoinscost: 10
     amount: 0
-    minprobability: 0
-    maxprobability: 0
-    rarity: Uncommon
+    minprobability: 1
+    maxprobability: 100
+    rarity: Rare
+    imagen: {fileID: 2074635296, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_food: "Salm\xF3n King"
     purrstige: 10
     michicoinscost: 25
     amount: 0
-    minprobability: 0
-    maxprobability: 0
-    rarity: Uncommon
+    minprobability: 1
+    maxprobability: 100
+    rarity: Very Rare
+    imagen: {fileID: 106909645, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   foodtext: {fileID: 2001253216}
   employeecount: 0
   employeelist: []
@@ -8545,13 +8555,21 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 474481643}
     m_Modifications:
-    - target: {fileID: 3162508738050470413, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -225
+    - target: {fileID: 2474700623955026829, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1344643768}
+    - target: {fileID: 4386158500105723686, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4234424354009734290, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -225
+    - target: {fileID: 5379285556893360565, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261890908960742452, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7020173661122851501, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -8660,6 +8678,14 @@ PrefabInstance:
     - target: {fileID: 7020173661215313155, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7020173661491754176, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604116766992568522, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
