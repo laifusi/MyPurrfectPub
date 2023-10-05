@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Client : MonoBehaviour
 {
+    [SerializeField] public int id_pedido = 0;
 
-    public int maxrarityfood;
+    [SerializeField] public List<Sprite> consumiciones = new List<Sprite>();
 
-    public int maxraritydrink;
+    [SerializeField] public List<bool> disponibilidad_consumiciones = new List<bool>();
+
+    [SerializeField] public string descripcion = "";
+
+    [SerializeField] public bool estado = true;
 
     // Start is called before the first frame update
     void Start()
@@ -21,13 +26,40 @@ public class Client : MonoBehaviour
         
     }
 
-    public void ConsumeFood()
+    public void AddConsumicines(int id, string c, bool disponibilidad, bool activarTexto)
     {
+        id_pedido = id;
 
+        if(!activarTexto)
+        {
+            foreach (Inventory.inventoryDrink d in Inventory.instance.drinklist)
+            {
+                if (d.name_drink == c)
+                    consumiciones.Add(d.imagen);
+            }
+
+            foreach (Inventory.inventoryFood f in Inventory.instance.foodlist)
+            {
+                if (f.name_food == c)
+                    consumiciones.Add(f.imagen);
+            }
+
+            disponibilidad_consumiciones.Add(disponibilidad);
+        }
+
+        else
+        {
+            descripcion = c;
+        }
+
+        
+        if (!disponibilidad)
+            estado = false;
     }
 
-    public void ConsumeDrink()
+    public void ResetLists()
     {
-
+        consumiciones.Clear();
+        disponibilidad_consumiciones.Clear();
     }
 }

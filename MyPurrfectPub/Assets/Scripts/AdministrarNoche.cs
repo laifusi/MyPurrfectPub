@@ -99,7 +99,7 @@ public class AdministrarNoche : MonoBehaviour
     {
         if (i_recursos_totales_prestige >= 100)
         {
-            GameManager.instance.Perder();
+            GameManager.instance.Ganar();
         }
         else if (i_recursos_totales_coins < 0)
         {

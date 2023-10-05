@@ -13,27 +13,22 @@ public class PanelProbabilidades : MonoBehaviour
 
     [SerializeField] private TMP_Text muyrara;
 
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameManager gameManager;
+
+    public void OnEnable()
     {
-        
+        UpdateText(gameManager.GetPrestigeLevel());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     public void UpdateText(int level)
     {
         switch(level)
         {
             case 1:
                 comun.text = "70%";
-                poco_comun.text = "10%";
+                poco_comun.text = "20%";
                 rara.text = "7%";
-                muyrara.text = "2%";
+                muyrara.text = "3%";
                 break;
             case 2:
                 comun.text = "55%";

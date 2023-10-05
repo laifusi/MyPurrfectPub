@@ -21,8 +21,9 @@ public class Inventory : MonoBehaviour
         public int minprobability;
         public int maxprobability;
         public string rarity;
+        public Sprite imagen;
 
-        public inventoryDrink(string name, int p, int m, int a, int mpr, int mmpr, string r)
+        public inventoryDrink(string name, int p, int m, int a, int mpr, int mmpr, string r, Sprite i)
         {
             name_drink = name;
             purrstige = p;
@@ -31,6 +32,7 @@ public class Inventory : MonoBehaviour
             minprobability = mpr;
             maxprobability = mmpr;
             rarity = r;
+            imagen = i;
         }
     }
 
@@ -49,8 +51,9 @@ public class Inventory : MonoBehaviour
         public int minprobability;
         public int maxprobability;
         public string rarity;
+        public Sprite imagen;
 
-        public inventoryFood(string name, int p, int m, int a, int mpr, int mmpr, string r)
+        public inventoryFood(string name, int p, int m, int a, int mpr, int mmpr, string r, Sprite i)
         {
             name_food = name;
             purrstige = p;
@@ -59,6 +62,7 @@ public class Inventory : MonoBehaviour
             minprobability = mpr;
             maxprobability = mmpr;
             rarity = r;
+            imagen = i;
         }
     }
     [SerializeField] private TextMeshProUGUI foodtext;
@@ -139,7 +143,7 @@ public class Inventory : MonoBehaviour
     {
         var index = foodlist.FindIndex(item => item.name_food == food.name);
         
-        foodlist[index] = new inventoryFood(food.name, food.prestige, food.cost, foodlist[index].amount + 1, food.minprobability, food.maxprobability, food.rarity);
+        foodlist[index] = new inventoryFood(food.name, food.prestige, food.cost, foodlist[index].amount + 1, food.minprobability, food.maxprobability, food.rarity, food.image);
         foodcount++;
         UpdateFood();
     }
@@ -148,7 +152,7 @@ public class Inventory : MonoBehaviour
     {
         var index = foodlist.FindIndex(item => item.name_food == food.name_food);
 
-        foodlist[index] = new inventoryFood(food.name_food, food.purrstige, food.michicoinscost, foodlist[index].amount - 1, food.minprobability, food.maxprobability, food.rarity);
+        foodlist[index] = new inventoryFood(food.name_food, food.purrstige, food.michicoinscost, foodlist[index].amount - 1, food.minprobability, food.maxprobability, food.rarity, food.imagen);
         foodcount--;
         UpdateFood();
     }
@@ -162,7 +166,7 @@ public class Inventory : MonoBehaviour
     {
         var index = drinklist.FindIndex(item => item.name_drink == drink.name);
 
-        drinklist[index] = new inventoryDrink(drink.name, drink.prestige, drink.cost, drinklist[index].amount + 1, drink.minprobability, drink.maxprobability, drink.rarity);
+        drinklist[index] = new inventoryDrink(drink.name, drink.prestige, drink.cost, drinklist[index].amount + 1, drink.minprobability, drink.maxprobability, drink.rarity, drink.image);
         drinkcount++;
         UpdateDrink();
     }
@@ -171,7 +175,7 @@ public class Inventory : MonoBehaviour
     {
         var index = drinklist.FindIndex(item => item.name_drink == drink.name_drink);
 
-        drinklist[index] = new inventoryDrink(drink.name_drink, drink.purrstige, drink.michicoinscost, drinklist[index].amount - 1, drink.minprobability, drink.maxprobability, drink.rarity);
+        drinklist[index] = new inventoryDrink(drink.name_drink, drink.purrstige, drink.michicoinscost, drinklist[index].amount - 1, drink.minprobability, drink.maxprobability, drink.rarity, drink.imagen);
         drinkcount--;
         UpdateDrink();
     }

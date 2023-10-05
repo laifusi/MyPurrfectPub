@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] managementPanels;
     [SerializeField] private PanelFinal PanelFinal;
     [SerializeField] private PanelProbabilidades pptext;
+    [SerializeField] private Client clientePrefab;
 
     private AudioSource audioSource;
 
@@ -71,6 +72,8 @@ public class GameManager : MonoBehaviour
 
     public int createdEvents;
 
+    [SerializeField] public List<Client> listado_clientes = new List<Client>();
+
 
 
     [System.Serializable]
@@ -113,7 +116,6 @@ public class GameManager : MonoBehaviour
         totalCapacityDrink = 0;
         totalCapacityFood = 0;
         prestigelevel = 1;
-        UpdateProbabilidadesText();
         actualRarityRate = (rarityRate[])rarityRatesLevel1.Clone();
 
         yield return null;
@@ -169,11 +171,6 @@ public class GameManager : MonoBehaviour
         OnDrinkCapacityChange?.Invoke(totalCapacityDrink);
     }
 
-    public void UpdateProbabilidadesText()
-    {
-        pptext.UpdateText(prestigelevel);
-    }
-
     public void AddCapacityFood(int cap)
     {
         totalCapacityFood += cap;
@@ -215,28 +212,26 @@ public class GameManager : MonoBehaviour
 
     public void UpdatePrestigeLevel()
     {
-        if(prestigelevel >= 0 && prestigelevel <= 25)
+        if(prestige >= 0 && prestige <= 25)
         {
             prestigelevel = 1;
             actualRarityRate = (rarityRate[])rarityRatesLevel1.Clone();
         }
-        else if (prestigelevel > 25 && prestigelevel <= 50)
+        else if (prestige > 25 && prestige <= 50)
         {
             prestigelevel = 2;
             actualRarityRate = (rarityRate[])rarityRatesLevel2.Clone();
         }
-        else if (prestigelevel > 50 && prestigelevel <= 75)
+        else if (prestige > 50 && prestige <= 75)
         {
             prestigelevel = 3;
             actualRarityRate = (rarityRate[])rarityRatesLevel3.Clone();
         }
-        else if (prestigelevel > 75 && prestigelevel <= 100)
+        else if (prestige > 75 && prestige <= 100)
         {
             prestigelevel = 4;
             actualRarityRate = (rarityRate[])rarityRatesLevel4.Clone();
         }
-
-        UpdateProbabilidadesText();
     }
 
     public void AddListCalculationCoins(int new_calculation)
@@ -632,7 +627,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            rarity = "VeryRare";
+            rarity = "Very Rare";
         }
 
         return rarity;
@@ -651,14 +646,18 @@ public class GameManager : MonoBehaviour
             {
                 if(randomProbability >= inventory.drinklist[i].minprobability && randomProbability <= inventory.drinklist[i].maxprobability)
                 {
-                    if(inventory.drinklist[i].amount != 0)
+                    if (inventory.drinklist[i].amount != 0)
                     {
-                        indexDrink = i;
                         result = true;
                     }
+                    indexDrink = i;
                     break;
                 }
             }
+        }
+        if(indexDrink == -1)
+        {
+            Debug.Log("probabilidad de: " + randomProbability + " y rareza aztual: " + actualRarity);
         }
         return result;
     }
@@ -679,12 +678,17 @@ public class GameManager : MonoBehaviour
                 {
                     if (inventory.foodlist[i].amount != 0)
                     {
-                        indexFood = i;
                         result = true;
                     }
+                    indexFood = i;
                     break;
                 }
             }
+        }
+
+        if (indexFood == -1)
+        {
+            Debug.Log("probabilidad de: " + randomProbability + " y rareza aztual: " + actualRarity);
         }
         return result;
     }
@@ -696,6 +700,7 @@ public class GameManager : MonoBehaviour
         int indexFood = -1;
         for (int i = 1; i <= clientsNumber; i++)
         {
+            Client cliente = Instantiate(clientePrefab);
             switch(UnityEngine.Random.Range(0,3))
             {
                 case 0:
@@ -711,18 +716,25 @@ public class GameManager : MonoBehaviour
                             consumedDrinksCoins += (inventory.drinklist[indexDrink].michicoinscost * 2);
                             consumedDrinksPrestige += inventory.drinklist[indexDrink].purrstige;
                             happyClients++;
+                            cliente.AddConsumicines(i, inventory.drinklist[indexDrink].name_drink, true, false);
                         }
                         else
                         {
                             unhappyClients++;
                             calculationsPrestige.Add(-2);
+                            cliente.AddConsumicines(i, inventory.drinklist[indexDrink].name_drink, false, false);
                         }
-                            
+
+
                     }
                     else
                     {
                         unhappyClients++;
                         calculationsPrestige.Add(-2);
+                        if(actualCapacityDrink <= 0)
+                            cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas", false, true);
+                        else
+                            cliente.AddConsumicines(i, "No quedan bebidas", false, true);
                     }
                     break;
                 case 1:
@@ -738,28 +750,45 @@ public class GameManager : MonoBehaviour
                             consumedFoodCoins += (inventory.foodlist[indexFood].michicoinscost * 2);
                             consumedFoodPrestige += (inventory.foodlist[indexFood].purrstige);
                             happyClients++;
+                            cliente.AddConsumicines(i, inventory.foodlist[indexFood].name_food, true, false);
                         }
                         else
                         {
                             unhappyClients++;
                             calculationsPrestige.Add(-2);
+                            cliente.AddConsumicines(i, inventory.foodlist[indexFood].name_food, false, false);
                         }
                     }
                     else
                     {
                         unhappyClients++;
                         calculationsPrestige.Add(-2);
+                        if (actualCapacityFood <= 0)
+                            cliente.AddConsumicines(i, "No hay suficiente capacidad de comidas", false, true);
+                        else
+                            cliente.AddConsumicines(i, "No quedan comidas", false, true);
                     }
                     break;
                 case 2:
-                    if((inventory.GetDrinkCount() == 0 && actualCapacityDrink == 0) || (inventory.GetFoodCount() <= 0 && actualCapacityFood <= 0))
+                    if((inventory.GetDrinkCount() <= 0 && actualCapacityDrink <= 0) || (inventory.GetFoodCount() <= 0 && actualCapacityFood <= 0))
                     {
                         unhappyClients++;
                         calculationsPrestige.Add(-2);
+
+                        if (actualCapacityDrink <= 0)
+                            cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas", false, true);
+                        else if(inventory.GetDrinkCount() <= 0)
+                            cliente.AddConsumicines(i, "No quedan bebidas", false, true);
+                        else if (actualCapacityFood <= 0)
+                            cliente.AddConsumicines(i, "No hay suficiente capacidad de comidas", false, true);
+                        else
+                            cliente.AddConsumicines(i, "No quedan comidas", false, true);
                     }
                     else
                     {
-                        if (ConsumeDrink(ref indexDrink) && ConsumeFood(ref indexFood))
+                        bool drinkConsumed = ConsumeDrink(ref indexDrink);
+                        bool foodConsumed = ConsumeFood(ref indexFood);
+                        if (drinkConsumed && foodConsumed)
                         {
                             calculationsCoins.Add(inventory.drinklist[indexDrink].michicoinscost * 2);
                             calculationsPrestige.Add(inventory.drinklist[indexDrink].purrstige);
@@ -778,15 +807,21 @@ public class GameManager : MonoBehaviour
                             consumedFoodPrestige += (inventory.foodlist[indexFood].purrstige);
 
                             happyClients++;
+
+                            cliente.AddConsumicines(i, inventory.drinklist[indexDrink].name_drink, true, false);
+                            cliente.AddConsumicines(i, inventory.foodlist[indexFood].name_food, true, false);
                         }
                         else
                         {
                             unhappyClients++;
                             calculationsPrestige.Add(-2);
+                            cliente.AddConsumicines(i, inventory.drinklist[indexDrink].name_drink, drinkConsumed, false);
+                            cliente.AddConsumicines(i, inventory.foodlist[indexFood].name_food, foodConsumed, false);
                         }
                     }
                     break;
             }
+            listado_clientes.Add(cliente);
         }
     }
 
@@ -837,6 +872,8 @@ public class GameManager : MonoBehaviour
             panelAdmin.GetCosteEmpleados(costEmployeeCoins, costEmployeePrestige);
             panelAdmin.GetGananciasEvento(costEventCoins, costEventPrestige);
 
+            //adminNightPrefab.GetComponent<AdministradorPedidos>().fillList(listado_clientes);
+
             int coinsObtained = 0;
             int prestigeObtained = 0;
 
@@ -880,6 +917,11 @@ public class GameManager : MonoBehaviour
         costEventPrestige = 0;
         calculationsPrestige.Clear();
         calculationsCoins.Clear();
+        foreach(Client c in listado_clientes)
+        {
+            Destroy(c.gameObject);
+        }
+        listado_clientes.Clear();
     }
 
     public void Ganar()
