@@ -487,7 +487,7 @@ public class GameManager : MonoBehaviour
                     break;
             }
 
-            if(selectedEvent.event_text != "")
+            if(selectedEvent != null && selectedEvent.event_text != null && selectedEvent.event_text != "")
             {
 
                 if (selectedEvent.dependence != null)
@@ -770,19 +770,25 @@ public class GameManager : MonoBehaviour
                     }
                     break;
                 case 2:
-                    if((inventory.GetDrinkCount() <= 0 && actualCapacityDrink <= 0) || (inventory.GetFoodCount() <= 0 && actualCapacityFood <= 0))
+                    if(inventory.GetDrinkCount() <= 0 || actualCapacityDrink <= 0 || inventory.GetFoodCount() <= 0 || actualCapacityFood <= 0)
                     {
+                        Debug.Log("Cliente doble insatisfecho");
                         unhappyClients++;
                         calculationsPrestige.Add(-2);
 
-                        if (actualCapacityDrink <= 0)
-                            cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas", false, true);
-                        else if(inventory.GetDrinkCount() <= 0)
+                        if (inventory.GetFoodCount() <= 0 && inventory.GetDrinkCount() <= 0)
+                            cliente.AddConsumicines(i, "No quedan comidas ni bebidas", false, true);
+                        else if(inventory.GetFoodCount() <= 0)
+                            cliente.AddConsumicines(i, "No quedan comidas", false, true);
+                        else if (inventory.GetDrinkCount() <= 0)
                             cliente.AddConsumicines(i, "No quedan bebidas", false, true);
+                        else if (actualCapacityDrink <= 0 && actualCapacityFood <= 0)
+                            cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas ni de comidas", false, true);
                         else if (actualCapacityFood <= 0)
                             cliente.AddConsumicines(i, "No hay suficiente capacidad de comidas", false, true);
                         else
-                            cliente.AddConsumicines(i, "No quedan comidas", false, true);
+                            cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas", false, true);
+                        
                     }
                     else
                     {

@@ -22,11 +22,16 @@ public class MenuManager : MonoBehaviour
 
     private IEnumerator LoadScene(int sceneId, AudioClip clip)
     {
-        audioSource.PlayOneShot(clip);
+        PlayClickSound(clip);
         if(sceneFadeOutAnimator != null)
             sceneFadeOutAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(0.25f);
         SceneManager.LoadScene(sceneId);
+    }
+
+    public void PlayClickSound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
     public void Menu()
