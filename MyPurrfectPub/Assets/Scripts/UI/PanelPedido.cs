@@ -41,14 +41,7 @@ public class PanelPedido : MonoBehaviour
 
         num_pedido.text = c.id_pedido + "º Pedido";
 
-        if (descripcion.text != "")
-        {
-            texto.SetActive(true);
-            imagenes.SetActive(false);
-
-            descripcion.text = c.descripcion;
-        }
-        else
+        if (c.consumiciones.Count > 0)
         {
             texto.SetActive(false);
             imagenes.SetActive(true);
@@ -74,6 +67,13 @@ public class PanelPedido : MonoBehaviour
                 imagenComida2.color = new Color(imagenComida2.color.r, imagenComida2.color.g, imagenComida2.color.b, 0);
                 imagenRespuesta2.color = new Color(imagenRespuesta2.color.r, imagenRespuesta2.color.g, imagenRespuesta2.color.b, 0); ;
             }
+        }
+        else
+        {
+            texto.SetActive(true);
+            imagenes.SetActive(false);
+
+            descripcion.text = c.descripcion;
         }
 
 
