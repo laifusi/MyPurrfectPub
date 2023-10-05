@@ -487,7 +487,7 @@ public class GameManager : MonoBehaviour
                     break;
             }
 
-            if(selectedEvent.event_text != "")
+            if(selectedEvent != null && selectedEvent.event_text != null && selectedEvent.event_text != "")
             {
 
                 if (selectedEvent.dependence != null)
