@@ -545,8 +545,8 @@ MonoBehaviour:
   imagenRespuesta1: {fileID: 478841737034310355}
   imagenComida2: {fileID: 3468778973236149652}
   imagenRespuesta2: {fileID: 435718527612390071}
-  correct: {fileID: 21300000, guid: be340a165cb9c8d4cb50f1deeb51d4ea, type: 3}
-  incorrect: {fileID: 21300000, guid: a3ced8f7044b9de4787602a9e9b20ea7, type: 3}
+  correct: {fileID: 21300000, guid: 8b18eea8951cf484a9df2b8f326ae10a, type: 3}
+  incorrect: {fileID: 21300000, guid: 385d098b1f53113458a6efd73be1cd01, type: 3}
   imagenes: {fileID: 2829035927640017805}
   texto: {fileID: 8617411099487199020}
 --- !u!1 &5146175221489602894
