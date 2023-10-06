@@ -26,9 +26,11 @@ public class GameManager : MonoBehaviour
     private int actualCapacityDrink;
     private int actualCapacityFood;
     private int clientsNumber;
+    private int actualMaxClient;
     [SerializeField] private int totalCapacityDrink;
     [SerializeField] private int totalCapacityFood;
     [SerializeField] private int prestigelevel;
+    [SerializeField] private int prestigeLost;
     [SerializeField] private rarityRate[] actualRarityRate;
 
     public AdministradorEvent eventAdministrator;
@@ -111,11 +113,13 @@ public class GameManager : MonoBehaviour
         }
 
         clientsNumber = 0;
+        actualMaxClient = 10;
         createdEvents = 0;
         ResetAdministratorNight();
         totalCapacityDrink = 0;
         totalCapacityFood = 0;
         prestigelevel = 1;
+        prestigeLost = 2;
         actualRarityRate = (rarityRate[])rarityRatesLevel1.Clone();
 
         yield return null;
@@ -158,6 +162,16 @@ public class GameManager : MonoBehaviour
     public int GetPrestigeLevel()
     {
         return prestigelevel;
+    }
+
+    public int GetClientAmount()
+    {
+        return actualMaxClient;
+    }
+
+    public int GetPrestigeLost()
+    {
+        return prestigeLost;
     }
 
     public void AddCapacityDrink(int cap)
@@ -216,21 +230,25 @@ public class GameManager : MonoBehaviour
         {
             prestigelevel = 1;
             actualRarityRate = (rarityRate[])rarityRatesLevel1.Clone();
+            prestigeLost = 2;
         }
         else if (prestige > 25 && prestige <= 50)
         {
             prestigelevel = 2;
             actualRarityRate = (rarityRate[])rarityRatesLevel2.Clone();
+            prestigeLost = 4;
         }
         else if (prestige > 50 && prestige <= 75)
         {
             prestigelevel = 3;
             actualRarityRate = (rarityRate[])rarityRatesLevel3.Clone();
+            prestigeLost = 6;
         }
         else if (prestige > 75 && prestige <= 100)
         {
             prestigelevel = 4;
             actualRarityRate = (rarityRate[])rarityRatesLevel4.Clone();
+            prestigeLost = 8;
         }
     }
 
@@ -312,7 +330,6 @@ public class GameManager : MonoBehaviour
         {
             if (UnityEngine.Random.Range(1, 101) <= eventAdministrator.showEvents.posibility)
             {
-                Debug.Log("Hay evento de Show");
                 fillShowEventList();
                 int numEventsShow = UnityEngine.Random.Range(1, eventAdministrator.showEvents.maxEventsDuringNight + 1);
                 for (int i = 1; i <= numEventsShow; i++)
@@ -355,7 +372,7 @@ public class GameManager : MonoBehaviour
                             break;
                     }
 
-                    if (selectedEvent.event_text != "")
+                    if (selectedEvent != null && selectedEvent.event_text != null && selectedEvent.event_text != "")
                     {
                         if (selectedEvent.dependence != null)
                         {
@@ -602,6 +619,8 @@ public class GameManager : MonoBehaviour
             indexActualPrestige++;
         }
 
+        actualMaxClient = purrstigeRanges[indexActualPrestige].maxClients;
+
         numberClients = UnityEngine.Random.Range(purrstigeRanges[indexActualPrestige].minClients, purrstigeRanges[indexActualPrestige].maxClients + 1);
 
         totalClients = numberClients;
@@ -646,7 +665,7 @@ public class GameManager : MonoBehaviour
             {
                 if(randomProbability >= inventory.drinklist[i].minprobability && randomProbability <= inventory.drinklist[i].maxprobability)
                 {
-                    if (inventory.drinklist[i].amount != 0)
+                    if (inventory.drinklist[i].amount > 0)
                     {
                         result = true;
                     }
@@ -676,7 +695,7 @@ public class GameManager : MonoBehaviour
             {
                 if (randomProbability >= inventory.foodlist[i].minprobability && randomProbability <= inventory.foodlist[i].maxprobability)
                 {
-                    if (inventory.foodlist[i].amount != 0)
+                    if (inventory.foodlist[i].amount > 0)
                     {
                         result = true;
                     }
@@ -721,7 +740,7 @@ public class GameManager : MonoBehaviour
                         else
                         {
                             unhappyClients++;
-                            calculationsPrestige.Add(-2);
+                            calculationsPrestige.Add(prestigeLost * -1);
                             cliente.AddConsumicines(i, inventory.drinklist[indexDrink].name_drink, false, false);
                         }
 
@@ -730,7 +749,7 @@ public class GameManager : MonoBehaviour
                     else
                     {
                         unhappyClients++;
-                        calculationsPrestige.Add(-2);
+                        calculationsPrestige.Add(prestigeLost * -1);
                         if(actualCapacityDrink <= 0)
                             cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas", false, true);
                         else
@@ -755,14 +774,14 @@ public class GameManager : MonoBehaviour
                         else
                         {
                             unhappyClients++;
-                            calculationsPrestige.Add(-2);
+                            calculationsPrestige.Add(prestigeLost * -1);
                             cliente.AddConsumicines(i, inventory.foodlist[indexFood].name_food, false, false);
                         }
                     }
                     else
                     {
                         unhappyClients++;
-                        calculationsPrestige.Add(-2);
+                        calculationsPrestige.Add(prestigeLost * -1);
                         if (actualCapacityFood <= 0)
                             cliente.AddConsumicines(i, "No hay suficiente capacidad de comidas", false, true);
                         else
@@ -772,9 +791,8 @@ public class GameManager : MonoBehaviour
                 case 2:
                     if(inventory.GetDrinkCount() <= 0 || actualCapacityDrink <= 0 || inventory.GetFoodCount() <= 0 || actualCapacityFood <= 0)
                     {
-                        Debug.Log("Cliente doble insatisfecho");
                         unhappyClients++;
-                        calculationsPrestige.Add(-2);
+                        calculationsPrestige.Add(prestigeLost * -1);
 
                         if (inventory.GetFoodCount() <= 0 && inventory.GetDrinkCount() <= 0)
                             cliente.AddConsumicines(i, "No quedan comidas ni bebidas", false, true);
@@ -820,7 +838,7 @@ public class GameManager : MonoBehaviour
                         else
                         {
                             unhappyClients++;
-                            calculationsPrestige.Add(-2);
+                            calculationsPrestige.Add(prestigeLost * -1);
                             cliente.AddConsumicines(i, inventory.drinklist[indexDrink].name_drink, drinkConsumed, false);
                             cliente.AddConsumicines(i, inventory.foodlist[indexFood].name_food, foodConsumed, false);
                         }
@@ -872,7 +890,7 @@ public class GameManager : MonoBehaviour
             AdministrarNoche panelAdmin = Instantiate(adminNightPrefab);
             panelAdmin.GetClientesTotales(totalClients);
             panelAdmin.GetClientesAtendidos(happyClients);
-            panelAdmin.GetClientesDesatendidos(unhappyClients, unhappyClients * -2);
+            panelAdmin.GetClientesDesatendidos(unhappyClients, unhappyClients * prestigeLost * -1);
             panelAdmin.GetBebidasConsumidas(consumedDrinks, consumedDrinksCoins, consumedDrinksPrestige);
             panelAdmin.GetAlimentosConsumidos(consumedFood, consumedFoodCoins, consumedFoodPrestige);
             panelAdmin.GetCosteEmpleados(costEmployeeCoins, costEmployeePrestige);
