@@ -13,14 +13,20 @@ public class PanelProbabilidades : MonoBehaviour
 
     [SerializeField] private TMP_Text muyrara;
 
+    [SerializeField] private TMP_Text level_local;
+
+    [SerializeField] private TMP_Text Clients_amount;
+
+    [SerializeField] private TMP_Text purrstige_lost;
+
     [SerializeField] private GameManager gameManager;
 
     public void OnEnable()
     {
-        UpdateText(gameManager.GetPrestigeLevel());
+        UpdateText(gameManager.GetPrestigeLevel(), gameManager.GetClientAmount(), gameManager.GetPrestigeLost());
     }
 
-    public void UpdateText(int level)
+    public void UpdateText(int level, int c_cantidad, int p_lost)
     {
         switch(level)
         {
@@ -49,5 +55,12 @@ public class PanelProbabilidades : MonoBehaviour
                 muyrara.text = "20%";
                 break;
         }
+
+        level_local.text = level.ToString();
+
+        Clients_amount.text = c_cantidad.ToString();
+
+        purrstige_lost.text = p_lost.ToString();
+
     }
 }

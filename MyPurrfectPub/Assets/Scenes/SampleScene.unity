@@ -960,7 +960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -28.099426, y: -62.499756}
+  m_AnchoredPosition: {x: -28.099365, y: -62.499756}
   m_SizeDelta: {x: -57.938232, y: -125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &173227830
@@ -6224,7 +6224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -28.099426, y: -62.499756}
+  m_AnchoredPosition: {x: -28.099365, y: -62.499756}
   m_SizeDelta: {x: -57.938232, y: -125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286098176
@@ -6628,7 +6628,7 @@ MonoBehaviour:
     minprobability: 1
     maxprobability: 100
     rarity: Common
-    imagen: {fileID: 24786586, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
+    imagen: {fileID: 2074635296, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_food: Atunes rotos
     purrstige: 8
     michicoinscost: 7
@@ -6636,7 +6636,7 @@ MonoBehaviour:
     minprobability: 1
     maxprobability: 100
     rarity: Uncommon
-    imagen: {fileID: -108851696, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
+    imagen: {fileID: 24786586, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_food: Anchoa rellena
     purrstige: 0
     michicoinscost: 10
@@ -6644,7 +6644,7 @@ MonoBehaviour:
     minprobability: 1
     maxprobability: 100
     rarity: Rare
-    imagen: {fileID: 2074635296, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
+    imagen: {fileID: -108851696, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   - name_food: "Salm\xF3n King"
     purrstige: 10
     michicoinscost: 25
@@ -7946,7 +7946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -28.099426, y: -62.499756}
+  m_AnchoredPosition: {x: -28.099365, y: -62.499756}
   m_SizeDelta: {x: -57.9381, y: -124.99999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1616847306
@@ -8828,6 +8828,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8808149400097045368, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.6549072
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
@@ -9698,7 +9702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -28.099426, y: -62.499756}
+  m_AnchoredPosition: {x: -28.099365, y: -62.499756}
   m_SizeDelta: {x: -57.938232, y: -125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916769287
