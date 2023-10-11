@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Uno de los gatitos que sube al escenario comienza a cantar el famos
+  event_text: "Uno de los gatitos que sube al escenario comienza a cantar el famoso
     hit veraniego del Miaumiau Style.\n\nTodo el local, euf\xF3rico, comienza a cantar
     al un\xEDsono. Esto alegra el ambiente, invitando a que m\xE1s gatitos quieran
     subir al escenario. \n\nCuando termina la canci\xF3n, la lista del karaoke est\xE1
     llena. Seguramente muchos gatitos se hayan quedado con ganas de volver para cantar
-    su canci\xF3n favorita.\n\n(Ganas 10 puntos de PURRSTIGIO)"
+    su canci\xF3n favorita.\n\n<b>(Ganas 10 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

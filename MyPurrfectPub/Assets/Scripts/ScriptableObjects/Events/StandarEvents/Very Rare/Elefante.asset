@@ -18,8 +18,8 @@ MonoBehaviour:
     y un vendedor ambulante del extranjero te pide refugio para \xE9l y para su elefante.\n\nEl
     gran tama\xF1o del animal podr\xEDa causar serios desperfectos en el local. Sin
     embargo, un elefante llama bastante la atenci\xF3n. Y llamar la atenci\xF3n,
-    atrae a nuevos clientes.\n\nAceptar:\nPierdes 30 MICHIMONEDAS\nGanas 30 de PURRSTIGIO\n\nRechazar:\nEl
-    vendedor se va sin causar problemas"
+    atrae a nuevos clientes.\n\nAceptar:\n<b>Pierdes 30 MICHIMONEDAS\nGanas 30 de
+    PURRSTIGIO</b>\n\nRechazar:\n<b>El vendedor se va sin causar problemas</b>"
   image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0

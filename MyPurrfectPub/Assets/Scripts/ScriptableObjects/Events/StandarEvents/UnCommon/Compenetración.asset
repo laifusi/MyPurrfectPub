@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Hoy el equipo est\xE1 motivado, y se nota en la eficiencia con la
     que trabajan.\n\nEsto les ha permitido poder cumplir con m\xE1s pedidos de los
-    que suelen cumplir.\n\n(Ganas 3 puntos de Capacidad en bebidas y de Capacidad
-    en comidas)"
+    que suelen cumplir.\n\n<b>(El servicio m\xE1ximo de comidas y de bebidas aumenta
+    en 3 esta noche)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "La gente aplaude ante el final del Show. Las canciones han sido bell\xEDsimas
     y los clientes est\xE1n m\xE1s que satisfechos.\n\nEsto se ve reflejado en sus
-    donativos hacia el local, los cuales indican que ha sido un completo \xE9xito.\n\n(Ganas
-    60 MICHIMONEDAS)"
+    donativos hacia el local, los cuales indican que ha sido un completo \xE9xito.\n\n<b>(Ganas
+    60 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

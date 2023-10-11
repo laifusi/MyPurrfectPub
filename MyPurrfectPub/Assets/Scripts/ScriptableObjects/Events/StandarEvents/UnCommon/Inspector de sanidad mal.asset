@@ -18,7 +18,7 @@ MonoBehaviour:
     de las instalaciones y que todos los alimentos se encuentren en condiciones \xF3ptimas.\n\nFinalmente,
     el inspector te da una lista de fallas que ha visto en tu local.\n\nNo son muy
     graves, la mayor\xEDa son cuestiones de limpieza. Pero podr\xEDa afectar a la
-    reputaci\xF3n del local.\n\n(Pierdes 10 de PURRSTIGIO)"
+    reputaci\xF3n del local.\n\n<b>(Pierdes 10 de PURRSTIGIO)</b>"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

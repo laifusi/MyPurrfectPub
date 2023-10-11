@@ -16,7 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Fuera cae un gran chaparr\xF3n. Esto har\xE1 que varios mininos decidan
     quedarse en casa esta noche.\n\nEsto afectar\xE1 a la cantidad de clientes que
-    tendr\xE1s esta noche.\n\n(6 gatos han decidido no acudir a tu local esta noche)"
+    tendr\xE1s esta noche.\n\n<b>(6 gatos han decidido no acudir a tu local esta
+    noche)</b>"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

@@ -15,9 +15,9 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Esta noche no ha habido suerte con el c\xF3mico.\n\nSus bromas no
-    son muy buenas y el p\xFAblic lo abuchea. El espect\xE1culo termina, pero la
-    impresi\xF3n que se han llevado los clientes no es muy buena.\n\n(Pierdes 15
-    puntos de PURRSTIGIO)"
+    son muy buenas y el p\xFAblico lo abuchea. El espect\xE1culo termina, pero la
+    impresi\xF3n que se han llevado los clientes no es muy buena.\n\n<b>(Pierdes
+    15 puntos de PURRSTIGIO)</b>"
   image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

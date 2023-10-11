@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "El micr\xF3fono est\xE1 dando problemas, haciendo que la voz del c\xF3mico
     se oiga entrecortada y cortando los chistes a mitad.\n\nTanto el p\xFAblic como
-    el c\xF3mico comienzan a frustarse por los fallos que est\xE1 dando.\n\n(Pierdes
-    7 puntos de PURRSTIGIO)"
+    el c\xF3mico comienzan a frustarse por los fallos que est\xE1 dando.\n\n<b>(Pierdes
+    7 puntos de PURRSTIGIO)</b>"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

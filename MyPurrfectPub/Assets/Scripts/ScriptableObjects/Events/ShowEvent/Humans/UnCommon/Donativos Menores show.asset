@@ -14,17 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: 'Las gatitos se ven muy satisfechos. La noche ha ido muy bien gracias
-    a la increible performance de gactores.
-
-
-    Todos salen con una sonrisa en
-    el ocico. Eso te incluye a ti, que ves como los asistentes han dejado una generosa
-    cantidad de popinas. Lo suficiente como para compensar los gastos del Miausical.
-
-
-    (Ganas
-    37 MICHIMONEDAS)'
+  event_text: "Las gatitos se ven muy satisfechos. La noche ha ido muy bien gracias
+    a la incre\xEDble actuaci\xF3n de los gactores.\n\nTodos salen con una sonrisa
+    en el hocico. Eso te incluye a ti, que ves como los asistentes han dejado una
+    generosa cantidad de propinas. Lo suficiente como para compensar los gastos del
+    Miausical.\n\n<b>(Ganas 37 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
@@ -36,7 +30,7 @@ MonoBehaviour:
     text_option: Siguiente
     selected_option: 1
     purrstige: 0
-    michicoins: 50
+    michicoins: 37
     capacity_drink: 0
     capacity_food: 0
     new_clients: 0

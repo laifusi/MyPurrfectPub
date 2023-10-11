@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "El grupo de gactores ha clavado la canci\xF3n principal de Miausical.\n\nLa
-    gente clama por escucharla otra vez. \n\nEstas ansias son las que les haran volver
-    a tu local.\n\n(Ganas 10 puntos de PURRSTIGIO)"
+  event_text: "El grupo de gactores ha clavado la canci\xF3n principal del Miausical.\n\nLa
+    gente clama por escucharla otra vez. \n\nEstas ansias son las que les har\xE1n
+    volver a tu local.\n\n<b>(Ganas 10 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
