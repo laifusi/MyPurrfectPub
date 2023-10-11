@@ -294,7 +294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 550, y: -37.5}
+  m_AnchoredPosition: {x: 536.6, y: -37.5}
   m_SizeDelta: {x: 643.738, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23756493
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0  capacidad de comida
+  m_text: "Servicio m\xE1ximo de comidas 0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -576,7 +576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 188, y: -37.5}
+  m_AnchoredPosition: {x: 134.9, y: -37.5}
   m_SizeDelta: {x: 970.1, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89895978
@@ -2238,7 +2238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 550, y: -37.5}
+  m_AnchoredPosition: {x: 536.6, y: -37.5}
   m_SizeDelta: {x: 970.1, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372591464
@@ -2273,7 +2273,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0 capacidad de bebida
+  m_text: "Servicio m\xE1ximo de bebidas 0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -6482,6 +6482,7 @@ MonoBehaviour:
   totalCapacityDrink: 0
   totalCapacityFood: 0
   prestigelevel: 0
+  prestigeLost: 0
   actualRarityRate: []
   eventAdministrator: {fileID: 1344643771}
   purrstigeRanges:
@@ -6616,7 +6617,7 @@ MonoBehaviour:
     amount: 0
     minprobability: 1
     maxprobability: 100
-    rarity: Very Rare
+    rarity: VeryRare
     imagen: {fileID: -191422379, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   drinktext: {fileID: 89895978}
   foodcount: 0
@@ -6651,7 +6652,7 @@ MonoBehaviour:
     amount: 0
     minprobability: 1
     maxprobability: 100
-    rarity: Very Rare
+    rarity: VeryRare
     imagen: {fileID: 106909645, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   foodtext: {fileID: 2001253216}
   employeecount: 0
@@ -7439,8 +7440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 387.72, y: 350}
-  m_SizeDelta: {x: 807.5, y: 381.59998}
+  m_AnchoredPosition: {x: 388.87903, y: 350}
+  m_SizeDelta: {x: 810.076, y: 381.6}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1434207396
 MonoBehaviour:
@@ -8668,6 +8669,18 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1344643768}
+    - target: {fileID: 3786965411654882496, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.5617676
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786965411654882496, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.53741455
+      objectReference: {fileID: 0}
+    - target: {fileID: 4119515761553725636, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.5219727
+      objectReference: {fileID: 0}
     - target: {fileID: 4386158500105723686, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
       propertyPath: m_text
       value: 
@@ -8823,6 +8836,14 @@ PrefabInstance:
     - target: {fileID: 7020173661491754176, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137747148136825425, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 19.998108
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341966195000998483, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.3413086
       objectReference: {fileID: 0}
     - target: {fileID: 8604116766992568522, guid: 722ce6ca5c018984a8f346142aafb4de, type: 3}
       propertyPath: m_text
@@ -10242,7 +10263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 188.00002, y: -37.5}
+  m_AnchoredPosition: {x: 134.9, y: -37.5}
   m_SizeDelta: {x: 643.738, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2001253216

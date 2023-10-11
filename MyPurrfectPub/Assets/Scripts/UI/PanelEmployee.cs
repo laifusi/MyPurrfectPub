@@ -11,6 +11,8 @@ public class PanelEmployee : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI rol;
 
+    [SerializeField] private TextMeshProUGUI capacidad;
+
     [SerializeField] private TextMeshProUGUI precio;
 
     [SerializeField] private TextMeshProUGUI prestigio;
@@ -55,6 +57,10 @@ public class PanelEmployee : MonoBehaviour
     {
         nombre.text = empleado.name;
         rol.text = empleado.rol;
+        if(empleado.rol == "Coctelero" || empleado.rol == "Coctelera")
+            capacidad.text = empleado.capacity.ToString() + " bebidas máximas por noche";
+        else if(empleado.rol == "Camarero" || empleado.rol == "Camarera")
+            capacidad.text = empleado.capacity.ToString() + " comidas máximas por noche";
         precio.text = empleado.costPerTurn.ToString() + "/turno";
         prestigio.text = empleado.prestigePerTurn.ToString() + "/turno";
         detalles = empleado.description;

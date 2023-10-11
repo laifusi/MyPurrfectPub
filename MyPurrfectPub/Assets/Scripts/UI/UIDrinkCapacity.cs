@@ -16,7 +16,7 @@ public class UIDrinkCapacity : MonoBehaviour
 
     private void ChangeText(int value)
     {
-        text.SetText(value.ToString() + " capacidad de bebida");
+        text.SetText("Servicio máximo de bebidas " + value.ToString());
     }
 
     private void OnDestroy()

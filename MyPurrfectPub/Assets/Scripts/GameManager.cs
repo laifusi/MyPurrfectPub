@@ -164,9 +164,40 @@ public class GameManager : MonoBehaviour
         return prestigelevel;
     }
 
-    public int GetClientAmount()
+    public int GetMinClientAmount()
     {
-        return actualMaxClient;
+        int actualPrestige = GetPrestige();
+        int indexActualPrestige = 0;
+
+        foreach (rangePurrstige rp in purrstigeRanges)
+        {
+            if (rp.minPurrstige <= actualPrestige && rp.maxPurrstige >= actualPrestige)
+            {
+                break;
+            }
+
+            indexActualPrestige++;
+        }
+
+        return purrstigeRanges[indexActualPrestige].minClients;
+    }
+
+    public int GetMaxClientAmount()
+    {
+        int actualPrestige = GetPrestige();
+        int indexActualPrestige = 0;
+
+        foreach (rangePurrstige rp in purrstigeRanges)
+        {
+            if (rp.minPurrstige <= actualPrestige && rp.maxPurrstige >= actualPrestige)
+            {
+                break;
+            }
+
+            indexActualPrestige++;
+        }
+
+        return purrstigeRanges[indexActualPrestige].maxClients;
     }
 
     public int GetPrestigeLost()
@@ -242,13 +273,13 @@ public class GameManager : MonoBehaviour
         {
             prestigelevel = 3;
             actualRarityRate = (rarityRate[])rarityRatesLevel3.Clone();
-            prestigeLost = 6;
+            prestigeLost = 8;
         }
         else if (prestige > 75 && prestige <= 100)
         {
             prestigelevel = 4;
             actualRarityRate = (rarityRate[])rarityRatesLevel4.Clone();
-            prestigeLost = 8;
+            prestigeLost = 10;
         }
     }
 
@@ -646,7 +677,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            rarity = "Very Rare";
+            rarity = "VeryRare";
         }
 
         return rarity;
@@ -888,7 +919,7 @@ public class GameManager : MonoBehaviour
             EmployeeCost();
 
             AdministrarNoche panelAdmin = Instantiate(adminNightPrefab);
-            panelAdmin.GetClientesTotales(totalClients);
+            panelAdmin.GetClientesTotales(clientsNumber);
             panelAdmin.GetClientesAtendidos(happyClients);
             panelAdmin.GetClientesDesatendidos(unhappyClients, unhappyClients * prestigeLost * -1);
             panelAdmin.GetBebidasConsumidas(consumedDrinks, consumedDrinksCoins, consumedDrinksPrestige);
