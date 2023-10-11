@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Por lo visto, el nivel de esfuerzo que le pone Kat a la hora de hacer
     comida es digno de un restaurante prestigioso.\n\nEsta noche ha conseguido aumentar
-    considerablemente su capacidad de cocina, pudiendo atender muchos m\xE1s pedidos
-    que de costumbre.\n\n(Ganas 10 puntos de capacidad de comida)"
+    considerablemente su capacidad de cocinar, pudiendo atender muchos m\xE1s pedidos
+    que de costumbre.\n\n<b>(Ganas 10 puntos de servicio m\xE1ximo de comidas)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   optionDependecyId: 0
   options:
   - id_option: 0
-    text_option: 
+    text_option: Siguiente
     selected_option: 0
     purrstige: 0
     michicoins: 0

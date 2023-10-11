@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Como en todas las noches, siempre hay un cliente que da la nota molestando
+  event_text: "Como en todas las noches, siempre hay un cliente que da la nota, molestando
     a los dem\xE1s.\n\nEn este caso, Kitty ha tenido que tratar con sus impertinencias.\n\nFinalmente,
     el local queda en silencia tras ver como Kitty le arroja su bebida al rostro
     del cliente, quien abandona el local indignado.\n\nPuede que se lo mereciese,
-    pero este comportamiento no deja en buen lugar al local.\n\n(Pierdes 10 puntos
-    de PURRSTIGIO)"
+    pero este comportamiento no deja en buen lugar al local.\n\n<b>(Pierdes 10 puntos
+    de PURRSTIGIO)</b>"
   image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

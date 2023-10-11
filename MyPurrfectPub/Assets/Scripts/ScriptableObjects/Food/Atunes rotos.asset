@@ -16,8 +16,8 @@ MonoBehaviour:
   cost: 7
   image: {fileID: 24786586, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 5
-  description: "ATUNES ROTOS\n\nSin duda un plato que gusta a la mayor\xEDa. Buena
-    cantidad, buen sabor. \xBFQu\xE9 m\xE1s se le puede pedir?"
+  description: "<b>ATUNES ROTOS</b>\n\nSin duda un plato que gusta a la mayor\xEDa.
+    Buena cantidad, buen sabor. \xBFQu\xE9 m\xE1s se le puede pedir?"
   rarity: Uncommon
   minprobability: 1
   maxprobability: 100

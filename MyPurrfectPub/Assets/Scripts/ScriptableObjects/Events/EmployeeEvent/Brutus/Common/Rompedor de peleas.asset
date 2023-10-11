@@ -18,7 +18,7 @@ MonoBehaviour:
     manos, pero antes de que nadie se haga da\xF1o, aparece Brutus.\n\nSu presencia
     resulta intimidante para todos los felinos, en especial a los dos causantes del
     problema.\n\nSin decir nada, Brutus se\xF1ala la puerta haciendo que los dos
-    clientes abandonen el local.\n\n(Ganas 5 puntos de PURRSTIGIO)"
+    clientes abandonen el local.\n\n<b>(Ganas 5 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
   options:
   - id_option: 0
     text_option: Siguiente
-    selected_option: 1
+    selected_option: 0
     purrstige: 5
     michicoins: 0
     capacity_drink: 0

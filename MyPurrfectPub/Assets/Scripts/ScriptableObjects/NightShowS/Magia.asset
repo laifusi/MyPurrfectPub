@@ -15,8 +15,8 @@ MonoBehaviour:
   name: El Miauravilloso Nekodini
   prestige: 15
   cost: 20
-  description: "EL MIAURAVILLOSO NEKODINI\n\nEl gran Nekodini es conocido por sus
-    trucos de prestidigitaci\xF3n, los cuales maravillan a todo el mundo.\n\nUna
+  description: "<b>EL MIAURAVILLOSO NEKODINI</b>\n\nEl gran Nekodini es conocido
+    por sus trucos de prestidigitaci\xF3n, los cuales maravillan a todo el mundo.\n\nUna
     noche m\xE1gica para los clientes puede ir acompa\xF1ada de grandes beneficios."
   image: {fileID: 360808819, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   eventlist:

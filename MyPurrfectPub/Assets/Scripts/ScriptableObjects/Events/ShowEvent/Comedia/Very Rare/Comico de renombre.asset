@@ -19,8 +19,8 @@ MonoBehaviour:
     cargados de humor.\n\nLas risas y vitoreos no cesan durante toda la noche, haciendo
     de este un espect\xE1culo inolvidable.\n\nAl finalizar la actuaci\xF3n, Michi
     se hace una foto contigo para que la cuelgues en la pared.\n\nMientras la cuelgas,
-    puedes ver como el bote de donativos esta a rebosar.\n\n(Ganas 25 puntos de PURRSTIGIO\nGanas
-    50 MICHIMONEDAS)"
+    puedes ver c\xF3mo el bote de donativos est\xE1 a rebosar.\n\n<b>(Ganas 25 puntos
+    de PURRSTIGIO\nGanas 50 MICHIMONEDAS)</b>"
   image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0

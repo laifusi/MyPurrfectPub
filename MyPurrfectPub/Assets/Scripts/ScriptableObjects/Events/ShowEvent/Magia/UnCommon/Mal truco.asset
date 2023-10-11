@@ -15,10 +15,10 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "El gran Nekodini ha vuelto a hacer su maravilloso truco de partir
-    a su ayudante en dos.\n\nSinembargo, tras tropezarse con su propia varita, el
+    a su ayudante en dos.\n\nSin embargo, tras tropezarse con su propia varita, el
     truco ha quedado expuesto y la gente ha estallado en carcajadas.\n\nEl espect\xE1culo
     ha continuado sin ning\xFAn percance, pero esto puede afectar a la reputaci\xF3n
-    de nuestra calidad.\n\n(Pierdes 30 puntos de PURRSTIGIO)"
+    de nuestra calidad.\n\n<b>(Pierdes 20 puntos de PURRSTIGIO)</b>"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

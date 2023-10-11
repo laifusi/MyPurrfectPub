@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "La sesi\xF3n de comedia ha ido mejor de lo esperado. Los gatitos rien
-    a carcajadas y puedes ver en sus rostros como han quedado con ganas de m\xE1s.\n\nAl
-    final de la noche, os repart\xEDs entre el c\xF3mico y t\xFA.  Las ganacias han
-    sido buenas, opero tampoco muy altas.\n\n(Ganas 7 puntos de PURRSTIGIO\nGanas
-    5 MICHIMONEDAS)"
+  event_text: "La sesi\xF3n de comedia ha ido mejor de lo esperado. Los gatitos r\xEDen
+    a carcajadas y puedes ver en sus rostros c\xF3mo han quedado con ganas de m\xE1s.\n\nAl
+    final de la noche, os repart\xEDs entre el c\xF3mico y t\xFA las ganacias, que
+    han sido buenas, pero tampoco muy altas.\n\n<b>(Ganas 7 puntos de PURRSTIGIO\nGanas
+    5 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0

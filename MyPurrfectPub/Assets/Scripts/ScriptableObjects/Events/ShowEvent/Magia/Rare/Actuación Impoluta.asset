@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Dificilmente has presenciado alguna vez un n\xFAmero como el que has
     visto hoy.\n\nLa gente clama por m\xE1s, pero el show ha terminado.\n\nDejarles
-    con ganas de m\xE1s es un perfecto aliciente para que vuelvan.\n\n(Ganas 10 puntos
-    de PURRSTIGIO)"
+    con ganas de m\xE1s es un perfecto aliciente para que vuelvan.\n\n<b>(Ganas 10
+    puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

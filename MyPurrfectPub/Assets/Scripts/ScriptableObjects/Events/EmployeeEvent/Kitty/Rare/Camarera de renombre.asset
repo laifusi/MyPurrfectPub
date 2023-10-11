@@ -17,7 +17,7 @@ MonoBehaviour:
   event_text: "La fama de Kitty como coctelera es bien conocida hasta el punto que
     su anterior jefe entra para suplicarle que regrese al local.\n\nElla se niega
     muy amablemente alegando que en este local recibe un mejor trato. Este acto no
-    pasar\xE1 desapercibido entre los clientes.\n\n(Ganas 10 puntos de PURRSTIGIO)"
+    pasar\xE1 desapercibido entre los clientes.\n\n<b>(Ganas 10 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

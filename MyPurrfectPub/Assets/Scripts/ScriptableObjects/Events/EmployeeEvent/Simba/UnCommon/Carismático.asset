@@ -18,11 +18,11 @@ MonoBehaviour:
     encantadas con el coctelero.
 
 
-    Cuando el grupito se ha marchado, han dejado
-    una buena propina.
+    Cuando el grupito se marcha, dejan una buena
+    propina.
 
 
-    (Ganas 15 MICHIMONEDAS)'
+    <b>(Ganas 15 MICHIMONEDAS)</b>'
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

@@ -17,12 +17,12 @@ MonoBehaviour:
   costPerTurn: 20
   rol: Guardia
   capacity: 0
-  description: "BRUTUS\n\nPuede que los gatos y los perros no se lleven. Pero hay
-    gatos que no soportan a otros gatos.\n\nEs por eso que tener a un pedazo de perro
-    guardian como Brutus, leal e implacable, puede ser de utilidad pese a lo que
-    cobra.\n\nBrutus no puede servir bebidas ni comidas. Pero podr\xE1 parar algunas
-    peleas o inconvenientes que surjan."
-  bought: 0
+  description: "<b>BRUTUS</b>\n\nPuede que los gatos y los perros no se lleven. Pero
+    hay gatos que no soportan a otros gatos.\n\nEs por eso que tener a un pedazo
+    de perro guardian como Brutus, leal e implacable, puede ser de utilidad pese
+    a lo que cobra.\n\n<b>Brutus no puede servir bebidas ni comidas. Pero podr\xE1
+    parar algunas peleas o inconvenientes que surjan.</b>"
+  bought: 1
   image: {fileID: -699907576, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}
   eventlist:
   - {fileID: 11400000, guid: 13df79c5b743d694bbe9e0bb429a8e68, type: 2}

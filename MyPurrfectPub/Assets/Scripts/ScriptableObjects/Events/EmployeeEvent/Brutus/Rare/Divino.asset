@@ -16,9 +16,9 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Hoy parece una noche concurrida. Pero aun hay gatos fuera que quieren
     entrar pese al l\xEDmite del aforo.\n\nPor suerte, Brutus se encarga de mantenerlos
-    a raya. Permitiendo as\xED que el aforo se mantenga en el \xF9nto \xF3ptimo para
-    que todos los pedidos sean realizados.\n\n(Ganas 15 puntos de capacidad de bebida\nGanas
-    15 puntos de capacidad de comida)"
+    a raya. Permitiendo as\xED que el aforo se mantenga en el punto \xF3ptimo para
+    que todos los pedidos sean realizados.\n\n<b>(Ganas 15 puntos de servicio m\xE1ximo
+    de bebidas\nGanas 15 puntos de servicio m\xE1ximo de comidas)</b>"
   image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

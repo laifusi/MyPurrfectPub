@@ -15,10 +15,9 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Simba ha llegado una hora tarde.\n\nEsto har\xE1 que el n\xFAmero
-    de clientes atendidos disminuya un poco.\n\n(Pierdes 3 puntos de capacidad de
-    bebidas)\n\nLe das una reprimenda para que espabile. Pero su mirade parece agotada.
-    Es posible que se haya quedado dormido.\n\n(Pierdes 3 puntos de capacidad de
-    bebida)"
+    de clientes atendidos disminuya un poco.\n\nLe das una reprimenda para que espabile.
+    Pero su mirada parece agotada. Es posible que se haya quedado dormido.\n\n<b>(Pierdes
+    3 puntos de servicio m\xE1ximo de bebidas)</b>"
   image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 10

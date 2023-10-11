@@ -18,7 +18,8 @@ MonoBehaviour:
     una canci\xF3n.\n\nSu voz resulta ser extremadamente irritante, haciendo que
     todos los clientes bufen de rabia para que se calle. Sin embargo, el cantante
     se niega a dejar el micr\xF3fono.\n\nPara cuando termina, varios clientes han
-    abandonado el local airados.\n\n(Pierdes 3 clientes\n Pierdes 15 puntos de PURRSTIGIO)"
+    abandonado el local airados.\n\n<b>(Pierdes 3 clientes\n Pierdes 15 puntos de
+    PURRSTIGIO)</b>"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

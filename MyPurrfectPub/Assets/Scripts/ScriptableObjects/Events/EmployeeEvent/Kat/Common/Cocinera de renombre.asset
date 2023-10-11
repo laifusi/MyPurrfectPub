@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Se nota la experiencia de Kat como cocinera.\n\nSus platos gustan
-    tanto que los clientes se est\xE1n biendo obligados a dejar algo de propina..\n\n(Ganas
-    20 MICHIMONEDAS)"
+    tanto que los clientes se est\xE1n viendo obligados a dejar algo de propina..\n\n<b>(Ganas
+    20 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0

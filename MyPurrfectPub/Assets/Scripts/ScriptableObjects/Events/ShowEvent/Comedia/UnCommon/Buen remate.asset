@@ -17,8 +17,8 @@ MonoBehaviour:
   event_text: "Un estallido de carcajadas resuena en todo el local cuando el c\xF3mico
     remata su sesi\xF3n con una serie de comentarios que dejan al p\xFAblico sin
     palabras.\n\nEsta clase de comentarios son los que el p\xFAblico recuerda para
-    bien. Y tambi\xE9n son un buen aliciente para regresar a local como el tuyo.\n\n(Ganas
-    15 puntos de PURRSTIGIO)"
+    bien. Y tambi\xE9n son un buen aliciente para regresar a un local como el tuyo.\n\n<b>(Ganas
+    15 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
   - id_option: 0
     text_option: Siguiente
     selected_option: 0
-    purrstige: 10
+    purrstige: 15
     michicoins: 0
     capacity_drink: 0
     capacity_food: 0
