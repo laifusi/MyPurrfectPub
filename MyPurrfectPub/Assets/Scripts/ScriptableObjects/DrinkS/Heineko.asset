@@ -16,8 +16,9 @@ MonoBehaviour:
   cost: 5
   image: {fileID: 944108766, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 3
-  description: "HEINEKO\n\nUn alcohol un tanto m\xE1s sofisticado. Los clientes m\xE1s
-    refinados lo suelen consumir. Pero los felinos de papilas sensibles suelen aborrecerlo."
+  description: "<b>HEINEKO</b>\n\nUn alcohol un tanto m\xE1s sofisticado. Los clientes
+    m\xE1s refinados lo suelen consumir. Pero los felinos de papilas sensibles suelen
+    aborrecerlo."
   rarity: Rare
   minprobability: 1
   maxprobability: 100

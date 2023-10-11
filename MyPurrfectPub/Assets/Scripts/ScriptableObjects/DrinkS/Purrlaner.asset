@@ -16,9 +16,9 @@ MonoBehaviour:
   cost: 7
   image: {fileID: -191422379, guid: a20fcacecd0e70748909408be4b8c503, type: 3}
   prestige: 5
-  description: "PURRLANER\n\nEn todo local prestigiose que se precie, siempre hay
-    una botella de Purrlaner esperando a ser consumida. Su calidad es impecable y
-    solo los clientes m\xE1s selectos escogen este miauravilloso licor."
+  description: "<b>PURRLANER</b>\n\nEn todo local prestigioso que se precie, siempre
+    hay una botella de Purrlaner esperando a ser consumida. Su calidad es impecable
+    y solo los clientes m\xE1s selectos escogen este miauravilloso licor."
   rarity: VeryRare
   minprobability: 1
   maxprobability: 100

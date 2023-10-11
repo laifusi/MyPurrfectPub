@@ -15,13 +15,13 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Un gato negro entra bruscamente preguntando por el Se\xF1or Bigotes.
-    El intruso de hace llamar Miaulterio y exige que es momento de ajustar cuentas
+    El intruso se hace llamar Miaulterio y exige que es momento de ajustar cuentas
     con el Se\xF1or Bigotes.\n\nEl Se\xF1or Bigotes sale de la cocina con el pelo
     erizado.\n\nLos dos gatos sacan sus zarpas y comienzan a darse de golpes. El
     Se\xF1or Bigotes consigue alcanzar a Maulterio varias veces, haci\xE9ndolo huir
     del local. \n\nTodos los clientes se quedan en silencio y algunos han huido durante
-    el combate. Actos como estos podr\xEDan traer mala fama al lugar.\n\n(Pierdes
-    15 puntos de PURRSTIGIO)"
+    el combate. Actos como estos podr\xEDan traer mala fama al lugar.\n\n<b>(Pierdes
+    15 puntos de PURRSTIGIO)</b>"
   image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Hoy Simba parece comprometido con su trabajo y est\xE1 sirviendo bebidas
-    de forma m\xE1s eficiente.\n\n(Ganas 5 puntos de capacidad de bebidas)"
+    de forma muy eficiente.\n\n<b>(Ganas 5 puntos de servicio m\xE1ximo de bebidas)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0

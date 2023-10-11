@@ -88,28 +88,28 @@ public class AdministradorEvent : MonoBehaviour
     public void ChangepossibleEventShow(int purrstigelevel)
     {
         showEvents.maxEventsDuringNight = 1;
-        showEvents.posibility = 50;
+        showEvents.posibility = 70;
     }
 
     public void ChangepossibleEventStandar(int purrstigelevel)
     {
-        standarEvents.posibility = 100;
+        standarEvents.posibility = 80;
 
         switch (purrstigelevel)
         {
             case 1:
-                standarEvents.maxEventsDuringNight = 1;
+                standarEvents.maxEventsDuringNight = 2;
                 break;
             case 2:
-                standarEvents.maxEventsDuringNight = 2;
-                break;
-            case 3:
-                standarEvents.maxEventsDuringNight = 2;
-                break;
-            case 4:
                 standarEvents.maxEventsDuringNight = 3;
                 break;
-            case 5:
+            case 3:
+                standarEvents.maxEventsDuringNight = 4;
+                break;
+            case 4:
+                standarEvents.maxEventsDuringNight = 5;
+                break;
+            /*case 5:
                 standarEvents.maxEventsDuringNight = 3;
                 break;
             case 6:
@@ -117,13 +117,13 @@ public class AdministradorEvent : MonoBehaviour
                 break;
             case 7:
                 standarEvents.maxEventsDuringNight = 4;
-                break;
+                break;*/
         }
     }
 
     public void ChangepossibleEventEmployee(int purrstigelevel)
     {
-        employeeEvents.posibility = 30;
+        employeeEvents.posibility = 40;
 
         switch (purrstigelevel)
         {
@@ -131,23 +131,23 @@ public class AdministradorEvent : MonoBehaviour
                 employeeEvents.maxEventsDuringNight = 1;
                 break;
             case 2:
-                employeeEvents.maxEventsDuringNight = 1;
+                employeeEvents.maxEventsDuringNight = 2;
                 break;
             case 3:
-                employeeEvents.maxEventsDuringNight = 2;
+                employeeEvents.maxEventsDuringNight = 3;
                 break;
             case 4:
-                employeeEvents.maxEventsDuringNight = 2;
-                break;
-            case 5:
-                employeeEvents.maxEventsDuringNight = 3;
-                break;
-            case 6:
-                employeeEvents.maxEventsDuringNight = 3;
-                break;
-            case 7:
                 employeeEvents.maxEventsDuringNight = 4;
                 break;
+                /*  case 5:
+                      employeeEvents.maxEventsDuringNight = 3;
+                      break;
+                  case 6:
+                      employeeEvents.maxEventsDuringNight = 3;
+                      break;
+                  case 7:
+                      employeeEvents.maxEventsDuringNight = 4;
+                      break;*/
         }
     }
 }

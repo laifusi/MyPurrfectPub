@@ -18,7 +18,7 @@ MonoBehaviour:
     Lebrijana, quien pregunta por el Se\xF1or Bigotes.\n\nParece que se conocen de
     algo, pues \xE9ste siempre se esmera en el plato que cocina para ella, y ella
     siempre deja un poco m\xE1s de propina que el Se\xF1or Bigotes se niega a aceptar,
-    d\xE1ndonosla a nosotros.\n\n(Ganas 15 MICHIMONEDAS)"
+    d\xE1ndonosla a nosotros.\n\n<b>(Ganas 15 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

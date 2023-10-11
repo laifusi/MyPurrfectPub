@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Parece que ha habido un problema en la cocina. \n\nTratando de llevar
     los platos r\xE1pidamente, unos cuantos han acabados rotos en el suelo. \n\nNo
-    han causado ning\xFAn da\xF1o, pero tendr\xE1n que ser remplazados.\n\n(Pierdes
-    10 MICHIMONEDAS)"
+    han causado ning\xFAn da\xF1o, pero tendr\xE1n que ser remplazados.\n\n<b>(Pierdes
+    10 MICHIMONEDAS)</b>"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

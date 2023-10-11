@@ -18,9 +18,9 @@ MonoBehaviour:
     sorpresa de todos, resulta ser el famoso Meowdon Catsay. El prestigioso cocinero
     famoso por su mal caracter.\n\nPese a los gritos en la cocina, ambos hacen un
     equipo extraordinario, siendo capaces de llevar a cabo todos los pedidos y crear
-    platos impresionantes.\n\nSin duda los comensales tendr\xE1n una noche para recordar.\n\n(Ganas
-    80 MICHIMONEDAS\nGanas 15 puntos de PURRSTIGIO\nGanas 15 puntos de capacidad
-    de comida) "
+    platos impresionantes.\n\nSin duda los comensales tendr\xE1n una noche para recordar.\n\n<b>(Ganas
+    80 MICHIMONEDAS\nGanas 15 puntos de PURRSTIGIO\nGanas 15 puntos de servicio m\xE1ximo
+    de comidas) </b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0

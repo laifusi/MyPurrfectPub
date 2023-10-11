@@ -16,7 +16,7 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Se nota la experiencia de Kitty como coctelera.\n\nSus movimientos
     son \xE1giles y sabe quedar bien con los clientes. Su don de gentes ayuda a que
-    siempre haya algo de dinero en la caja de donativos.\n\n(Ganas 10 MICHIMONEDAS)"
+    siempre haya algo de dinero en la caja de donativos.\n\n<b>(Ganas 10 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0

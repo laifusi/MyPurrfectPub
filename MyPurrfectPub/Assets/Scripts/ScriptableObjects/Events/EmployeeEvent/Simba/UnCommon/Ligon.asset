@@ -26,10 +26,10 @@ MonoBehaviour:
     que se castre a los gatos.
 
 
-    (Pierdes 1 cliente
+    <b>(Pierdes 1 cliente
 
-    Pierdes 5 puntos de
-    PURRSTIGIO)'
+    Pierdes 5 puntos
+    de PURRSTIGIO)</b>'
   image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

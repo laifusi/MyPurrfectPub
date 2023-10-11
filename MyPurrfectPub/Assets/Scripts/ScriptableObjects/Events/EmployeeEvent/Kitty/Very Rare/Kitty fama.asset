@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "La noche no parece muy animada y tiene pinta de que los clientes vayan
-    a abandonar el local en breves.\n\nViendo esto, Kitty decide subir al escenario
+  event_text: "La noche no parece muy animada y tiene pinta de que los clientes 
+    abandonar\xE1n el local en breves.\n\nViendo esto, Kitty decide subir al escenario
     y comienza a recitar poes\xEDa improvisada.\n\nLo que al principio parece extra\xF1o,
     poco a poco comienza a cautivar a todo el mundo, hasta el punto que los clientes
     comienzan a subir al escenario a improvisar, dejando a Kitty trabajar.\n\nLo
     que parec\xEDa una noche de pocas ganancias se ha convertido en un evento muy
-    lucrativo gracias al ingenio de tu empleada.\n\n(Ganas 60 MICHIMONEDAS\nGanas
-    10 puntos de PURRSTIGIO) "
+    lucrativo gracias al ingenio de tu empleada.\n\n<b>(Ganas 60 MICHIMONEDAS\nGanas
+    10 puntos de PURRSTIGIO)</b> "
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0

@@ -17,9 +17,9 @@ MonoBehaviour:
   event_text: "Hoy ha venido un gato bastante peculiar. \n\nEl se\xF1or Maulledo,
     quien es famoso cantautor, decide deleitar a todo el local con su \xFAltima composici\xF3n.
     La cual es recibida con aplausos y ronroneos.\n\nSiempre pregunta por el Se\xF1or
-    Bigotes, con quien parece tener una buena amistad.\n\nUna vez abandona el el
-    local, oyes los cuchicheos del resto de clientes, quienes esperan con ansias
-    volverlo a ver alg\xFAn d\xEDa.\n\n(Ganas 7 puntos de PURRSTIGIO)"
+    Bigotes, con quien parece tener una buena amistad.\n\nUna vez abandona el local,
+    oyes los cuchicheos del resto de clientes, quienes esperan con ansias volverlo
+    a ver alg\xFAn d\xEDa.\n\n<b>(Ganas 7 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

@@ -19,8 +19,8 @@ MonoBehaviour:
     al cliente que no tiene idea de degustar un buen plato.\n\nLos dem\xE1s clientes
     se quedan boquiabiertos ante la excesiva reacci\xF3n de Kat, por lo que algunos
     abandonan el local.\n\nLe das una reprimenda para que no lo vuelva a hacer, pero
-    el da\xF1o ya est\xE1 hecho.\n\n(Pierdes 20 puntos de PURRSTIGIO\nPierdes a 10
-    clientes esta noche)"
+    el da\xF1o ya est\xE1 hecho.\n\n<b>(Pierdes 20 puntos de PURRSTIGIO\nPierdes
+    a 10 clientes esta noche)</b>"
   image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

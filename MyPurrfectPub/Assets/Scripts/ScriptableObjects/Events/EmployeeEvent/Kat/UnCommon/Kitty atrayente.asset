@@ -22,7 +22,7 @@ MonoBehaviour:
     salgan con una amplia sonrisa en la boca.
 
 
-    (Ganas 5 puntos de PURRSTIGIO)'
+    <b>(Ganas 5 puntos de PURRSTIGIO)</b>'
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

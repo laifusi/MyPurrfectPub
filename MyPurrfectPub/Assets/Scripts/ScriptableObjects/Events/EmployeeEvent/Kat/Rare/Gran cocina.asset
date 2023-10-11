@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "La fama de Kat es bien merecida.\n\nUn cr\xEDtico culinario entr\xF3
     por casualidad en el local y prob\xF3 uno de sus platos, quedando obnubilado.
-    \n\nLa cr\xEDtica se ha hecho viral, lo que te viene muy bien como publicidad.\n\n(Ganas
-    10 puntos de PURRSTIGIO)"
+    \n\nLa cr\xEDtica se ha hecho viral, lo que te viene muy bien como publicidad.\n\n<b>(Ganas
+    10 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

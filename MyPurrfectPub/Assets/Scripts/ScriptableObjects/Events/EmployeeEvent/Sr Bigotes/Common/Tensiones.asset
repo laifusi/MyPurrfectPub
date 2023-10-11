@@ -16,7 +16,7 @@ MonoBehaviour:
   event_tittle: 
   event_text: "La actitud seria del se\xF1or bigotes genera algunas tensiones en
     la cocina.\n\nTensiones que los clientes perciben desde sus asientos. Haciendo
-    su estancia un tanto desagradable.\n\n(Pierdes 3 puntos de PURRSTIGIO)"
+    su estancia un tanto desagradable.\n\n<b>(Pierdes 3 puntos de PURRSTIGIO)</b>"
   image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0

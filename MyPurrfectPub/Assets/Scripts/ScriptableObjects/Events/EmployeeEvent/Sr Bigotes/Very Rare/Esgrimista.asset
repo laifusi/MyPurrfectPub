@@ -21,8 +21,8 @@ MonoBehaviour:
     la jauria.\n\nTras un brusco intercambio de golpes, los perros huyen despaboridos,
     dejando a un herido pero aun firme Se\xF1or Bigotes en medio del local.\n\nLos
     clientes comienzan a vitorearlo. La fama de nuestro heroe puede venirle muy bien
-    al local. Y tambi\xE9n las generosas propinas que est\xE1n dejando hoy los clientes.\n\n(Ganas
-    20 puntos de PURRSTIGIO\nGanas 25 MICHIMONEDAS)"
+    al local. Y tambi\xE9n las generosas propinas que est\xE1n dejando hoy los clientes.\n\n<b>(Ganas
+    20 puntos de PURRSTIGIO\nGanas 25 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0
