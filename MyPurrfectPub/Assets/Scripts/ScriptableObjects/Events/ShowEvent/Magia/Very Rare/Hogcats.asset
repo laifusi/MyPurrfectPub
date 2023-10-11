@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Para sorpresa de todos, Nekodini ha traido a un grupo de magos de
-    la escuela de magia Hogcats.\n\nEntre todos hacen un espl\xE9ndido n\xFAmero
-    m\xE1gico que deja embelesados a todo el mundo.\n\nCosas como esta y las increibles
-    ganancias que te ha aportado el show, hacen que creas en la magia.\n\n(Ganas
-    30 puntos de PURRSTIGIO\nGanas 55 MICHIMONEDAS)"
+  event_text: "Para sorpresa de todos, Nekodini ha tra\xEDdo a un grupo de magos
+    de la escuela de magia Hogcats.\n\nEntre todos hacen un espl\xE9ndido n\xFAmero
+    m\xE1gico que deja embelesados a todo el mundo.\n\nCosas como esta y las incre\xEDbles
+    ganancias que te ha aportado el show, hacen que creas en la magia.\n\n<b>(Ganas
+    30 puntos de PURRSTIGIO\nGanas 55 MICHIMONEDAS)</b>"
   image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0

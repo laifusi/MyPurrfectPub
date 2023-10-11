@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Lo de esta noche ha sido sobervio. \n\nNunca hab\xEDas presenciado
+  event_text: "Lo de esta noche ha sido soberbio. \n\nNunca hab\xEDas presenciado
     un espect\xE1culo como este. Los mininos est\xE1n fascinados y t\xFA no puedes
-    dejar de aplaudir.\n\nSin duda ha sido el espect\xE1culo definitivo. Los cr\xEDticos
-    hablaran de ello y tu local no quedar\xE1 desapercibido.\n\n(Ganas 35 puntos
-    de PURRSTIGIO\nGanas 100 MICHIMONEDAS)"
+    dejar de aplaudir.\n\nSin duda, ha sido el espect\xE1culo definitivo. Los cr\xEDticos
+    hablar\xE1n de ello y tu local no pasar\xE1 desapercibido.\n\n<b>(Ganas 35 puntos
+    de PURRSTIGIO\nGanas 100 MICHIMONEDAS)</b>"
   image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0

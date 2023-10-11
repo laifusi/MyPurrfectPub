@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Parece que el m\xFAsical ha tenido bastante \xE9xito entre los asistentes
+  event_text: "Parece que el miausical ha tenido bastante \xE9xito entre los asistentes
     de la noche. \n\nVes sus ojos llenos de vida y fascinaci\xF3n. Pero lo que realmente
-    te enternece es la cantidad de donatibos recibidos y la esperanza de que los
-    asistentes vuelvan a visitar el local.\n\n(Ganas 5 puntos de PURRSTIGIO\nGanas
-    25 MICHIMONEDAS)"
+    te enternece es la cantidad de donativos recibidos y la esperanza de que los
+    asistentes vuelvan a visitar el local.\n\n<b>(Ganas 5 puntos de PURRSTIGIO\nGanas
+    25 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0

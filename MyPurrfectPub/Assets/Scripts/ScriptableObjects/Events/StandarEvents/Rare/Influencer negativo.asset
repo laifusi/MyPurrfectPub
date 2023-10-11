@@ -17,7 +17,7 @@ MonoBehaviour:
   event_text: "Uno de tus clientes ha resultado ser el conocido influencer local
     Michilix27.\n\nParece que no est\xE1 satisfecho con su experiencia en tu local
     y ha escrito una rese\xF1a negativa sobre tu negocio.\n\nEsto podr\xEDa afectar
-    seriamente a la reputaci\xF3n del local.\n\n(Pierdes 15 de PURRSTIGIO)"
+    seriamente a la reputaci\xF3n del local.\n\n<b>(Pierdes 15 de PURRSTIGIO)</b>"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

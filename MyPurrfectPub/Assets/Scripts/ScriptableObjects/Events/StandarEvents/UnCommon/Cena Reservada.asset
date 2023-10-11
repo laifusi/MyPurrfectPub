@@ -18,7 +18,7 @@ MonoBehaviour:
     cena en tu local.\n\nEsto te ha permitido comprar de antemano la comida y bebida
     necesarias para llevar a cabo este evento sin percances.\n\nLa cena ha salido
     bien y todos los gatos se relamen satisfechos mientras pagan de buen grado una
-    cena que te ser\xE1 muy lucrativa."
+    cena que te ser\xE1 muy lucrativa.\n\n<b>(Ganas 50 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

@@ -15,12 +15,12 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Parece que el neko-c\xF3mico contratado ha decidido traerse a un grupo
-    de amigos, a los cuales incluye con elocuencia en sus bromas y chascarrillos.\n\nEsto
-    hace que la actuaci\xF3n se sienta m\xE1s cencana e interactiva con el p\xFAblico,
-    quien disfruta de sobremanera con las interacciones del neko-c\xF3mico y sus
-    compa\xF1eros.\n\nEl grupo de amigos expresa su gratitud hacia ti por dejar actuar
-    a su amigo ofreci\xE9ndote un generoso donativo.\n\n(Ganas 5 clientes\nGanas
-    15 MICHIMONEDAS\n Ganas 10 puntos de PURRSTIGIO)"
+    de amigos, a los que incluye con elocuencia en sus bromas y chascarrillos.\n\nEsto
+    hace que la actuaci\xF3n se sienta m\xE1s cercana e interactiva con el p\xFAblico,
+    que disfruta de sobremanera con las interacciones del neko-c\xF3mico y sus compa\xF1eros.\n\nEl
+    grupo de amigos expresa su gratitud hacia ti por dejar actuar a su amigo, ofreci\xE9ndote
+    un generoso donativo.\n\n<b>(Ganas 5 clientes\nGanas 15 MICHIMONEDAS\nGanas 10
+    puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
     text_option: Siguiente
     selected_option: 0
     purrstige: 10
-    michicoins: 10
+    michicoins: 15
     capacity_drink: 0
     capacity_food: 0
     new_clients: 5

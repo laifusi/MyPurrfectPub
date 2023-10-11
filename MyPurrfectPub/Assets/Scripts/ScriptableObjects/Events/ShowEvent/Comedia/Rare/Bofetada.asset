@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "La noche esta yendo bien. La gente se r\xEDe, el alcohol fluye...\n\nSin
+  event_text: "La noche est\xE1 yendo bien. La gente se r\xEDe, el alcohol fluye...\n\nSin
     embargo, las risas cesan cuando uno de los clientes se levanta y abofetea al
     neko-c\xF3mico delante de todos.\n\nParece que el neko-c\xF3mico ha dicho un
     comentario desafortunado. Pero eso no es motivo para tener un comportamiento
     tan vulgar.\n\nEl cliente es guiado hacia la salida y el espect\xE1culo es retomado,
-    pero esto puede desprestigiar el buen nombre de tu local.\n\n(Pierdes 20 puntos
-    de PURRSTIGIO) "
+    pero esto puede desprestigiar el buen nombre de tu local.\n\n<b>(Pierdes 15 puntos
+    de PURRSTIGIO) </b>"
   image: {fileID: -1212568836, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

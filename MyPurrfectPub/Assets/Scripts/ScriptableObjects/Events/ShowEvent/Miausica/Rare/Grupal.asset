@@ -20,8 +20,8 @@ MonoBehaviour:
     piden m\xE1s canciones hasta que acaba la noche.\n\nEl miauraoke ha sido un \xE9xito.
     Cuando todo termina, el grupito se te acerca y agradece la oportunidad.\n\nEn
     compensaci\xF3n, te ofrecen un peque\xF1o donativo para el negocio. En un principio
-    te niegas, pero son muy insistentes.\n\n(Ganas 8 puntos de PURRSTIGIO\nGanas
-    18 MICHIMONEDAS)"
+    te niegas, pero son muy insistentes.\n\n<b>(Ganas 8 puntos de PURRSTIGIO\nGanas
+    18 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0
