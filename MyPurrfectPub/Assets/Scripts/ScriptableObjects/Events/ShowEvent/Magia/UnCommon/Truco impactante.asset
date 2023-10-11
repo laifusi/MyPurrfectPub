@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Hay algo que gusta a todo el mundo. Los trucos de cartas y los punteros
-    laseres en las paredes.\n\nAsi que imagina como tuvo que sentirse el p\xFAblico
+  event_text: "Hay algo que gusta a todo el mundo: los trucos de cartas y los punteros
+    l\xE1ser en las paredes.\n\nAs\xED que imagina c\xF3mo tuvo que sentirse el p\xFAblico
     cuando el miauravilloso Nekodini consigui\xF3 adivinar la carta de su voluntario
-    y mostrar su valor mediante punteros l\xE1seres en la pared.\n\nLa gente est\xE1
-    encantada con el mago y no puede esperar a ver la pr\xF3xima actuaci\xF3n.\n\n(Ganas
-    5 puntos de PURRSTIGIO)"
+    y mostrar su valor mediante punteros l\xE1ser en la pared.\n\nLa gente est\xE1
+    encantada con el mago y no puede esperar a ver la pr\xF3xima actuaci\xF3n.\n\n<b>(Ganas
+    5 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

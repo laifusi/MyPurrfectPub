@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "A un cliente, debido a su estado de embriaguez, se le cae el micr\xF3fono
     al suelo.\n\nEsto provoca que el Miauraoke quede inutilizado para toda la noche.\n\nHabr\xE1
-    que reparar el micr\xF3fono para que funcione la pr\xF3xima vez.\n\n(Pierdes
-    15 MICHIMONEDAS) "
+    que reparar el micr\xF3fono para que funcione la pr\xF3xima vez.\n\n<b>(Pierdes
+    15 MICHIMONEDAS)</b>"
   image: {fileID: -1212568836, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

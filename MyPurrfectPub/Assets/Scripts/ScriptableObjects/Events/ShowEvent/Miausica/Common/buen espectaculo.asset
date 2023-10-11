@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: 'El espectaculo ha ido mejor de lo esperado. Los gatitos han disfrutado
-    de poder cantar en el escenario y se les ve muy satisfechos.
-
-
-    (Ganas 5 puntos
-    de PURRSTIGIO)'
+  event_text: "El espect\xE1culo ha ido mejor de lo esperado. Los gatitos han disfrutado
+    de poder cantar en el escenario y se les ve muy satisfechos.\n\n<b>(Ganas 5 puntos
+    de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0

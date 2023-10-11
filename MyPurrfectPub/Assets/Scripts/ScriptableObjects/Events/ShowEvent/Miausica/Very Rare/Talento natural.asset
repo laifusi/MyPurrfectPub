@@ -19,8 +19,8 @@ MonoBehaviour:
     final consigues sobreponerte y comienzas a cantar.\n\nEl p\xFAblico se queda
     boquiabierto, tienes un talento natural para esto.\n\nAl final, todo el mundo
     se levanta y aplaude por tu actuaci\xF3n, dejando cuantiosas propinas a cambio
-    de un espect\xE1culo que dif\xEDcilmente olviden.\n\n(Ganas 50 MICHIMONEDAS\nGanas
-    20 puntos de PURRSTIGIO)"
+    de un espect\xE1culo que dif\xEDcilmente olviden.\n\n<b>(Ganas 50 MICHIMONEDAS\nGanas
+    20 puntos de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 3
   min_purrstige: 0

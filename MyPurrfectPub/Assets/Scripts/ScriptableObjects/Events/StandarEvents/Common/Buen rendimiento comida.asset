@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Esta noche, has decidido unirte al equipo de cocineros, pudiendo as\xED
-    atender a un mayor n\xFAmero de pedidos de comida.\n\n(Ganas 3 puntos de Capacidad
-    de comida)"
+    atender a un mayor n\xFAmero de pedidos de comida.\n\n<b>(El servicio m\xE1ximo
+    de comidas aumenta en 3 esta noche)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 0
   min_purrstige: 0

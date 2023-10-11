@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "La noche esta yendo bien. La gente est\xE1 espectante por el pr\xF3ximo
+  event_text: "La noche est\xE1 yendo bien. La gente est\xE1 espectante por el pr\xF3ximo
     truco.\n\nNekodini saca un conejo de la chistera y todo el mundo comienza a aplaudir.\n\nPara
     sorpresa de todos, saca otro, y otro, y otro, y otro... Incluso Nekodini parece
     tan sorprendido como el p\xFAblico por esto.\n\nAl cabo de unos instantes, el
@@ -22,7 +22,7 @@ MonoBehaviour:
     aplauden ante tal extraordinario n\xFAmero.\n\nSin embargo, el problema viene
     cuando toca limpiar. Debido a la cantidad de conejos que hab\xEDa, la suciedad
     es inmensa. Habr\xE1 que contratar a un equipo de limpieza para que se ocupe
-    este problema.\n\n(Pierdes 20 MICHIMONEDAS) "
+    de este problema.\n\n<b>(Pierdes 20 MICHIMONEDAS) </b>"
   image: {fileID: -226758607, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

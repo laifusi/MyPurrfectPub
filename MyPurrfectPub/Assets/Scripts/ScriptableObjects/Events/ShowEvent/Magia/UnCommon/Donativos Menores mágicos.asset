@@ -15,10 +15,10 @@ MonoBehaviour:
   id: 0
   event_tittle: 
   event_text: "Las gatitos se ven muy satisfechos. La noche ha ido muy bien gracias
-    a la increible performance de Nekodini.\n\nTodos salen con una sonrisa en el
-    ocico. Eso te incluye a ti, que ves como los asistentes han dejado una generosa
-    cantidad de popinas. Lo suficiente como para compensar los gastos de la contrataci\xF3n
-    del Nekodini.\n\n(Ganas 37 MICHIMONEDAS)"
+    a la incre\xEDble actuaci\xF3n de Nekodini.\n\nTodos salen con una sonrisa en
+    el hocico. Eso te incluye a ti, que ves c\xF3mo los asistentes han dejado una
+    generosa cantidad de popinas. Lo suficiente como para compensar los gastos de
+    la contrataci\xF3n del Nekodini.\n\n<b>(Ganas 37 MICHIMONEDAS)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

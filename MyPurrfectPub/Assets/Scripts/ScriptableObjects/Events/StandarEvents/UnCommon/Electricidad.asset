@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Los gatos tienen una buena visi\xF3n nocturna. Pero forzar la vista
     no es bueno para nadie.\n\nLa instalaci\xF3n el\xE9ctrica est\xE1 dando problemas
-    debido a una subida de la tensi\xF3n. Repararla costar\xE1 un poco.\n\n(Pierdes
-    15 MICHIMONEDAS)"
+    debido a una subida de la tensi\xF3n. Repararla costar\xE1 un poco.\n\n<b>(Pierdes
+    15 MICHIMONEDAS)</b>"
   image: {fileID: 1750965895, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
     text_option: Siguiente
     selected_option: 0
     purrstige: 0
-    michicoins: -10
+    michicoins: -15
     capacity_drink: 0
     capacity_food: 0
     new_clients: 0

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   event_tittle: 
-  event_text: "Dificilmente has presenciado alguna interpretaci\xF3n como la realizada
+  event_text: "Dif\xEDcilmente has presenciado alguna interpretaci\xF3n como la realizada
     por Meowlaine Paige.\n\nLa actriz ha calado fondo en el coraz\xF3n de los clientes
-    y estos clama por m\xE1s, pero el show ya ha terminado.\n\nDejarles con ganas
-    de m\xE1s es un perfecto aliciente para que vuelvan.\n\n(Ganas 15 puntos de PURRSTIGIO)"
+    y estos claman por m\xE1s, pero el show ya ha terminado.\n\nDejarles con ganas
+    de m\xE1s es un perfecto aliciente para que vuelvan.\n\n<b>(Ganas 15 puntos de
+    PURRSTIGIO)</b>"
   image: {fileID: 210061182, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

@@ -19,8 +19,8 @@ MonoBehaviour:
     bufando hacia el mago.\n\nParece ser que se trata de la exmujer de Nekodini,
     quien comienza a reclamarle que se haga responsable y pague la manutenci\xF3n
     del hijo.\n\nEl local queda en silencio mientras escuchan la acalorada discusi\xF3n.
-    Puedes ver los rostros de extra\xF1eza y decepci\xF3n en los clientes. Esto pdr\xEDa
-    pasar factura.\n\n(Pierdes 30 puntos de PURRSTIGIO)"
+    Puedes ver los rostros de extra\xF1eza y decepci\xF3n en los clientes. Esto podr\xEDa
+    pasar factura.\n\n<b>(Pierdes 30 puntos de PURRSTIGIO)</b>"
   image: {fileID: -1212568836, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 2
   min_purrstige: 0

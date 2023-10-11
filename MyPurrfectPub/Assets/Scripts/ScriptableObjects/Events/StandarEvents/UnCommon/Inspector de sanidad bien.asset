@@ -17,7 +17,7 @@ MonoBehaviour:
   event_text: "Un inspector de sanidad ha pasado por tu local para comprobar la calidad
     de las instalaciones y que todos los alimentos se encuentren en condiciones \xF3ptimas.\n\nFinalmente,
     el inspector te da el visto bueno.\n\nUn local en buenas condiciones atraer\xE1
-    a m\xE1s clientes.\n\n(Ganas 10 de PURRSTIGIO)"
+    a m\xE1s clientes.\n\n<b>(Ganas 10 de PURRSTIGIO)</b>"
   image: {fileID: -2001537582, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0

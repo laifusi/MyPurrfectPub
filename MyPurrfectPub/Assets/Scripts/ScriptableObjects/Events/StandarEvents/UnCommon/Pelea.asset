@@ -16,8 +16,8 @@ MonoBehaviour:
   event_tittle: 
   event_text: "Dos mininos han comenzado a maullarse de forma muy agresiva. Los maullidos
     han acabado en bufidos y finalmentos han llegado a los zarpazos.\n\nLa pelea
-    no ha causado da\xF1os graves, pero la gente hablar\xE1 de esto, y no muy bien.\n\n(Pierdes
-    5 de PURRSTIGIO)"
+    no ha causado da\xF1os graves, pero la gente hablar\xE1 de esto, y no muy bien.\n\n<b>(Pierdes
+    10 de PURRSTIGIO)</b>"
   image: {fileID: 1958580178, guid: 5fd0d901b3d3b0847ab5361afa202bf0, type: 3}
   rarity: 1
   min_purrstige: 0
