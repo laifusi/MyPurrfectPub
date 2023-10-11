@@ -16,11 +16,11 @@ MonoBehaviour:
   prestigePerTurn: 5
   costPerTurn: 20
   rol: Camarera
-  capacity: 20
+  capacity: 15
   description: "KAT ERIN\n\nUna gatita con mucho caracter. Pero en su curr\xEDculum
     muestra tener mucha experiencia previa.\n\nIncluso particip\xF3 en el famos programa
     de cocina Miauster Chef. En donde gan\xF3 algo de fama.\n\nEsa fama y experiencia
-    puede venirnos muy bien.\n\nKat Erin solo podr\xE1 atender a 20 clientes por
+    puede venirnos muy bien.\n\nKat Erin solo podr\xE1 atender a 15 clientes por
     noche, pero solo preparando comida."
   bought: 0
   image: {fileID: -958879238, guid: ac8f82d56e1bb4c438389eab7133638f, type: 3}

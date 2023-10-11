@@ -16,7 +16,7 @@ public class UIFoodCapacity : MonoBehaviour
 
     private void ChangeText(int value)
     {
-        text.SetText(value.ToString() + " capacidad de comida");
+        text.SetText("Servicio máximo de comidas " + value.ToString());
     }
 
     private void OnDestroy()

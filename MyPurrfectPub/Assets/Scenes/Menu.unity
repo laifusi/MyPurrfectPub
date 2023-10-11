@@ -1603,7 +1603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 4c58105539f9e5b4ea37d02431433d43, type: 2}
   maxSoundValue: 10
-  minSoundValue: -40
+  minSoundValue: -70
 --- !u!4 &702398097
 Transform:
   m_ObjectHideFlags: 0

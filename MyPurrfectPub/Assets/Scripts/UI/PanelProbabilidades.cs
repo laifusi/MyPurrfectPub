@@ -15,7 +15,9 @@ public class PanelProbabilidades : MonoBehaviour
 
     [SerializeField] private TMP_Text level_local;
 
-    [SerializeField] private TMP_Text Clients_amount;
+    [SerializeField] private TMP_Text Clients_min_amount;
+
+    [SerializeField] private TMP_Text Clients_max_amount;
 
     [SerializeField] private TMP_Text purrstige_lost;
 
@@ -23,10 +25,10 @@ public class PanelProbabilidades : MonoBehaviour
 
     public void OnEnable()
     {
-        UpdateText(gameManager.GetPrestigeLevel(), gameManager.GetClientAmount(), gameManager.GetPrestigeLost());
+        UpdateText(gameManager.GetPrestigeLevel(), gameManager.GetMinClientAmount(), gameManager.GetMaxClientAmount(), gameManager.GetPrestigeLost());
     }
 
-    public void UpdateText(int level, int c_cantidad, int p_lost)
+    public void UpdateText(int level, int c_min_cantidad, int c_max_cantidad, int p_lost)
     {
         switch(level)
         {
@@ -58,7 +60,9 @@ public class PanelProbabilidades : MonoBehaviour
 
         level_local.text = level.ToString();
 
-        Clients_amount.text = c_cantidad.ToString();
+        Clients_min_amount.text = c_min_cantidad.ToString();
+
+        Clients_max_amount.text = c_max_cantidad.ToString();
 
         purrstige_lost.text = p_lost.ToString();
 
