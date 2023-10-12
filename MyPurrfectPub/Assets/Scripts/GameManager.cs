@@ -782,7 +782,7 @@ public class GameManager : MonoBehaviour
                         unhappyClients++;
                         calculationsPrestige.Add(prestigeLost * -1);
                         if(actualCapacityDrink <= 0)
-                            cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas", false, true);
+                            cliente.AddConsumicines(i, "No hay suficiente servicio de bebidas", false, true);
                         else
                             cliente.AddConsumicines(i, "No quedan bebidas", false, true);
                     }
@@ -814,7 +814,7 @@ public class GameManager : MonoBehaviour
                         unhappyClients++;
                         calculationsPrestige.Add(prestigeLost * -1);
                         if (actualCapacityFood <= 0)
-                            cliente.AddConsumicines(i, "No hay suficiente capacidad de comidas", false, true);
+                            cliente.AddConsumicines(i, "No hay suficiente servicio de comidas", false, true);
                         else
                             cliente.AddConsumicines(i, "No quedan comidas", false, true);
                     }
@@ -832,11 +832,11 @@ public class GameManager : MonoBehaviour
                         else if (inventory.GetDrinkCount() <= 0)
                             cliente.AddConsumicines(i, "No quedan bebidas", false, true);
                         else if (actualCapacityDrink <= 0 && actualCapacityFood <= 0)
-                            cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas ni de comidas", false, true);
+                            cliente.AddConsumicines(i, "No hay suficiente servicio de bebidas ni de comidas", false, true);
                         else if (actualCapacityFood <= 0)
-                            cliente.AddConsumicines(i, "No hay suficiente capacidad de comidas", false, true);
+                            cliente.AddConsumicines(i, "No hay suficiente servicio de comidas", false, true);
                         else
-                            cliente.AddConsumicines(i, "No hay suficiente capacidad de bebidas", false, true);
+                            cliente.AddConsumicines(i, "No hay suficiente servicio de bebidas", false, true);
                         
                     }
                     else
